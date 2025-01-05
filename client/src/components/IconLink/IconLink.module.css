@@ -1,0 +1,15 @@
+.link {
+    width: 41px;
+    height: 41px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: 1px solid var(--surface-10);
+    color: var(--text-0);
+}
+
+.link:hover {
+    background-color: var(--primary-0);
+    text-decoration: none;
+}

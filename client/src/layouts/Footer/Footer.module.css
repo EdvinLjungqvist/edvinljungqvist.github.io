@@ -1,0 +1,15 @@
+footer {
+    width: var(--width);
+    height: 100px;
+    margin: auto auto 0 auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--surface-10);
+}
+
+.links {
+    gap: 5px;
+    display: flex;
+}

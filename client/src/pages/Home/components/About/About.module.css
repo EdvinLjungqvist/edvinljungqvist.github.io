@@ -1,0 +1,31 @@
+.container {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 75%;
+    border-radius: 50%;
+}
+
+.location {
+    color: var(--text-50);
+}
+
+.links {
+    gap: 5px;
+    display: flex;
+}
+
+@media (min-width: 576px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .image {
+        width: 175px;
+    }
+}

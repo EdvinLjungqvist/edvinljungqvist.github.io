@@ -1,0 +1,72 @@
+.grid {
+    gap: 30px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.cell {
+    position: relative;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px dashed var(--surface-10);
+}
+
+.empty {
+    display: none;
+}
+
+.line {
+    width: 3px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    background-image: linear-gradient(
+        to bottom, 
+        var(--surface-0) 0%, 
+        var(--primary-0) 5%, 
+        var(--primary-0) 95%, 
+        var(--surface-0) 100%
+    );
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    top: -8px;
+    left: -26px;
+    border-radius: 50%;
+    border: 2px solid var(--surface-0);
+    position: absolute;
+    background-color: var(--primary-0);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        margin: 50px 0;
+        padding-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .empty {
+        display: block;
+    }
+
+    .cell:nth-child(even) .circle {
+        left: unset;
+        right: -23px;
+    }
+
+    .cell:nth-child(odd) .circle {
+        left: -23px;
+        right: unset;
+    }
+
+    .line {
+        left: calc(50% - 2px)
+    }
+}

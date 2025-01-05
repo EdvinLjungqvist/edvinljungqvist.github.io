@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.minimized-width,
+.full-width {
+    margin: 0 auto;
+    width: var(--width);
+}
+
+.small-spacing {
+    row-gap: 10px;
+}
+
+.normal-spacing {
+    row-gap: 30px;
+}
+
+.large-spacing {
+    row-gap: 50px;
+}
+
+.center-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .minimized-width {
+        width: calc(var(--width) - 20%);
+    }
+}

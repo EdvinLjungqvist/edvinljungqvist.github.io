@@ -1,0 +1,18 @@
+.grid {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cell {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--surface-10);
+}
+
+@media (min-width: 768px) {
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

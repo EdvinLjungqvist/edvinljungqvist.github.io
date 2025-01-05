@@ -1,0 +1,46 @@
+[
+    {
+        "language": "JavaScript",
+        "icon": "fa-brands fa-js",
+        "technologies": [
+            "TypeScript",
+            "React.js",
+            "Node.js",
+            "Express.js"
+        ]
+    },
+    {
+        "language": "Python",
+        "icon": "fa-brands fa-python",
+        "technologies": [
+            "Flask"
+        ]
+    },
+    {
+        "language": "SQL",
+        "icon": "fa-solid fa-database",
+        "technologies": [
+            "MySQL",
+            "SQLite"
+        ]
+    },
+    {
+        "language": "Java",
+        "icon": "fa-brands fa-java",
+        "technologies": [
+            "PaperMC"
+        ]
+    },
+    {
+        "language": "Kotlin",
+        "icon": "fa-brands fa-android",
+        "technologies": [
+            "Jetpack Compose"
+        ]
+    },
+    {
+        "language": "GitHub",
+        "icon": "fa-brands fa-github",
+        "technologies": []
+    }
+]
