@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.1825fe6b.css",
-    "main.js": "/static/js/main.1b25c0ec.js",
-    "static/css/875.1c68cdc9.chunk.css": "/static/css/875.1c68cdc9.chunk.css",
-    "static/js/875.517baa73.chunk.js": "/static/js/875.517baa73.chunk.js",
+    "main.css": "/static/css/main.2e489835.css",
+    "main.js": "/static/js/main.9b09ee5f.js",
+    "static/css/875.f8b04530.chunk.css": "/static/css/875.f8b04530.chunk.css",
+    "static/js/875.d2b86f27.chunk.js": "/static/js/875.d2b86f27.chunk.js",
     "static/js/38.9a1baf1b.chunk.js": "/static/js/38.9a1baf1b.chunk.js",
     "static/js/749.53a20ccc.chunk.js": "/static/js/749.53a20ccc.chunk.js",
     "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
@@ -14,15 +14,15 @@
     "static/media/othello.png": "/static/media/othello.195e78d56f90c9181e6f.png",
     "static/media/quizGame.png": "/static/media/quizGame.ecd4e6a62ade883c2c43.png",
     "index.html": "/index.html",
-    "main.1825fe6b.css.map": "/static/css/main.1825fe6b.css.map",
-    "main.1b25c0ec.js.map": "/static/js/main.1b25c0ec.js.map",
-    "875.1c68cdc9.chunk.css.map": "/static/css/875.1c68cdc9.chunk.css.map",
-    "875.517baa73.chunk.js.map": "/static/js/875.517baa73.chunk.js.map",
+    "main.2e489835.css.map": "/static/css/main.2e489835.css.map",
+    "main.9b09ee5f.js.map": "/static/js/main.9b09ee5f.js.map",
+    "875.f8b04530.chunk.css.map": "/static/css/875.f8b04530.chunk.css.map",
+    "875.d2b86f27.chunk.js.map": "/static/js/875.d2b86f27.chunk.js.map",
     "38.9a1baf1b.chunk.js.map": "/static/js/38.9a1baf1b.chunk.js.map",
     "749.53a20ccc.chunk.js.map": "/static/js/749.53a20ccc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1825fe6b.css",
-    "static/js/main.1b25c0ec.js"
+    "static/css/main.2e489835.css",
+    "static/js/main.9b09ee5f.js"
   ]
 }
