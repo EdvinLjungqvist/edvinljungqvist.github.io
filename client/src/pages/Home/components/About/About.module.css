@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image {
     width: 75%;
     border-radius: 50%;
@@ -15,8 +21,12 @@
     color: var(--text-50);
 }
 
+.description {
+    text-align: center;
+}
+
 .links {
-    gap: 5px;
+    gap: 10px;
     display: flex;
 }
 
@@ -25,7 +35,15 @@
         flex-direction: row;
     }
 
+    .content {
+        align-items: start;
+    }
+
     .image {
         width: 175px;
+    }
+
+    .description {
+        text-align: left;
     }
 }

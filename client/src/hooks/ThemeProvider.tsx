@@ -26,7 +26,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): Rea
 
     useEffect(() => {
         setLightTheme(cookies.lightTheme ?? false);
-    }, [cookies.lightTheme]);
+    }, []);
 
     useEffect(() => {
         if (lightTheme) {
@@ -35,7 +35,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): Rea
             document.body.removeAttribute("lightTheme");
         }
         setCookie("lightTheme", lightTheme);
-    }, [lightTheme, setCookie]);
+    }, [lightTheme]);
 
     const value: ThemeContextType = {
         lightTheme,

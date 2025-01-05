@@ -12,14 +12,14 @@ const About: FunctionComponent = (): ReactElement => {
         <section id="about" className="minimized-width" >
             <RevealUp className={styles["container"]}>
                 <img src={image} className={styles["image"]} alt="Me" />
-                <div className={`container small-spacing`}>
+                <div className={`${styles["content"]} container small-spacing`}>
                     <h2>
                         Edvin Ljungqvist
                     </h2>
                     <p className={styles["location"]}>
                         <i className="fa-solid fa-location-dot" /> {t("main.about.location")}
                     </p>
-                    <p>
+                    <p className={styles["description"]}>
                         {t("main.about.description", { age: 19, experience: 5 })}
                     </p>
                     <div className={styles["links"]}>

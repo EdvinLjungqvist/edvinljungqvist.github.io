@@ -21,7 +21,7 @@ const Projects: FunctionComponent = (): ReactElement => {
 
     const showMore = () => {
         setViewedProjects(projects.slice(0, viewedProjectsCount + ADD_VIEW_COUNT));
-        setViewedProjectsCount(count => count + 1);
+        setViewedProjectsCount(count => count + ADD_VIEW_COUNT);
     };
 
     const projectsLength = projects.length;

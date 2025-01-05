@@ -4,12 +4,12 @@
     border-radius: 5px;
     display: grid;
     place-items: center;
-    background: none;
-    border: 1px solid var(--surface-10);
-    color: var(--text-0);
+    color: var(--primary-0);
+    border: 1px solid var(--primary-0);
 }
 
 .link:hover {
+    color: var(--text-0);
     background-color: var(--primary-0);
     text-decoration: none;
 }
