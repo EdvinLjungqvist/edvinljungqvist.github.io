@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../hooks/ThemeProvider";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header: FunctionComponent = (): ReactElement => {
     const [navListActive, setNavListActive] = useState(false);
     const [languageListActive, setLanguageListActive] = useState(false);
     const { lightTheme, setLightTheme } = useTheme();

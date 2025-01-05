@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, FunctionComponent, ReactElement } from "react";
 import { useTranslation } from "react-i18next";
 import RevealUp from "../../../../components/animations/RevealUp";
 import RevealLeft from "../../../../components/animations/RevealLeft";
@@ -11,7 +11,7 @@ type EventType = {
     description: string;
 };
 
-const Timeline = () => {
+const Timeline: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     return (

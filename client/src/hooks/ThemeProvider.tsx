@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import React, { createContext, useContext, useEffect, useState, ReactNode, FunctionComponent, ReactElement } from "react";
 import { useCookies } from "react-cookie";
 
 type ThemeContextType = {
@@ -18,9 +18,9 @@ const useTheme = (): ThemeContextType => {
 
 type ThemeProviderProps = {
     children: ReactNode;
-}
+};
 
-const ThemeProvider = ({ children }: ThemeProviderProps) => {
+const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): ReactElement => {
     const [lightTheme, setLightTheme] = useState<boolean>(false);
     const [cookies, setCookie] = useCookies(["lightTheme"]);
 

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import image from "../../../../assets/images/me.png";
 import styles from "./About.module.css";
 import IconLink from "../../../../components/IconLink";
 
-const About = () => {
+const About: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     return (

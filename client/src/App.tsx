@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import Header from "./layouts/Header";
 import Main from "./layouts/Main";
 import Footer from "./layouts/Footer";
 import "./App.css";
 
-const App = () => {
+const App: FunctionComponent = (): ReactElement => {
 	return (
 		<>
 			<Header />

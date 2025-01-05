@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Skills.module.css";
@@ -10,7 +10,7 @@ type Skill = {
     technologies: string[];
 };
 
-const Skills = () => {
+const Skills: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     return (

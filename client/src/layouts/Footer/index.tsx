@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import IconLink from "../../components/IconLink";
 import styles from "./Footer.module.css";
 
-const Footer = () => {
+const Footer: FunctionComponent = (): ReactElement => {
     return (
         <footer className={styles["footer"]}>
             <p>

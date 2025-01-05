@@ -1,8 +1,13 @@
+import React, { useRef, ReactNode, FunctionComponent, ReactElement } from "react";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 
-const RevealUp = ({ children, className }) => {
-    const ref = useRef(null);
+type RevealUpProps = {
+    children: ReactNode;
+    className?: string;
+};
+
+const RevealUp: FunctionComponent<RevealUpProps> = ({ children, className }): ReactElement => {
+    const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref, { once: true });
 
     return (

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RevealUp from "../../../../components/animations/RevealUp";
 import styles from "./Contact.module.css";
 
-const Contact = () => {
+const Contact: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     return (

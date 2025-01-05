@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FunctionComponent, ReactElement, useState } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Projects.module.css";
@@ -14,7 +14,7 @@ type Project = {
 const INITIAL_VIEW_COUNT = 4
 const ADD_VIEW_COUNT = 4
 
-const Projects = () => {
+const Projects: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
     const [viewedProjects, setViewedProjects] = useState(projects.slice(0, INITIAL_VIEW_COUNT));
     const [viewedProjectsCount, setViewedProjectsCount] = useState(INITIAL_VIEW_COUNT);

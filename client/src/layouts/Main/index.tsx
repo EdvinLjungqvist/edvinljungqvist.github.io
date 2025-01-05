@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../../pages/Home";
 import styles from "./Main.module.css";
 
-const Main = () => {
+const Main: FunctionComponent = (): ReactElement => {
     return (
         <main className={styles["main"]}>
             <Routes>

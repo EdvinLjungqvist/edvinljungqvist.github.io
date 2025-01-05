@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import { SyncLoader } from "react-spinners";
 import { useTranslation } from "react-i18next";
 import styles from "./Loader.module.css";
 
-const Loader = () => {
+const Loader: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     const messages = t("loader.messages", { returnObjects: true }) as string[];
