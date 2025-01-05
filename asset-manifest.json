@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.453531ef.css",
+    "main.js": "/static/js/main.faa409fd.js",
+    "static/js/38.9a1baf1b.chunk.js": "/static/js/38.9a1baf1b.chunk.js",
+    "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
+    "static/media/ragnarok.png": "/static/media/ragnarok.72f16c9c884e1d4f4f28.png",
+    "static/media/me.png": "/static/media/me.ce6eeae9db91f41cac77.png",
+    "static/media/magnetism.png": "/static/media/magnetism.d9e1eeed5289cf0f7f9b.png",
+    "static/media/humanPerformanceTester.png": "/static/media/humanPerformanceTester.3551b7245da8f8230628.png",
+    "static/media/othello.png": "/static/media/othello.195e78d56f90c9181e6f.png",
+    "static/media/quizGame.png": "/static/media/quizGame.ecd4e6a62ade883c2c43.png",
+    "index.html": "/index.html",
+    "main.453531ef.css.map": "/static/css/main.453531ef.css.map",
+    "main.faa409fd.js.map": "/static/js/main.faa409fd.js.map",
+    "38.9a1baf1b.chunk.js.map": "/static/js/38.9a1baf1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.453531ef.css",
+    "static/js/main.faa409fd.js"
+  ]
+}
