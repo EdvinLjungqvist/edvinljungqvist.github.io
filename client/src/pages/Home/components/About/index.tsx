@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement, Suspense } from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import image from "../../../../assets/images/me.png";
@@ -6,7 +6,7 @@ import styles from "./About.module.css";
 import IconLink from "../../../../components/IconLink";
 
 const About: FunctionComponent = (): ReactElement => {
-    const { t } = useTranslation();
+    const { t } = useTranslation(["home"]);
 
     return (
         <section id="about" className="minimized-width">
@@ -18,10 +18,10 @@ const About: FunctionComponent = (): ReactElement => {
                             Edvin Ljungqvist
                         </h2>
                         <p className={styles["location"]}>
-                            <i className="fa-solid fa-location-dot" /> {t("main.about.location")}
+                            <i className="fa-solid fa-location-dot" /> {t("about.location")}
                         </p>
                         <p className={styles["description"]}>
-                            {t("main.about.description", { age: 19, experience: 5 })}
+                            {t("about.description", { age: 19, experience: 5 })}
                         </p>
                     </div>
                     <div className={styles["links"]}>

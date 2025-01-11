@@ -2,7 +2,7 @@ import React, { FunctionComponent, ReactElement } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Skills.module.css";
-import skills from "./data/skills.json";
+import skills from "../../../../data/skills.json";
 
 type Skill = {
     language: string;
@@ -11,14 +11,14 @@ type Skill = {
 };
 
 const Skills: FunctionComponent = (): ReactElement => {
-    const { t } = useTranslation();
+    const { t } = useTranslation(["home"]);
 
     return (
-        <section id="skills" className={styles["container"]}>
+        <section id="skills" className={`${styles["container"]} background-primary`}>
             <div className="container normal-spacing full-width">
                 <RevealUp>
                     <h2>
-                        {t("main.skills.title")}
+                        {t("skills.title")}
                     </h2>
                 </RevealUp>
                 <div className={styles["grid"]}>

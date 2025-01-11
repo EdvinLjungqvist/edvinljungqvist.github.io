@@ -12,18 +12,18 @@ type EventType = {
 };
 
 const Timeline: FunctionComponent = (): ReactElement => {
-    const { t } = useTranslation();
+    const { t } = useTranslation(["home"]);
 
     return (
         <section id="timeline" className="container normal-spacing minimized-width">
             <RevealUp>
                 <h2 className="text-center">
-                    {t("main.timeline.title")}
+                    {t("timeline.title")}
                 </h2>
             </RevealUp>
             <div className={styles["grid"]}>
                 <span className={styles["line"]} />
-                {(t("main.timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
+                {(t("timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
                     const isEven = index % 2 === 0;
                     const Animation = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealUp;
 

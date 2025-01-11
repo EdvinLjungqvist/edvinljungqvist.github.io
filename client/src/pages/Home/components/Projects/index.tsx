@@ -2,20 +2,21 @@ import React, { FunctionComponent, ReactElement, useState } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Projects.module.css";
-import projects from "./data/projects.json";
+import projects from "../../../../data/projects.json";
 import { Link } from "react-router-dom";
 
 type Project = {
     name: string;
     image: string;
     link: string;
+    technologies: string[];
 };
 
 const INITIAL_VIEW_COUNT = 4
 const ADD_VIEW_COUNT = 4
 
 const Projects: FunctionComponent = (): ReactElement => {
-    const { t } = useTranslation();
+    const { t } = useTranslation(["home"]);
     const [viewedProjects, setViewedProjects] = useState(projects.slice(0, INITIAL_VIEW_COUNT));
     const [viewedProjectsCount, setViewedProjectsCount] = useState(INITIAL_VIEW_COUNT);
 
@@ -31,26 +32,26 @@ const Projects: FunctionComponent = (): ReactElement => {
         <section id="projects" className="container large-spacing full-width">
             <RevealUp className="container small-spacing center-content">
                 <h2>
-                    {t("main.projects.title")}
+                    {t("projects.title")}
                 </h2>
                 <p>
-                    {t("main.projects.description")}
+                    {t("projects.description")}
                 </p>
             </RevealUp>
             <div className={styles["grid"]}>
                 {viewedProjects.map((project: Project, index: number) => (
                     <Link key={index} to={project.link} target="_blank">
                         <RevealUp className={styles["cell"]}>
-                            <img src={require(`./assets/images/${project.image}`)} className={styles["image"]} alt={`Project ${project.name}`} />
+                            <img src={require(`../../../../assets/images/projects/${project.image}`)} className={styles["image"]} alt={`Project ${project.name}`} />
                             <div className={`${styles["content"]} container small-spacing`}>
                                 <h3 className={styles["title"]}>
-                                    {t(`main.projects.gallery.${project.name}.title`)}
+                                    {t(`projects.gallery.${project.name}.title`)}
                                 </h3>
                                 <p className={styles["description"]}>
-                                    {t(`main.projects.gallery.${project.name}.description`)}
+                                    {t(`projects.gallery.${project.name}.description`)}
                                 </p>
                                 <div className={styles["languages"]}>
-                                    {(t(`main.projects.gallery.${project.name}.languages`, { returnObjects: true }) as string[]).map((language: string, index: number) => (
+                                    {project.technologies.map((language: string, index: number) => (
                                         <span key={index} className={styles["language"]}>
                                             {language}
                                         </span>
@@ -63,7 +64,7 @@ const Projects: FunctionComponent = (): ReactElement => {
             </div>
             {viewedProjectsLength < projectsLength && (
                 <button className={styles["button"]} onClick={showMore}>
-                    {t("main.projects.button", { count: Math.min(ADD_VIEW_COUNT, projectsLength - viewedProjectsLength) })}
+                    {t("projects.button", { count: Math.min(ADD_VIEW_COUNT, projectsLength - viewedProjectsLength) })}
                 </button>
             )}
         </section>

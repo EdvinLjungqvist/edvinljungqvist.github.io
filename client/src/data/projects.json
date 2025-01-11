@@ -1,0 +1,62 @@
+[
+    {
+        "name": "90gqopen",
+        "image": "90gqopen.png",
+        "link": "https://90gqopen.se",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "name": "ragnarok",
+        "image": "ragnarok.png",
+        "link": "https://ragnarok.se",
+        "technologies": [
+            "Node.js",
+            "React.js",
+            "Discord.js",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "name": "humanPerformanceTester",
+        "image": "humanPerformanceTester.png",
+        "link": "https://scalargames.se",
+        "technologies": [
+            "Node.js",
+            "React.js",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "name": "magnetism",
+        "image": "magnetism.png",
+        "link": "https://scalargames.se",
+        "technologies": [
+            "MCFunction"
+        ]
+    },
+    {
+        "name": "othello",
+        "image": "othello.png",
+        "link": "https://scalargames.se",
+        "technologies": [
+            "Kotlin",
+            "Jetpack Compose"
+        ]
+    },
+    {
+        "name": "quizGame",
+        "image": "quizGame.png",
+        "link": "https://scalargames.se",
+        "technologies": [
+            "Java"
+        ]
+    }
+]

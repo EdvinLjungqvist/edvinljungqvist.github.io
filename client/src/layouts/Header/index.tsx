@@ -14,7 +14,7 @@ const Header: FunctionComponent = (): ReactElement => {
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             const target = event.target as HTMLElement;
-            
+
             if (target && !target.closest(`.${styles["nav-container"]}`)) {
                 setListsInactive();
             }
@@ -25,7 +25,7 @@ const Header: FunctionComponent = (): ReactElement => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-    
+
 
     const toggleLightTheme = () => setLightTheme(!lightTheme);
 

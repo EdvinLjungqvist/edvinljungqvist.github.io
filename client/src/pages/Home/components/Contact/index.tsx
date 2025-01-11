@@ -5,13 +5,13 @@ import RevealUp from "../../../../components/animations/RevealUp";
 import styles from "./Contact.module.css";
 
 const Contact: FunctionComponent = (): ReactElement => {
-    const { t } = useTranslation();
+    const { t } = useTranslation(["home"]);
 
     return (
         <section id="contact" className="container normal-spacing minimized-width">
             <RevealUp>
                 <h2>
-                    {t("main.contact.title")}
+                    {t("contact.title")}
                 </h2>
             </RevealUp>
             <RevealUp>

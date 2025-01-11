@@ -3,15 +3,6 @@
     position: relative;
 }
 
-.container::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--primary-0);
-    opacity: 0.05;
-    pointer-events: none;
-}
-
 .grid {
     gap: 20px;
     display: grid;

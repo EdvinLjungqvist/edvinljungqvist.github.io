@@ -5,15 +5,6 @@ footer {
     position: relative;
 }
 
-footer::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--primary-0);
-    opacity: 0.05;
-    pointer-events: none;
-}
-
 .container {
     width: var(--width);
     margin: auto auto 0 auto;

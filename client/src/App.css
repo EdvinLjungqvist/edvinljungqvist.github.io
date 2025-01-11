@@ -34,6 +34,15 @@
     color: var(--primary-0);
 }
 
+.background-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--primary-0);
+    opacity: 0.05;
+    pointer-events: none;
+}
+
 @media (min-width: 768px) {
     .minimized-width {
         width: calc(var(--width) - 20%);
