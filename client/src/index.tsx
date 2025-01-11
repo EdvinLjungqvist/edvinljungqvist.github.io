@@ -8,18 +8,18 @@ import "./i18n.ts";
 import "./index.css";
 
 const root = createRoot(document.getElementById("root"));
-const App = lazy(() => import('./App'));
+const App = lazy(() => import("./App"));
 
 root.render(
     <StrictMode>
-        <Suspense fallback={<Loader />}>
-            <Router>
-                <HelmetProvider>
-                    <ThemeProvider>
+        <Router>
+            <HelmetProvider>
+                <ThemeProvider>
+                    <Suspense fallback={<Loader />}>
                         <App />
-                    </ThemeProvider>
-                </HelmetProvider>
-            </Router>
-        </Suspense>
+                    </Suspense>
+                </ThemeProvider>
+            </HelmetProvider>
+        </Router>
     </StrictMode>
 );

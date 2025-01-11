@@ -33,7 +33,7 @@ const Timeline: FunctionComponent = (): ReactElement => {
                             <div className={`${styles["cell"]}`}>
                                 <span className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
-                                    <p>
+                                    <p className={styles["date"]}>
                                         {event.date}
                                     </p>
                                     <h3>

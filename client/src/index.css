@@ -73,16 +73,6 @@ body {
     background-color: var(--surface-0);
 }
 
-body::after {
-    content: '';
-    position: absolute;
-    z-index: 999;
-    inset: 0;
-    background-color: var(--primary-0);
-    opacity: 0.025;
-    pointer-events: none;
-}
-
 #root {
     display: flex;
     flex-direction: column;

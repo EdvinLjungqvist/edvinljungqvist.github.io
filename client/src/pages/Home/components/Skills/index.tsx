@@ -24,7 +24,7 @@ const Skills: FunctionComponent = (): ReactElement => {
                 <div className={styles["grid"]}>
                     {skills.map((skill: Skill, index: number) => (
                         <RevealUp key={index} className={`${styles["cell"]} container small-spacing`}>
-                            <h3>
+                            <h3 className="text-primary">
                                 <i className={skill.icon} /> {skill.language}
                             </h3>
                             <ul>

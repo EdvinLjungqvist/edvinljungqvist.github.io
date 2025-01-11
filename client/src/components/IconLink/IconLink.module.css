@@ -9,7 +9,7 @@
 }
 
 .link:hover {
-    color: var(--text-0);
+    color: var(--gray-0);
     background-color: var(--primary-0);
     text-decoration: none;
 }

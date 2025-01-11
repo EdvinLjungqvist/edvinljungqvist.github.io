@@ -16,6 +16,10 @@
     border: 1px dashed var(--surface-10);
 }
 
+.date {
+    color: var(--text-50)
+}
+
 .empty {
     display: none;
 }

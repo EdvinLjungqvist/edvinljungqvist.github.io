@@ -9,19 +9,21 @@ const About: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     return (
-        <section id="about" className="minimized-width" >
+        <section id="about" className="minimized-width">
             <RevealUp className={styles["container"]}>
                 <img src={image} className={styles["image"]} alt="Me" />
-                <div className={`${styles["content"]} container small-spacing`}>
-                    <h2>
-                        Edvin Ljungqvist
-                    </h2>
-                    <p className={styles["location"]}>
-                        <i className="fa-solid fa-location-dot" /> {t("main.about.location")}
-                    </p>
-                    <p className={styles["description"]}>
-                        {t("main.about.description", { age: 19, experience: 5 })}
-                    </p>
+                <div className={`${styles["content"]} container normal-spacing`}>
+                    <div className={`${styles["content"]} container small-spacing`}>
+                        <h2>
+                            Edvin Ljungqvist
+                        </h2>
+                        <p className={styles["location"]}>
+                            <i className="fa-solid fa-location-dot" /> {t("main.about.location")}
+                        </p>
+                        <p className={styles["description"]}>
+                            {t("main.about.description", { age: 19, experience: 5 })}
+                        </p>
+                    </div>
                     <div className={styles["links"]}>
                         <IconLink to="https://github.com/EdvinLjungqvist" target="_blank" icon="fa-brands fa-github" />
                         <IconLink to="https://www.instagram.com/edvin.ljungqvist" target="_blank" icon="fa-brands fa-instagram" />
