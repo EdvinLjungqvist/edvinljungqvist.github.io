@@ -38,7 +38,7 @@
                 "title": "Ragnarök website",
                 "description": "En webbplats för Minecraft-servern Ragnarök"
             },
-            "humanPerformanceTester": {
+            "human_performance_tester": {
                 "title": "Human Performance Tester",
                 "description": "En webbplats som mäter prestation"
             },
@@ -50,9 +50,17 @@
                 "title": "Othello",
                 "description": "Ett Othello-spel med AI och anpassningsbart rutnät"
             },
-            "quizGame": {
+            "quiz_game": {
                 "title": "Quizspel",
                 "description": "Ett flerspelar-quizspel"
+            },
+            "balloon_blasters": {
+                "title": "Balloon Blasters",
+                "description": "Mitt första minispel skapat i Vanilla Minecraft"
+            },
+            "salmon_says": {
+                "title": "Salmon Says",
+                "description": "Ett minispel skapat i Vanilla Minecraft"
             }
         },
         "button": "Visa {{count}} till"
