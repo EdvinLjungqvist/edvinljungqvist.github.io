@@ -1,18 +1,11 @@
 .container {
     padding: 50px 0;
-    position: relative;
 }
 
 .grid {
-    gap: 20px;
+    gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.cell {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--surface-10);
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,5 @@
 import React, { FunctionComponent, ReactElement } from "react";
 import { Helmet } from "react-helmet-async";
-import { Translation } from "react-i18next";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
@@ -12,7 +11,7 @@ const Home: FunctionComponent = (): ReactElement => {
         <>
             <Helmet>
                 <title>
-                    Portfolio | Edvin Ljungqvist
+                    Edvin Ljungqvist | Portfolio
                 </title>
             </Helmet>
             <About />

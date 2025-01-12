@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 
 const Footer: FunctionComponent = (): ReactElement => {
     return (
-        <footer className={`${styles["footer"]} background-primary`}>
+        <footer className="background-primary">
             <div className={styles["container"]}>
                 <p>
                     Edvin Ljungqvist © {new Date().getFullYear()}

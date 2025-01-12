@@ -23,7 +23,7 @@ const Skills: FunctionComponent = (): ReactElement => {
                 </RevealUp>
                 <div className={styles["grid"]}>
                     {skills.map((skill: Skill, index: number) => (
-                        <RevealUp key={index} className={`${styles["cell"]} container small-spacing`}>
+                        <RevealUp key={index} className="container small-spacing">
                             <h3 className="text-primary">
                                 <i className={skill.icon} /> {skill.language}
                             </h3>

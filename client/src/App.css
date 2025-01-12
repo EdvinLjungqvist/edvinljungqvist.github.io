@@ -34,6 +34,10 @@
     color: var(--primary-0);
 }
 
+.background-primary {
+    position: relative;
+}
+
 .background-primary::after {
     content: '';
     position: absolute;

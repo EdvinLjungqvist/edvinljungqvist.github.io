@@ -25,7 +25,7 @@
     {
         "name": "humanPerformanceTester",
         "image": "humanPerformanceTester.png",
-        "link": "https://scalargames.se",
+        "link": "https://scalargames.com",
         "technologies": [
             "Node.js",
             "React.js",
@@ -37,7 +37,7 @@
     {
         "name": "magnetism",
         "image": "magnetism.png",
-        "link": "https://scalargames.se",
+        "link": "https://scalargames.com",
         "technologies": [
             "MCFunction"
         ]
@@ -45,7 +45,7 @@
     {
         "name": "othello",
         "image": "othello.png",
-        "link": "https://scalargames.se",
+        "link": "https://scalargames.com",
         "technologies": [
             "Kotlin",
             "Jetpack Compose"
@@ -54,7 +54,7 @@
     {
         "name": "quizGame",
         "image": "quizGame.png",
-        "link": "https://scalargames.se",
+        "link": "https://scalargames.com",
         "technologies": [
             "Java"
         ]
