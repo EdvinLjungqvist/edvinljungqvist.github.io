@@ -11,7 +11,7 @@
 }
 
 .image {
-    filter: brightness(0.4);
+    filter: brightness(0.6);
     transition: 200ms;
 }
 
@@ -37,7 +37,7 @@
     font-size: 16px;
     color: var(--gray-0);
     border-radius: 3px;
-    background-color: var(--secondary-0);
+    background-color: var(--primary-0);
 }
 
 .title {

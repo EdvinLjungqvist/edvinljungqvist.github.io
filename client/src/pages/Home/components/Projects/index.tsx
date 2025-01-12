@@ -6,7 +6,7 @@ import projects from "../../../../data/projects.json";
 import { Link } from "react-router-dom";
 
 type Project = {
-    name: string;
+    key: string;
     image: string;
     link: string;
     technologies: string[];
@@ -42,13 +42,13 @@ const Projects: FunctionComponent = (): ReactElement => {
                 {viewedProjects.map((project: Project, index: number) => (
                     <Link key={index} to={project.link} target="_blank">
                         <RevealUp className={styles["cell"]}>
-                            <img src={require(`../../../../assets/images/projects/${project.image}`)} className={styles["image"]} alt={`Project ${project.name}`} />
+                            <img src={require(`../../../../assets/images/projects/${project.image}`)} className={styles["image"]} alt={`Project ${project.key}`} />
                             <div className={`${styles["content"]} container small-spacing`}>
                                 <h3 className={styles["title"]}>
-                                    {t(`projects.gallery.${project.name}.title`)}
+                                    {t(`projects.gallery.${project.key}.title`)}
                                 </h3>
                                 <p className={styles["description"]}>
-                                    {t(`projects.gallery.${project.name}.description`)}
+                                    {t(`projects.gallery.${project.key}.description`)}
                                 </p>
                                 <div className={styles["languages"]}>
                                     {project.technologies.map((language: string, index: number) => (

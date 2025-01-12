@@ -56,7 +56,7 @@ nav {
 .nav-link:hover {
     color: var(--text-0);
     text-decoration: none;
-    background-color: var(--surface-10);
+    background: none;
 }
 
 .nav-logo {
@@ -77,12 +77,12 @@ nav {
     place-items: center;
     background: none;
     border: none;
-    color: var(--text-10);
+    color: var(--text-30);
 }
 
 .nav-button:hover {
     color: var(--text-0);
-    background-color: var(--surface-10);
+    background: none;
 }
 
 .language-selector {
@@ -128,13 +128,13 @@ nav {
     background: none;
 }
 
-.language-selector-button.active,
-.language-selector-button:hover {
+.language-selector-button.active {
     color: var(--text-0);
 }
 
 .language-selector-button:hover {
-    background-color: var(--surface-10);
+    color: var(--text-0);
+    background: none;
 }
 
 .language-selector-item:last-child .language-selector-button {
@@ -151,10 +151,6 @@ nav {
         position: static;
         background: none;
         border: none;
-    }
-
-    .language-selector-button:hover {
-        background-color: var(--surface-10);
     }
 
     .nav-item {

@@ -1,6 +1,6 @@
 [
     {
-        "name": "90gqopen",
+        "key": "90gqopen",
         "image": "90gqopen.png",
         "link": "https://90gqopen.se",
         "technologies": [
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "name": "ragnarok",
+        "key": "ragnarok",
         "image": "ragnarok.png",
         "link": "https://ragnarok.se",
         "technologies": [
@@ -23,8 +23,8 @@
         ]
     },
     {
-        "name": "humanPerformanceTester",
-        "image": "humanPerformanceTester.png",
+        "key": "human_performance_tester",
+        "image": "human_performance_tester.png",
         "link": "https://scalargames.com",
         "technologies": [
             "Node.js",
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "name": "magnetism",
+        "key": "magnetism",
         "image": "magnetism.png",
         "link": "https://scalargames.com",
         "technologies": [
@@ -43,7 +43,7 @@
         ]
     },
     {
-        "name": "othello",
+        "key": "othello",
         "image": "othello.png",
         "link": "https://scalargames.com",
         "technologies": [
@@ -52,11 +52,27 @@
         ]
     },
     {
-        "name": "quizGame",
-        "image": "quizGame.png",
+        "key": "quiz_game",
+        "image": "quiz_game.png",
         "link": "https://scalargames.com",
         "technologies": [
             "Java"
+        ]
+    },
+    {
+        "key": "balloon_blasters",
+        "image": "balloon_blasters.png",
+        "link": "https://scalargames.com",
+        "technologies": [
+            "MCFunction"
+        ]
+    },
+    {
+        "key": "salmon_says",
+        "image": "salmon_says.png",
+        "link": "https://scalargames.com",
+        "technologies": [
+            "MCFunction"
         ]
     }
 ]
