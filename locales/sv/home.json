@@ -1,0 +1,63 @@
+{
+    "about": {
+        "location": "Stockholm, Sverige",
+        "description": "Jag är en {{age}} år gammal fullstack-webbutvecklare med {{experience}} års erfarenhet. Jag skapar professionella webbplatser."
+    },
+    "skills": {
+        "title": "Vad jag arbetar med"
+    },
+    "timeline": {
+        "title": "Tidslinje",
+        "events": [
+            {
+                "date": "2018-2021",
+                "title": "Lorem ipsum",
+                "description": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "date": "2021-2024",
+                "title": "Lorem ipsum",
+                "description": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "date": "2024-2025",
+                "title": "Lorem ipsum",
+                "description": "Lorem ipsum dolor sit amet."
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projekt",
+        "description": "Här är några av mina projekt",
+        "gallery": {
+            "90gqopen": {
+                "title": "90gQopen webbplats",
+                "description": "En webbplats för Minecraft-servern 90gQopen"
+            },
+            "ragnarok": {
+                "title": "Ragnarök website",
+                "description": "En webbplats för Minecraft-servern Ragnarök"
+            },
+            "humanPerformanceTester": {
+                "title": "Human Performance Tester",
+                "description": "En webbplats som mäter prestation"
+            },
+            "magnetism": {
+                "title": "Magnetism",
+                "description": "Ett 2D-minispel skapat i Vanilla Minecraft"
+            },
+            "othello": {
+                "title": "Othello",
+                "description": "Ett Othello-spel med AI och anpassningsbart rutnät"
+            },
+            "quizGame": {
+                "title": "Quizspel",
+                "description": "Ett flerspelar-quizspel"
+            }
+        },
+        "button": "Visa {{count}} till"
+    },
+    "contact": {
+        "title": "Låt oss samarbeta"
+    }
+}

@@ -1,12 +1,5 @@
 {
     "language": "English",
-    "loader": {
-        "messages": [
-            "Loading, please wait...",
-            "Just a moment...",
-            "Loading content..."
-        ]
-    },
     "header": {
         "navigation": {
             "about": "About",
@@ -16,99 +9,11 @@
             "contact": "Contact"
         }
     },
-    "main": {
-        "about": {
-            "location": "Stockholm, Sweden",
-            "description": "I am an {{age}}-year-old full-stack web developer with {{experience}} years of experience. I create professional websites."
-        },
-        "skills": {
-            "title": "What I work with"
-        },
-        "timeline": {
-            "title": "Timeline",
-            "events": [
-                {
-                    "date": "2018-2021",
-                    "title": "Lorem ipsum",
-                    "description": "Lorem ipsum dolor sit amet."
-                },
-                {
-                    "date": "2021-2024",
-                    "title": "Lorem ipsum",
-                    "description": "Lorem ipsum dolor sit amet."
-                },
-                {
-                    "date": "2024-2025",
-                    "title": "Lorem ipsum",
-                    "description": "Lorem ipsum dolor sit amet."
-                }
-            ]
-        },
-        "projects": {
-            "title": "Projects",
-            "description": "Here are some of my projects",
-            "gallery": {
-                "90gqopen": {
-                    "title": "90gQopen website",
-                    "description": "A website for the Minecraft server 90gQopen",
-                    "languages": [
-                        "HTML",
-                        "CSS",
-                        "JavaScript"
-                    ]
-                },
-                "ragnarok": {
-                    "title": "Ragnarök website",
-                    "description": "A website for the Minecraft server Ragnarök",
-                    "languages": [
-                        "React",
-                        "Node.js",
-                        "Express.js",
-                        "Discord.js",
-                        "HTML",
-                        "CSS",
-                        "JavaScript"
-                    ]
-                },
-                "humanPerformanceTester": {
-                    "title": "Human Performance Tester",
-                    "description": "A website that measures performance.",
-                    "languages": [
-                        "React",
-                        "Node.js",
-                        "Express.js",
-                        "HTML",
-                        "CSS",
-                        "JavaScript"
-                    ]
-                },
-                "magnetism": {
-                    "title": "Magnetism",
-                    "description": "A 2D minigame created in vanilla Minecraft",
-                    "languages": [
-                        "MCFunction"
-                    ]
-                },
-                "othello": {
-                    "title": "Othello",
-                    "description": "An Othello game with AI and customizable grid",
-                    "languages": [
-                        "Kotlin",
-                        "Jetpack Compose"
-                    ]
-                },
-                "quizGame": {
-                    "title": "Quiz game",
-                    "description": "A multiplayer quiz game",
-                    "languages": [
-                        "Java"
-                    ]
-                }
-            },
-            "button": "Show {{count}} more"
-        },
-        "contact": {
-            "title": "Let's collaborate"
-        }
+    "loader": {
+        "messages": [
+            "Loading, please wait...",
+            "Just a moment...",
+            "Loading content..."
+        ]
     }
 }
