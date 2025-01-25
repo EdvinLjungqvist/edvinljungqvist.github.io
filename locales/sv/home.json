@@ -1,28 +1,28 @@
 {
     "about": {
         "location": "Stockholm, Sverige",
-        "description": "Jag är en {{age}} år gammal fullstack-webbutvecklare med {{experience}} års erfarenhet. Jag skapar professionella webbplatser."
+        "description": "Jag är en {{age}}-årig fullstackutvecklare med {{experience}} års erfarenhet. Utforska mitt arbete för att se hur jag förvandlar idéer till verklighet genom genomtänkt design och utveckling."
     },
     "skills": {
         "title": "Vad jag arbetar med"
     },
     "timeline": {
-        "title": "Tidslinje",
+        "title": "Min resa",
         "events": [
             {
                 "date": "2018-2021",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet."
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
             {
                 "date": "2021-2024",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet."
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
             {
                 "date": "2024-2025",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet."
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             }
         ]
     },
@@ -35,7 +35,7 @@
                 "description": "En webbplats för Minecraft-servern 90gQopen"
             },
             "ragnarok": {
-                "title": "Ragnarök website",
+                "title": "Ragnarök webbplats",
                 "description": "En webbplats för Minecraft-servern Ragnarök"
             },
             "human_performance_tester": {
