@@ -15,5 +15,10 @@
             "Just a moment...",
             "Loading content..."
         ]
+    },
+    "cookie_consent": {
+        "title": "Cookies",
+        "description": "Necessary cookies is used to improve your experience.",
+        "button": "Okay"
     }
 }
