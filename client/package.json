@@ -2,7 +2,7 @@
   "name": "client",
   "version": "1.0.0",
   "homepage": "https://edvinljungqvist.github.io",
-  "description": "A portfolio website",
+  "description": "Frontend of portfolio website",
   "main": "index.tsx",
   "scripts": {
     "predeploy": "npm run build",
@@ -10,12 +10,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "keywords": [
-    "website",
-    "react",
-    "portfolio"
-  ],
-  "author": "",
+  "keywords": [],
+  "author": "Edvin Ljungqvist",
   "license": "ISC",
   "browserslist": {
     "production": [

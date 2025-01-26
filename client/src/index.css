@@ -37,7 +37,7 @@
     --width: calc(100% - 30px);
 }
 
-[lightTheme] {
+[theme=light] {
     --surface-0: #ffffff;
     --surface-10: #e6e6e6;
     --surface-20: #cccccc;

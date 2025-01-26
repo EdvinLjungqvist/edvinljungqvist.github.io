@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useEffect, useState, ReactNode, FunctionComponent, ReactElement } from "react";
 import { useCookies } from "react-cookie";
 
+type Theme = "dark" | "light";
+
 type ThemeContextType = {
-    lightTheme: boolean;
-    setLightTheme: React.Dispatch<React.SetStateAction<boolean>>;
+    theme: Theme;
+    setTheme: React.Dispatch<React.SetStateAction<Theme>>;
 };
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
@@ -21,25 +23,21 @@ type ThemeProviderProps = {
 };
 
 const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): ReactElement => {
-    const [lightTheme, setLightTheme] = useState<boolean>(false);
-    const [cookies, setCookie] = useCookies(["lightTheme"]);
+    const [theme, setTheme] = useState<Theme>("dark");
+    const [cookies, setCookie] = useCookies(["theme"]);
 
     useEffect(() => {
-        setLightTheme(cookies.lightTheme ?? false);
+        setTheme(cookies.theme ?? "dark");
     }, []);
 
     useEffect(() => {
-        if (lightTheme) {
-            document.body.setAttribute("lightTheme", "");
-        } else {
-            document.body.removeAttribute("lightTheme");
-        }
-        setCookie("lightTheme", lightTheme, { sameSite: "strict" });
-    }, [lightTheme]);
+        document.body.setAttribute("theme", theme);
+        setCookie("theme", theme, { sameSite: "strict" });
+    }, [theme]);
 
     const value: ThemeContextType = {
-        lightTheme,
-        setLightTheme,
+        theme,
+        setTheme,
     };
 
     return (

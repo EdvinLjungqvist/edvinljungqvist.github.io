@@ -9,7 +9,7 @@ const CookieConsent: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
 
     const acceptCookies = () => {
-        setCookie("consent", true);
+        setCookie("consent", true, { sameSite: "strict" });
     };
 
     return (

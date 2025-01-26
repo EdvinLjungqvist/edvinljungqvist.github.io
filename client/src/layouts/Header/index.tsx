@@ -8,7 +8,7 @@ import styles from "./Header.module.css";
 const Header: FunctionComponent = (): ReactElement => {
     const [navListActive, setNavListActive] = useState(false);
     const [languageListActive, setLanguageListActive] = useState(false);
-    const { lightTheme, setLightTheme } = useTheme();
+    const { theme, setTheme } = useTheme();
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
@@ -27,9 +27,9 @@ const Header: FunctionComponent = (): ReactElement => {
         };
     }, []);
 
-    const toggleLightTheme = () => {
+    const changeTheme = () => {
         setListsInactive();
-        setLightTheme(!lightTheme);
+        setTheme(theme == "dark" ? "light" : "dark");
     };
 
     const toggleNavListActive = () => {
@@ -88,7 +88,7 @@ const Header: FunctionComponent = (): ReactElement => {
                             </NavHashLink>
                         </li>
                     </ul>
-                    <button className={styles["nav-button"]} onClick={toggleLightTheme}>
+                    <button className={styles["nav-button"]} onClick={changeTheme}>
                         <i className="fa-solid fa-circle-half-stroke fa-lg" />
                     </button>
                     <div className={styles["language-selector"]}>
