@@ -6,7 +6,16 @@
             "TypeScript",
             "React.js",
             "Node.js",
-            "Express.js"
+            "Express.js",
+            "Discord.js"
+        ]
+    },
+    {
+        "language": "Java",
+        "icon": "fa-brands fa-java",
+        "technologies": [
+            "Kotlin",
+            "PaperMC"
         ]
     },
     {
@@ -25,22 +34,15 @@
         ]
     },
     {
-        "language": "Java",
-        "icon": "fa-brands fa-java",
-        "technologies": [
-            "PaperMC / SpigotMC / Bukkit"
-        ]
-    },
-    {
-        "language": "Kotlin",
-        "icon": "fa-brands fa-android",
-        "technologies": [
-            "Jetpack Compose"
-        ]
-    },
-    {
-        "language": "GitHub",
-        "icon": "fa-brands fa-github",
+        "language": "HTML",
+        "icon": "fa-brands fa-html5",
         "technologies": []
+    },
+    {
+        "language": "CSS",
+        "icon": "fa-brands fa-css3-alt",
+        "technologies": [
+            "Bootstrap"
+        ]
     }
 ]

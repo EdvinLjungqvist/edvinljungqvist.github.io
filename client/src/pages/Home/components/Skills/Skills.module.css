@@ -1,11 +1,27 @@
 .container {
-    padding: 50px 0;
+    position: relative;
+    margin: 150px 0;
 }
 
 .grid {
     gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.waves {
+    min-width: 1920px;
+    position: absolute;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.top {
+    bottom: 100%;
+}
+
+.bottom {
+    top: 100%;
 }
 
 @media (min-width: 768px) {

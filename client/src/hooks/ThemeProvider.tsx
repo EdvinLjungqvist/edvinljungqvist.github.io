@@ -34,7 +34,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): Rea
         } else {
             document.body.removeAttribute("lightTheme");
         }
-        setCookie("lightTheme", lightTheme);
+        setCookie("lightTheme", lightTheme, { sameSite: "strict" });
     }, [lightTheme]);
 
     const value: ThemeContextType = {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://edvinljungqvist.github.io",
   "description": "A portfolio website",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

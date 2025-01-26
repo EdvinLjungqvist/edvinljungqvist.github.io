@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px;
+    background-color: var(--surface-10);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: var(--width);
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 500px;
+        left: auto;
+        transform: none;
+        right: 15px;
+    }
+}

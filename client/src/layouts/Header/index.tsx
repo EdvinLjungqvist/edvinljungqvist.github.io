@@ -14,20 +14,23 @@ const Header: FunctionComponent = (): ReactElement => {
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             const target = event.target as HTMLElement;
-
+    
             if (target && !target.closest(`.${styles["nav-container"]}`)) {
                 setListsInactive();
             }
         };
+    
         document.addEventListener("mousedown", handleClickOutside);
-
+    
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
 
-
-    const toggleLightTheme = () => setLightTheme(!lightTheme);
+    const toggleLightTheme = () => {
+        setListsInactive();
+        setLightTheme(!lightTheme);
+    };
 
     const toggleNavListActive = () => {
         setListsInactive();
@@ -44,7 +47,7 @@ const Header: FunctionComponent = (): ReactElement => {
         setLanguageListActive(false);
     };
 
-    const changeLanguage = (language) => {
+    const changeLanguage = (language: string) => {
         i18n.changeLanguage(language);
         setLanguageListActive(false);
     };
@@ -55,32 +58,32 @@ const Header: FunctionComponent = (): ReactElement => {
         <header className={styles["header"]}>
             <nav className={styles["nav"]}>
                 <NavHashLink to="#" className={styles["nav-logo"]}>
-                    Portfolio
+                    Edvin Ljungqvist
                 </NavHashLink>
                 <div className={styles["nav-container"]}>
                     <ul className={`${styles["nav-list"]} ${navListActive ? styles["active"] : ""}`}>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#about" className={styles["nav-link"]}>
+                            <NavHashLink to="#about" className={styles["nav-link"]} onClick={setListsInactive}>
                                 {t("header.navigation.about")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#skills" className={styles["nav-link"]}>
+                            <NavHashLink to="#skills" className={styles["nav-link"]}  onClick={setListsInactive}>
                                 {t("header.navigation.skills")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#timeline" className={styles["nav-link"]}>
+                            <NavHashLink to="#timeline" className={styles["nav-link"]}  onClick={setListsInactive}>
                                 {t("header.navigation.timeline")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#projects" className={styles["nav-link"]}>
+                            <NavHashLink to="#projects" className={styles["nav-link"]}  onClick={setListsInactive}>
                                 {t("header.navigation.projects")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#contact" className={styles["nav-link"]}>
+                            <NavHashLink to="#contact" className={styles["nav-link"]}  onClick={setListsInactive}>
                                 {t("header.navigation.contact")}
                             </NavHashLink>
                         </li>

@@ -1,28 +1,28 @@
 {
     "about": {
         "location": "Stockholm, Sweden",
-        "description": "I am an {{age}}-year-old full-stack web developer with {{experience}} years of experience. I create professional websites."
+        "description": "I am a {{age}}-year-old full-stack developer with {{experience}} years of experience. Explore my work to see how I turn ideas into reality with thoughtful design and development."
     },
     "skills": {
         "title": "What I work with"
     },
     "timeline": {
-        "title": "Timeline",
+        "title": "My journey",
         "events": [
             {
                 "date": "2018-2021",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet."
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
             {
                 "date": "2021-2024",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet."
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
             {
                 "date": "2024-2025",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet."
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             }
         ]
     },
