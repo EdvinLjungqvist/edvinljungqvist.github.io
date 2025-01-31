@@ -25,7 +25,7 @@
     {
         "key": "human_performance_tester",
         "image": "human_performance_tester.png",
-        "link": "https://scalargames.com",
+        "link": "https://github.com/EdvinLjungqvist/Human-Performance-Tester",
         "technologies": [
             "Node.js",
             "React.js",
@@ -45,7 +45,7 @@
     {
         "key": "othello",
         "image": "othello.png",
-        "link": "https://scalargames.com",
+        "link": "https://github.com/EdvinLjungqvist/Othello",
         "technologies": [
             "Kotlin",
             "Jetpack Compose"
@@ -54,7 +54,7 @@
     {
         "key": "quiz_game",
         "image": "quiz_game.png",
-        "link": "https://scalargames.com",
+        "link": "https://github.com/EdvinLjungqvist/Quiz-Game",
         "technologies": [
             "Java"
         ]
