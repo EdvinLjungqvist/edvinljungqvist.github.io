@@ -6,12 +6,12 @@
     --primary-40: #9cb6ff;
     --primary-50: #b2c4ff;
 
-    --secondary-0: #1a1426;
-    --secondary-10: #2f293b;
-    --secondary-20: #464050;
-    --secondary-30: #5e5867;
-    --secondary-40: #77727e;
-    --secondary-50: #908c97;
+    --secondary-0: #ff8000;
+    --secondary-10: #ff944a;
+    --secondary-20: #ffa366;
+    --secondary-30: #ffb380;
+    --secondary-40: #ffc199;
+    --secondary-50: #ffd1b2;
 
     --surface-0: #121212;
     --surface-10: #282828;
@@ -35,6 +35,7 @@
     --text-50: var(--gray-50);
 
     --width: calc(100% - 30px);
+    --box-shadow: #00000059 0px 5px 15px;
 }
 
 [theme=light] {

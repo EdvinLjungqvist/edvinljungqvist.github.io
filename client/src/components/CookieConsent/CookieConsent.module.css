@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 0px;
     padding: 15px;
-    border-top: 1px solid var(--surface-10);
+    box-shadow: var(--box-shadow);
     background-color: var(--surface-0);
     z-index: 1;
 }
@@ -14,7 +14,6 @@
         bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
-        border: 1px solid var(--surface-10);
         border-radius: 5px;
     }
 }

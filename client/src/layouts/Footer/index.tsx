@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement } from "react";
+import React, { FunctionComponent, ReactElement, useEffect, useState } from "react";
 import IconLink from "../../components/IconLink";
 import styles from "./Footer.module.css";
 
@@ -20,3 +20,4 @@ const Footer: FunctionComponent = (): ReactElement => {
 };
 
 export default Footer;
+ 

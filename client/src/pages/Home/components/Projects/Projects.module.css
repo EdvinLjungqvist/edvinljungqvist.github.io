@@ -8,10 +8,11 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--box-shadow);
 }
 
 .image {
-    filter: brightness(0.6) blur(3px);
+    filter: brightness(0.6);
     transition: 200ms;
     aspect-ratio: 16/9;
 }
@@ -38,7 +39,7 @@
     font-size: 16px;
     color: var(--gray-0);
     border-radius: 3px;
-    background-color: var(--primary-0);
+    background-color: var(--secondary-0);
 }
 
 .title {
@@ -62,7 +63,7 @@
     .cell:hover .content {
         bottom: 0;
     }
-    
+
     .cell:hover .image {
         transform: scale(1.1);
     }

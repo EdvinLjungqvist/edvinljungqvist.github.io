@@ -6,6 +6,7 @@ import { ThemeProvider } from "./hooks/ThemeProvider";
 import Loader from "./components/Loader";
 import "./i18n.ts";
 import "./index.css";
+import { FlashProvider } from "./hooks/FlashProvider";
 
 const root = createRoot(document.getElementById("root"));
 const App = lazy(() => import("./App"));
@@ -15,9 +16,11 @@ root.render(
         <Router>
             <HelmetProvider>
                 <ThemeProvider>
-                    <Suspense fallback={<Loader />}>
-                        <App />
-                    </Suspense>
+                    <FlashProvider>
+                        <Suspense fallback={<Loader />}>
+                            <App />
+                        </Suspense>
+                    </FlashProvider>
                 </ThemeProvider>
             </HelmetProvider>
         </Router>

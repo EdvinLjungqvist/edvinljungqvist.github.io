@@ -1,5 +1,5 @@
 {
-    "language": "Svenska",
+    "language": "🇸🇪 Svenska",
     "header": {
         "navigation": {
             "about": "Om mig",
@@ -20,5 +20,16 @@
         "title": "Kakor",
         "description": "Nödvändiga kakor (cookies) används för att förbättra din upplevelse.",
         "button": "Okej"
+    },
+    "flash": {
+        "category": {
+            "success": "Klart",
+            "info": "Information",
+            "warning": "Problem"
+        },
+        "copy": {
+            "success": "Kopierade \"{{text}}\" till urklipp",
+            "fail": "Misslyckades med att kopiera \"{{text}}\" till urklipp"
+        }
     }
 }
