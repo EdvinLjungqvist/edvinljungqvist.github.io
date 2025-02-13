@@ -12,8 +12,8 @@ type Project = {
     technologies: string[];
 };
 
-const INITIAL_VIEW_COUNT = 4
-const ADD_VIEW_COUNT = 4
+const INITIAL_VIEW_COUNT = 6;
+const ADD_VIEW_COUNT = 4;
 
 const Projects: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation(["home"]);

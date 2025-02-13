@@ -5,7 +5,6 @@ import Footer from "./layouts/Footer";
 import CookieConsent from "./components/CookieConsent";
 import { useLocation } from "react-router-dom";
 import "./App.css";
-import Flash from "./components/Flash";
 
 const App: FunctionComponent = (): ReactElement => {
 	const { hash } = useLocation();
@@ -28,7 +27,6 @@ const App: FunctionComponent = (): ReactElement => {
 			<Main />
 			<Footer />
 			<CookieConsent />
-			<Flash />
 		</>
 	);
 }

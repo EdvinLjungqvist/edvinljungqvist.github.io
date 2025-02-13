@@ -1,6 +1,6 @@
 main {
-    gap: 100px;
-    padding: 100px 0;
+    gap: 150px;
+    padding: 150px 0;
     display: grid;
     grid-auto-flow: row;
 }

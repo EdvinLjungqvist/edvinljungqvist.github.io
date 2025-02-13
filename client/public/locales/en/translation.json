@@ -20,16 +20,5 @@
         "title": "Cookies",
         "description": "Necessary cookies is used to improve your experience.",
         "button": "Okay"
-    },
-    "flash": {
-        "category": {
-            "success": "Success",
-            "info": "Information",
-            "warning": "Problem"
-        },
-        "copy": {
-            "success": "Copied \"{{text}}\" to cliboard",
-            "fail": "Failed to copy \"{{text}}\" to clipboard"
-        }
     }
 }

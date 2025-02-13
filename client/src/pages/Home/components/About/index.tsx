@@ -4,31 +4,10 @@ import { useTranslation } from "react-i18next";
 import image from "../../../../assets/images/me.png";
 import styles from "./About.module.css";
 import IconLink from "../../../../components/IconLink";
-import IconButton from "../../../../components/IconButton";
-import { useFlash } from "../../../../hooks/FlashProvider";
 import socials from "../../../../data/socials.json";
 
 const About: FunctionComponent = (): ReactElement => {
-    const { i18n, t } = useTranslation(["home"]);
-    const { setFlash } = useFlash();
-
-    const onClickDiscord = () => {
-        const clipboard = navigator.clipboard;
-        const discordName = socials.discord.name;
-
-        if (clipboard) {
-            clipboard.writeText(discordName);
-            setFlash({
-                message: i18n.t("flash.copy.success", { text: discordName }),
-                category: "success"
-            });
-        } else {
-            setFlash({
-                message: i18n.t("flash.copy.fail", { text: discordName }),
-                category: "warning"
-            });
-        }
-    };
+    const { t } = useTranslation(["home"]);
 
     return (
         <section id="about" className="minimized-width">
@@ -47,10 +26,9 @@ const About: FunctionComponent = (): ReactElement => {
                         </p>
                     </div>
                     <div className={styles["links"]}>
-                        <IconLink to={socials.github} target="_blank" icon="fa-brands fa-github" />
-                        <IconLink to={socials.instagram} target="_blank" icon="fa-brands fa-instagram" />
-                        <IconLink to={socials.linkedin} target="_blank" icon="fa-brands fa-linkedin" />
-                        <IconButton icon="fa-brands fa-discord" onClick={onClickDiscord} />
+                        <IconLink to={socials.github.link} target="_blank" icon="fa-brands fa-github" />
+                        <IconLink to={socials.instagram.link} target="_blank" icon="fa-brands fa-instagram" />
+                        <IconLink to={socials.linkedin.link} target="_blank" icon="fa-brands fa-linkedin" />
                     </div>
                 </div>
             </RevealUp>

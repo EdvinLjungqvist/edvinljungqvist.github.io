@@ -15,7 +15,7 @@ const Timeline: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation(["home"]);
 
     return (
-        <section id="timeline" className="container normal-spacing minimized-width">
+        <section id="timeline" className="container large-spacing minimized-width">
             <RevealUp>
                 <h2 className="text-center">
                     {t("timeline.title")}
