@@ -8,6 +8,22 @@
     z-index: 1;
 }
 
+.close {
+    position: absolute;
+    padding: 0;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    background: none;
+    color: var(--text-30);
+}
+
+.close:hover {
+    background: none;
+    color: var(--text-0);
+}
+
 @media (min-width: 768px) {
     .container {
         width: var(--width);

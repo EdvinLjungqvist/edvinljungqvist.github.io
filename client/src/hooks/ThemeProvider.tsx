@@ -25,7 +25,7 @@ type ThemeProviderProps = {
 
 const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): ReactElement => {
     const [theme, setTheme] = useState<Theme>("dark");
-    const [cookies, setCookie] = useCookies(["theme"]);
+    const [cookies, setCookie] = useCookies(["theme", "consent"]);
 
     useEffect(() => {
         setTheme(cookies.theme ?? "dark");
@@ -33,7 +33,10 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): Rea
 
     useEffect(() => {
         document.body.setAttribute("theme", theme);
-        setCookie("theme", theme, { sameSite: "strict" });
+        
+        if (cookies.consent) {
+            setCookie("theme", theme, { sameSite: "strict" });
+        }
     }, [theme]);
 
     const value: ThemeContextType = {

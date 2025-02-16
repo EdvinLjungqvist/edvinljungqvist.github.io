@@ -63,9 +63,11 @@ const Projects: FunctionComponent = (): ReactElement => {
                 ))}
             </div>
             {viewedProjectsLength < projectsLength && (
-                <button className={styles["button"]} onClick={showMore}>
-                    {t("projects.button", { count: Math.min(ADD_VIEW_COUNT, projectsLength - viewedProjectsLength) })}
-                </button>
+                <RevealUp className="container">
+                    <button className={styles["button"]} onClick={showMore}>
+                        {t("projects.button", { count: Math.min(ADD_VIEW_COUNT, projectsLength - viewedProjectsLength) })}
+                    </button>
+                </RevealUp>
             )}
         </section>
     );
