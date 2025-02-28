@@ -7,7 +7,7 @@ const Main: FunctionComponent = (): ReactElement => {
     return (
         <main className={styles["main"]}>
             <Routes>
-                {["/", "/home"].map((path, index) => (
+                {["/", "/home", "/hem"].map((path, index) => (
                     <Route key={index} path={path} element={<Home />} />
                 ))}
                 <Route path="*" element={<Navigate to="/" />} />

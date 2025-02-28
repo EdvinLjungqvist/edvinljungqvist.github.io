@@ -14,12 +14,12 @@
         "image": "ragnarok.png",
         "link": "https://ragnarok.se",
         "technologies": [
-            "Node.js",
-            "React.js",
-            "Discord.js",
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            "Node.js",
+            "React.js",
+            "Discord.js"
         ]
     },
     {
@@ -27,11 +27,11 @@
         "image": "human_performance_tester.png",
         "link": "https://github.com/EdvinLjungqvist/Human-Performance-Tester",
         "technologies": [
-            "Node.js",
-            "React.js",
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            "Node.js",
+            "React.js"
         ]
     },
     {
