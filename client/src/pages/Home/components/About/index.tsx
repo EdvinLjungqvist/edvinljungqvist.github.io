@@ -5,6 +5,9 @@ import image from "../../../../assets/images/me.png";
 import styles from "./About.module.css";
 import IconLink from "../../../../components/IconLink";
 import socials from "../../../../data/socials.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const About: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation(["home"]);
@@ -19,16 +22,16 @@ const About: FunctionComponent = (): ReactElement => {
                             Edvin Ljungqvist
                         </h1>
                         <p className={styles["location"]}>
-                            <i className="fa-solid fa-location-dot" /> {t("about.location")}
+                            <FontAwesomeIcon icon={faLocationDot} /> {t("about.location")}
                         </p>
                         <p className={styles["description"]}>
                             {t("about.description", { age: 19, experience: 5 })}
                         </p>
                     </div>
                     <div className={styles["links"]}>
-                        <IconLink to={socials.github.link} target="_blank" icon="fa-brands fa-github" />
-                        <IconLink to={socials.instagram.link} target="_blank" icon="fa-brands fa-instagram" />
-                        <IconLink to={socials.linkedin.link} target="_blank" icon="fa-brands fa-linkedin" />
+                        <IconLink to={socials.github.link} target="_blank" icon={<FontAwesomeIcon icon={faGithub} />} />
+                        <IconLink to={socials.instagram.link} target="_blank" icon={<FontAwesomeIcon icon={faInstagram} />} />
+                        <IconLink to={socials.linkedin.link} target="_blank" icon={<FontAwesomeIcon icon={faLinkedin} />} />
                     </div>
                 </div>
             </RevealUp>

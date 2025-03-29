@@ -4,10 +4,12 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../hooks/ThemeProvider";
 import styles from "./Header.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faGlobe, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header: FunctionComponent = (): ReactElement => {
-    const [navListActive, setNavListActive] = useState(false);
-    const [languageListActive, setLanguageListActive] = useState(false);
+    const [navListActive, setNavListActive] = useState<boolean>(false);
+    const [languageListActive, setLanguageListActive] = useState<boolean>(false);
     const { theme, setTheme } = useTheme();
     const { t, i18n } = useTranslation();
 
@@ -89,11 +91,11 @@ const Header: FunctionComponent = (): ReactElement => {
                         </li>
                     </ul>
                     <button className={styles["nav-button"]} onClick={changeTheme}>
-                        <i className="fa-solid fa-circle-half-stroke fa-lg" />
+                        <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun} size="lg" />
                     </button>
                     <div className={styles["language-selector"]}>
                         <button className={styles["nav-button"]} onClick={toggleLanguageListActive}>
-                            <i className="fa-solid fa-globe fa-lg" />
+                            <FontAwesomeIcon icon={faGlobe} size="lg" />
                         </button>
                         <ul className={`${styles["language-selector-list"]} ${languageListActive ? styles["active"] : ""}`}>
                             {languages.map(language => (
@@ -106,7 +108,7 @@ const Header: FunctionComponent = (): ReactElement => {
                         </ul>
                     </div>
                     <button className={`${styles["nav-button"]} ${styles["hamburger"]}`} onClick={toggleNavListActive}>
-                        <i className={`fa-solid ${navListActive ? "fa-xmark" : "fa-bars"} fa-lg`} />
+                        <FontAwesomeIcon icon={navListActive ? faXmark : faBars} size="lg" />
                     </button>
                 </div>
             </nav>

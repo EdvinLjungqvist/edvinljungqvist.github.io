@@ -1,4 +1,4 @@
-import React, { Fragment, FunctionComponent, ReactElement } from "react";
+import React, { ElementType, Fragment, FunctionComponent, ReactElement } from "react";
 import { useTranslation } from "react-i18next";
 import RevealUp from "../../../../components/animations/RevealUp";
 import RevealLeft from "../../../../components/animations/RevealLeft";
@@ -24,8 +24,8 @@ const Timeline: FunctionComponent = (): ReactElement => {
             <div className={styles["grid"]}>
                 <span className={styles["line"]} />
                 {(t("timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
-                    const isEven = index % 2 === 0;
-                    const Animation = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealUp;
+                    const isEven: boolean = index % 2 === 0;
+                    const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealUp;
 
                     return (
                         <Fragment key={index}>
@@ -33,14 +33,14 @@ const Timeline: FunctionComponent = (): ReactElement => {
                             <div className={`${styles["cell"]}`}>
                                 <span className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
+                                    <p className={styles["date"]}>
+                                        {event.date}
+                                    </p>
                                     <h3>
                                         {event.title}
                                     </h3>
                                     <p>
                                         {event.description}
-                                    </p>
-                                    <p className={styles["date"]}>
-                                        {event.date}
                                     </p>
                                 </Animation>
                             </div>

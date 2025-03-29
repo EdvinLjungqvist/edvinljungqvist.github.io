@@ -1,12 +1,8 @@
-import React, { useRef, ReactNode, FunctionComponent, ReactElement } from "react";
+import React, { useRef, FunctionComponent, ReactElement } from "react";
 import { motion, useInView } from "framer-motion";
+import { RevealProps } from "../animations.types";
 
-type RevealLeftProps = {
-    children: ReactNode;
-    className?: string;
-};
-
-const RevealLeft: FunctionComponent<RevealLeftProps> = ({ children, className }): ReactElement => {
+const RevealLeft: FunctionComponent<RevealProps> = ({ children, className }): ReactElement => {
     const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref, { once: true });
 

@@ -10,19 +10,19 @@
         "title": "My journey",
         "events": [
             {
+                "date": "2018-2021",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "date": "2018-2021"
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
             {
+                "date": "2021-2024",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "date": "2021-2024"
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
             {
+                "date": "2024-2025",
                 "title": "Lorem ipsum",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "date": "2024-2025"
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             }
         ]
     },
@@ -38,27 +38,27 @@
                 "title": "Ragnarök website",
                 "description": "A website for the Minecraft server Ragnarök"
             },
-            "human_performance_tester": {
+            "humanPerformanceTester": {
                 "title": "Human Performance Tester",
                 "description": "A website that measures performance."
             },
             "magnetism": {
                 "title": "Magnetism",
-                "description": "A 2D minigame created in vanilla Minecraft"
+                "description": "A 2D adventure map in vanilla Minecraft"
             },
             "othello": {
                 "title": "Othello",
                 "description": "An Othello game with AI and customizable grid"
             },
-            "quiz_game": {
+            "quizGame": {
                 "title": "Quiz game",
                 "description": "A multiplayer quiz game"
             },
-            "balloon_blasters": {
+            "balloonBlasters": {
                 "title": "Balloon Blasters",
                 "description": "My first minigame created in vanilla Minecraft"
             },
-            "salmon_says": {
+            "salmonSays": {
                 "title": "Salmon Says",
                 "description": "A minigame created in vanilla Minecraft"
             }

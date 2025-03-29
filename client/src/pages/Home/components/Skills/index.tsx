@@ -3,11 +3,24 @@ import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Skills.module.css";
 import skills from "../../../../data/skills.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faCss3Alt, faHtml5, faJava, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 type Skill = {
     language: string;
     icon: string;
     technologies: string[];
+};
+
+const icons: Record<string, IconProp> = {
+    "faJs": faJs,
+    "faJava": faJava,
+    "faPython": faPython,
+    "faDatabase": faDatabase,
+    "faHtml5": faHtml5,
+    "faCss3Alt": faCss3Alt,
 };
 
 const Skills: FunctionComponent = (): ReactElement => {
@@ -28,7 +41,7 @@ const Skills: FunctionComponent = (): ReactElement => {
                     {skills.map((skill: Skill, index: number) => (
                         <RevealUp key={index} className="container small-spacing">
                             <h3 className="text-primary">
-                                <i className={skill.icon} /> {skill.language}
+                                <FontAwesomeIcon icon={icons[skill.icon]} /> {skill.language}
                             </h3>
                             <ul>
                                 {skill.technologies.map((technology: string, index: number) => (

@@ -7,19 +7,17 @@ import { useLocation } from "react-router-dom";
 import "./App.css";
 
 const App: FunctionComponent = (): ReactElement => {
-	const { hash } = useLocation();
+    const { hash } = useLocation();
 
-	useEffect(() => {
-		const id = hash.substring(1);
-
-		if (id) {
-			const element = document.getElementById(id);
+    useEffect(() => {
+		if (hash) {
+			const element: Element | null = document.querySelector(hash);
 
 			if (element) {
-				element.scrollIntoView({ block: "start", behavior: "instant" });
+				element.scrollIntoView({ behavior: "instant", block: "start" });
 			}
 		}
-	}, []);
+    }, [hash]);
 
 	return (
 		<>

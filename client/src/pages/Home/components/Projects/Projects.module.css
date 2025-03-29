@@ -12,7 +12,7 @@
 }
 
 .image {
-    filter: brightness(0.6);
+    filter: brightness(0.8);
     transition: 200ms;
     aspect-ratio: 16/9;
 }
@@ -68,4 +68,5 @@
     .cell:hover .image {
         transform: scale(1.1);
     }
+
 }

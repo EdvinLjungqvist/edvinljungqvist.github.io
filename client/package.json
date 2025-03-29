@@ -26,6 +26,10 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "framer-motion": "^11.15.0",
     "gh-pages": "^6.3.0",
     "i18next": "^24.2.0",
@@ -40,5 +44,8 @@
     "react-scripts": "^5.0.1",
     "react-spinners": "^0.15.0",
     "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^19.0.4"
   }
 }

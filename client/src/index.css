@@ -39,12 +39,12 @@
 }
 
 [theme=light] {
-    --surface-0: #ffffff;
-    --surface-10: #e6e6e6;
-    --surface-20: #cccccc;
-    --surface-30: #b3b3b3;
-    --surface-40: #999999;
-    --surface-50: #808080;
+    --surface-0: #f2f2f2;
+    --surface-10: #dfdfdf;
+    --surface-20: #c6c6c6;
+    --surface-30: #aeaeae;
+    --surface-40: #959595;
+    --surface-50: #7d7d7d;
 
     --text-0: #282828;
     --text-10: #3f3f3f;
@@ -122,6 +122,10 @@ li {
 
 li {
     list-style-position: inside;
+}
+
+li::marker {
+    color: var(--secondary-0);
 }
 
 a {

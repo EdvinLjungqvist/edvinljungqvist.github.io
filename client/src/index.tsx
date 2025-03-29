@@ -1,14 +1,14 @@
-import React, { lazy, StrictMode, Suspense } from "react";
-import { createRoot } from "react-dom/client";
+import React, { FunctionComponent, lazy, LazyExoticComponent, StrictMode, Suspense } from "react";
+import { createRoot, Root } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "./hooks/ThemeProvider";
 import Loader from "./components/Loader";
-import "./i18n.ts";
+import "./i18n";
 import "./index.css";
 
-const root = createRoot(document.getElementById("root"));
-const App = lazy(() => import("./App"));
+const root: Root = createRoot(document.getElementById("root"));
+const App: LazyExoticComponent<FunctionComponent> = lazy(() => import("./App"));
 
 root.render(
     <StrictMode>

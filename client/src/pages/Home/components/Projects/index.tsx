@@ -17,8 +17,8 @@ const ADD_VIEW_COUNT = 4;
 
 const Projects: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation(["home"]);
-    const [viewedProjects, setViewedProjects] = useState(projects.slice(0, INITIAL_VIEW_COUNT));
-    const [viewedProjectsCount, setViewedProjectsCount] = useState(INITIAL_VIEW_COUNT);
+    const [viewedProjects, setViewedProjects] = useState<Project[]>(projects.slice(0, INITIAL_VIEW_COUNT));
+    const [viewedProjectsCount, setViewedProjectsCount] = useState<number>(INITIAL_VIEW_COUNT);
 
     const showMore = () => {
         setViewedProjects(projects.slice(0, viewedProjectsCount + ADD_VIEW_COUNT));

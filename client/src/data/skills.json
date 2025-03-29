@@ -1,17 +1,16 @@
 [
     {
         "language": "JavaScript",
-        "icon": "fa-brands fa-js",
+        "icon": "faJs",
         "technologies": [
             "TypeScript",
             "React.js",
-            "Node.js",
-            "Express.js"
+            "Node.js"
         ]
     },
     {
         "language": "Java",
-        "icon": "fa-brands fa-java",
+        "icon": "faJava",
         "technologies": [
             "Kotlin",
             "PaperMC"
@@ -19,14 +18,14 @@
     },
     {
         "language": "Python",
-        "icon": "fa-brands fa-python",
+        "icon": "faPython",
         "technologies": [
             "Flask"
         ]
     },
     {
         "language": "SQL",
-        "icon": "fa-solid fa-database",
+        "icon": "faDatabase",
         "technologies": [
             "MySQL",
             "SQLite"
@@ -34,12 +33,12 @@
     },
     {
         "language": "HTML",
-        "icon": "fa-brands fa-html5",
+        "icon": "faHtml5",
         "technologies": []
     },
     {
         "language": "CSS",
-        "icon": "fa-brands fa-css3-alt",
+        "icon": "faCss3Alt",
         "technologies": [
             "Bootstrap"
         ]

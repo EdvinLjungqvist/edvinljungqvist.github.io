@@ -16,7 +16,7 @@
             "Loading content..."
         ]
     },
-    "cookie_consent": {
+    "cookieConsent": {
         "title": "Cookies",
         "description": "Necessary cookies is used to improve your experience.",
         "button": "Okay"

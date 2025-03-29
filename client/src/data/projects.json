@@ -1,5 +1,13 @@
 [
     {
+        "key": "magnetism",
+        "image": "magnetism.png",
+        "link": "https://scalargames.com",
+        "technologies": [
+            "MCFunction"
+        ]
+    },
+    {
         "key": "90gqopen",
         "image": "90gqopen.png",
         "link": "https://90gqopen.se",
@@ -23,8 +31,8 @@
         ]
     },
     {
-        "key": "human_performance_tester",
-        "image": "human_performance_tester.png",
+        "key": "humanPerformanceTester",
+        "image": "human-performance-tester.png",
         "link": "https://github.com/EdvinLjungqvist/Human-Performance-Tester",
         "technologies": [
             "HTML",
@@ -32,14 +40,6 @@
             "JavaScript",
             "Node.js",
             "React.js"
-        ]
-    },
-    {
-        "key": "magnetism",
-        "image": "magnetism.png",
-        "link": "https://scalargames.com",
-        "technologies": [
-            "MCFunction"
         ]
     },
     {
@@ -52,24 +52,24 @@
         ]
     },
     {
-        "key": "quiz_game",
-        "image": "quiz_game.png",
+        "key": "quizGame",
+        "image": "quiz-game.png",
         "link": "https://github.com/EdvinLjungqvist/Quiz-Game",
         "technologies": [
             "Java"
         ]
     },
     {
-        "key": "balloon_blasters",
-        "image": "balloon_blasters.png",
+        "key": "balloonBlasters",
+        "image": "balloon-blasters.png",
         "link": "https://scalargames.com",
         "technologies": [
             "MCFunction"
         ]
     },
     {
-        "key": "salmon_says",
-        "image": "salmon_says.png",
+        "key": "salmonSays",
+        "image": "salmon-says.png",
         "link": "https://scalargames.com",
         "technologies": [
             "MCFunction"

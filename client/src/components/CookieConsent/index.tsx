@@ -2,10 +2,11 @@ import React, { FunctionComponent, ReactElement, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useCookies } from "react-cookie";
 import styles from "./CookieConsent.module.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCookie, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const CookieConsent: FunctionComponent = (): ReactElement => {
-    const [hidden, setHidden] = useState(false);
+    const [hidden, setHidden] = useState<boolean>(false);
     const [cookies, setCookie] = useCookies(["consent"]);
     const { t } = useTranslation();
 
@@ -24,17 +25,17 @@ const CookieConsent: FunctionComponent = (): ReactElement => {
                     <div className="container normal-spacing">
                         <div className="container small-spacing">
                             <h3>
-                                <i className="fa-solid fa-cookie" /> {t("cookie_consent.title")}
+                                <FontAwesomeIcon icon={faCookie} /> {t("cookieConsent.title")}
                             </h3>
                             <p>
-                                {t("cookie_consent.description")}
+                                {t("cookieConsent.description")}
                             </p>
                         </div>
                         <button onClick={acceptCookies}>
-                            {t("cookie_consent.button")}
+                            {t("cookieConsent.button")}
                         </button>
                         <button className={styles["close"]} onClick={close}>
-                            <i className="fa-solid fa-xmark" />
+                            <FontAwesomeIcon icon={faXmark} />
                         </button>
                     </div>
                 </div>
