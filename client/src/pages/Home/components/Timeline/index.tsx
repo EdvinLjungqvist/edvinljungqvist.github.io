@@ -4,6 +4,8 @@ import RevealUp from "../../../../components/animations/RevealUp";
 import RevealLeft from "../../../../components/animations/RevealLeft";
 import RevealRight from "../../../../components/animations/RevealRight";
 import styles from "./Timeline.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar, faCalendarCheck, faClock } from "@fortawesome/free-solid-svg-icons";
 
 type EventType = {
     date: string;
@@ -16,10 +18,13 @@ const Timeline: FunctionComponent = (): ReactElement => {
 
     return (
         <section id="timeline" className="container large-spacing minimized-width">
-            <RevealUp>
+            <RevealUp className="container small-spacing center-content">
                 <h2 className="text-center">
                     {t("timeline.title")}
                 </h2>
+                <p>
+                    {t("timeline.description")}
+                </p>
             </RevealUp>
             <div className={styles["grid"]}>
                 <span className={styles["line"]} />
@@ -34,7 +39,7 @@ const Timeline: FunctionComponent = (): ReactElement => {
                                 <span className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
                                     <p className={styles["date"]}>
-                                        {event.date}
+                                        <FontAwesomeIcon icon={faClock} /> {event.date}
                                     </p>
                                     <h3>
                                         {event.title}

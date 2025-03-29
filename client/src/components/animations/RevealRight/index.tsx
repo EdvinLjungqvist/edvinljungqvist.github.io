@@ -9,9 +9,9 @@ const RevealRight: FunctionComponent<RevealProps> = ({ children, className }): R
     return (
         <motion.div
             ref={ref}
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -75 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className={className}
         >
             {children}

@@ -3,7 +3,7 @@ import IconLink from "../../components/IconLink";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import socials from "../../data/socials.json";
+import me from "../../data/me.json";
 
 const Footer: FunctionComponent = (): ReactElement => {
     return (
@@ -13,9 +13,9 @@ const Footer: FunctionComponent = (): ReactElement => {
                     Edvin Ljungqvist © {new Date().getFullYear()}
                 </p>
                 <div className={styles["links"]}>
-                    <IconLink to={socials.github.link} target="_blank" icon={<FontAwesomeIcon icon={faGithub} />} />
-                    <IconLink to={socials.instagram.link} target="_blank" icon={<FontAwesomeIcon icon={faInstagram} />} />
-                    <IconLink to={socials.linkedin.link} target="_blank" icon={<FontAwesomeIcon icon={faLinkedin} />} />
+                    <IconLink to={me.socials.github} target="_blank" icon={<FontAwesomeIcon icon={faGithub} />} />
+                    <IconLink to={me.socials.instagram} target="_blank" icon={<FontAwesomeIcon icon={faInstagram} />} />
+                    <IconLink to={me.socials.linkedin} target="_blank" icon={<FontAwesomeIcon icon={faLinkedin} />} />
                 </div>
             </div>
         </footer>

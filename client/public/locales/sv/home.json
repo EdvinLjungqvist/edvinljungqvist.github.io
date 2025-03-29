@@ -8,6 +8,7 @@
     },
     "timeline": {
         "title": "Min resa",
+        "description": "Vägen till där jag är idag",
         "events": [
             {
                 "date": "2018-2021",
@@ -29,6 +30,15 @@
     "projects": {
         "title": "Projekt",
         "description": "Här är några av mina projekt",
+        "category": {
+            "title": "Välj kategori",
+            "categories": {
+                "all": "Alla",
+                "minecraft": "Minecraft",
+                "websites": "Hemsidor",
+                "games": "Spel"
+            }
+        },
         "gallery": {
             "90gqopen": {
                 "title": "90gQopen webbplats",
@@ -66,6 +76,7 @@
         "button": "Visa {{count}} till"
     },
     "contact": {
-        "title": "Låt oss samarbeta"
+        "title": "Låt oss samarbeta",
+        "description": "Tveka inte att höra av dig"
     }
 }

@@ -13,13 +13,6 @@
     --secondary-40: #ffc199;
     --secondary-50: #ffd1b2;
 
-    --surface-0: #121212;
-    --surface-10: #282828;
-    --surface-20: #3f3f3f;
-    --surface-30: #575757;
-    --surface-40: #717171;
-    --surface-50: #8b8b8b;
-
     --gray-0: #ffffff;
     --gray-10: #e6e6e6;
     --gray-20: #cccccc;
@@ -27,15 +20,24 @@
     --gray-40: #999999;
     --gray-50: #808080;
 
-    --text-0: var(--gray-0);
-    --text-10: var(--gray-10);
-    --text-20: var(--gray-20);
-    --text-30: var(--gray-30);
-    --text-40: var(--gray-40);
-    --text-50: var(--gray-50);
-
     --width: calc(100% - 30px);
     --box-shadow: #00000059 0px 5px 15px;
+}
+
+[theme=dark] {
+    --surface-0: #121212;
+    --surface-10: #282828;
+    --surface-20: #3f3f3f;
+    --surface-30: #575757;
+    --surface-40: #717171;
+    --surface-50: #8b8b8b;
+
+    --text-0: #ffffff;
+    --text-10: #e6e6e6;
+    --text-20: #cccccc;
+    --text-30: #b3b3b3;
+    --text-40: #999999;
+    --text-50: #808080;
 }
 
 [theme=light] {
@@ -163,7 +165,6 @@ button {
 button:hover{
     background-color: var(--primary-10);
 }
-
 
 @media (min-width: 992px) {
     :root {

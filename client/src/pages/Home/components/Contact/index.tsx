@@ -2,7 +2,7 @@ import React, { FunctionComponent, ReactElement } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RevealUp from "../../../../components/animations/RevealUp";
-import socials from "../../../../data/socials.json";
+import me from "../../../../data/me.json";
 import styles from "./Contact.module.css";
 
 const Contact: FunctionComponent = (): ReactElement => {
@@ -10,25 +10,28 @@ const Contact: FunctionComponent = (): ReactElement => {
 
     return (
         <section id="contact" className="container normal-spacing minimized-width">
-            <RevealUp>
+            <RevealUp className="container small-spacing">
                 <h2>
                     {t("contact.title")}
                 </h2>
+                <p>
+                    {t("contact.description")}
+                </p>
             </RevealUp>
             <RevealUp>
                 <ul>
                     <li>
-                        <Link to={socials.github.link} target="_blank">
+                        <Link to={me.socials.github} target="_blank">
                             GitHub
                         </Link>
                     </li>
                     <li>
-                        <Link to={socials.instagram.link} target="_blank">
+                        <Link to={me.socials.instagram} target="_blank">
                             Instagram
                         </Link>
                     </li>
                     <li>
-                        <Link to={socials.linkedin.link} target="_blank">
+                        <Link to={me.socials.linkedin} target="_blank">
                             LinkedIn
                         </Link>
                     </li>

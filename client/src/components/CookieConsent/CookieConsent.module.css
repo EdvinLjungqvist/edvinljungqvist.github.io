@@ -3,8 +3,8 @@
     position: fixed;
     bottom: 0px;
     padding: 15px;
-    box-shadow: var(--box-shadow);
     background-color: var(--surface-0);
+    border-top: 1px solid var(--surface-10);
     z-index: 1;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .close:hover {
-    background: none;
+    background: var(--surface-10);
     color: var(--text-0);
 }
 
@@ -31,6 +31,7 @@
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px;
+        border: 1px solid var(--surface-10);
     }
 }
 
