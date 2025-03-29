@@ -8,6 +8,7 @@
     },
     "timeline": {
         "title": "My journey",
+        "description": "Path to where I am today",
         "events": [
             {
                 "date": "2018-2021",
@@ -29,6 +30,15 @@
     "projects": {
         "title": "Projects",
         "description": "Here are some of my projects",
+        "category": {
+            "title": "Select category",
+            "categories": {
+                "all": "All",
+                "minecraft": "Minecraft",
+                "websites": "Websites",
+                "games": "Games"
+            }
+        },
         "gallery": {
             "90gqopen": {
                 "title": "90gQopen website",
@@ -66,6 +76,7 @@
         "button": "Show {{count}} more"
     },
     "contact": {
-        "title": "Let's collaborate"
+        "title": "Let's collaborate",
+        "description": "Feel free to reach out"
     }
 }
