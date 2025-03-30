@@ -30,9 +30,9 @@
     "projects": {
         "title": "Projects",
         "description": "Here are some of my projects",
-        "category": {
+        "categories": {
             "title": "Select category",
-            "categories": {
+            "list": {
                 "all": "All",
                 "minecraft": "Minecraft",
                 "websites": "Websites",

@@ -60,7 +60,7 @@ const Projects: FunctionComponent = (): ReactElement => {
             <div className="container normal-spacing">
                 <RevealUp className="container small-spacing">
                     <h3>
-                        {t("projects.category.title")}
+                        {t("projects.categories.title")}
                     </h3>
                     <div className={styles["categories"]}>
                         {categories.map(({ name, count }) => (
@@ -72,7 +72,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                                 }}
                                 className={name === selectedCategory ? styles["active"] : ""}
                             >
-                                {t(`projects.category.categories.${name}`)} ({count})
+                                {t(`projects.categories.list.${name}`)} ({count})
                             </button>
                         ))}
                     </div>

@@ -25,10 +25,10 @@ const CookieConsent: FunctionComponent = (): ReactElement => {
                     <div className="container normal-spacing">
                         <div className="container small-spacing">
                             <h3>
-                                <FontAwesomeIcon icon={faCookie} /> {t("cookieConsent.title")}
+                                <FontAwesomeIcon icon={faCookie} /> {t("cookieConsent.title", "Cookies")}
                             </h3>
                             <p>
-                                {t("cookieConsent.description")}
+                                {t("cookieConsent.description", "")}
                             </p>
                         </div>
                         <button onClick={acceptCookies}>

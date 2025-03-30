@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState, ReactNode, FunctionComponent, ReactElement } from "react";
 import { useCookies } from "react-cookie";
+import { useSearchParams } from "react-router-dom";
 
 type Theme = "dark" | "light";
 
@@ -26,9 +27,10 @@ type ThemeProviderProps = {
 const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): ReactElement => {
     const [theme, setTheme] = useState<Theme>("dark");
     const [cookies, setCookie] = useCookies(["theme", "consent"]);
+    const [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
-        setTheme(cookies.theme ?? "dark");
+        setTheme(searchParams.get("theme") as Theme ?? cookies.theme ?? "dark");
     }, []);
 
     useEffect(() => {

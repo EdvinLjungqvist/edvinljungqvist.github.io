@@ -10,9 +10,21 @@ i18n
     .init({
         fallbackLng: "en",
         preload: ["en", "sv"],
-        debug: false,
+        debug: process.env.NODE_ENV !== "production",
+        saveMissing: process.env.NODE_ENV === "production",
+        parseMissingKeyHandler: (key) => process.env.NODE_ENV === "production" ? "Not found" : `${key}`,
         interpolation: {
-            escapeValue: false
-        }
+            escapeValue: false,
+        },
+        backend: {
+            loadPath: "/locales/{{lng}}/{{ns}}.json",
+            addPath: "/locales/{{lng}}/{{ns}}.missing.json",
+        },
+        detection: {
+            order: ["querystring", "cookie", "localStorage", "navigator"],
+            lookupQuerystring: "lang",
+            caches: ["cookie"]
+        },
     });
-    
+
+export default i18n;

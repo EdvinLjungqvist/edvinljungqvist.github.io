@@ -6,6 +6,7 @@ import { useTheme } from "../../hooks/ThemeProvider";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
+import me from "../../data/me.json";
 
 const Header: FunctionComponent = (): ReactElement => {
     const [navListActive, setNavListActive] = useState<boolean>(false);
@@ -60,7 +61,7 @@ const Header: FunctionComponent = (): ReactElement => {
         <header className={styles["header"]}>
             <nav className={styles["nav"]}>
                 <NavHashLink to="#" className={styles["nav-logo"]}>
-                    Edvin Ljungqvist
+                    {me.name}
                 </NavHashLink>
                 <div className={styles["nav-container"]}>
                     <ul className={`${styles["nav-list"]} ${navListActive ? styles["active"] : ""}`}>

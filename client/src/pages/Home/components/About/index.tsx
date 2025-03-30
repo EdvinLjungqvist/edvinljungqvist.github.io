@@ -6,8 +6,9 @@ import styles from "./About.module.css";
 import IconLink from "../../../../components/IconLink";
 import me from "../../../../data/me.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import Skeleton from "../../../../components/Skeleton";
 
 const About: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation(["home"]);
