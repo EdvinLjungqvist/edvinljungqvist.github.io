@@ -30,9 +30,9 @@
     "projects": {
         "title": "Projekt",
         "description": "Här är några av mina projekt",
-        "category": {
-            "title": "Välj kategori",
-            "categories": {
+        "categories": {
+            "title": "Välj kategorier",
+            "list": {
                 "all": "Alla",
                 "minecraft": "Minecraft",
                 "websites": "Hemsidor",
@@ -47,6 +47,10 @@
             "ragnarok": {
                 "title": "Ragnarök webbplats",
                 "description": "En webbplats för Minecraft-servern Ragnarök"
+            },
+            "portfolio": {
+                "title": "Portfolio webbplats",
+                "description": "A webbplats för min portfolio"
             },
             "humanPerformanceTester": {
                 "title": "Human Performance Tester",

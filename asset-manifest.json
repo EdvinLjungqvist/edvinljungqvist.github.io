@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.7d4919aa.css",
-    "main.js": "/static/js/main.498ef7b5.js",
-    "static/css/169.77db1d2c.chunk.css": "/static/css/169.77db1d2c.chunk.css",
-    "static/js/169.579093da.chunk.js": "/static/js/169.579093da.chunk.js",
+    "main.js": "/static/js/main.2a6ee946.js",
+    "static/css/169.3ac040f2.chunk.css": "/static/css/169.3ac040f2.chunk.css",
+    "static/js/169.3966ded0.chunk.js": "/static/js/169.3966ded0.chunk.js",
     "static/js/38.9a1baf1b.chunk.js": "/static/js/38.9a1baf1b.chunk.js",
     "static/js/61.34b6fdf6.chunk.js": "/static/js/61.34b6fdf6.chunk.js",
     "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
@@ -12,20 +12,21 @@
     "static/media/me.png": "/static/media/me.ce6eeae9db91f41cac77.png",
     "static/media/balloon-blasters.png": "/static/media/balloon-blasters.11963130cde3a62e4eaf.png",
     "static/media/magnetism.png": "/static/media/magnetism.01a28685bb2575fd4fac.png",
+    "static/media/portfolio.png": "/static/media/portfolio.f02c6344c71dfe355db0.png",
     "static/media/magnetism_old.png": "/static/media/magnetism_old.d9e1eeed5289cf0f7f9b.png",
     "static/media/human-performance-tester.png": "/static/media/human-performance-tester.3551b7245da8f8230628.png",
     "static/media/othello.png": "/static/media/othello.195e78d56f90c9181e6f.png",
     "static/media/quiz-game.png": "/static/media/quiz-game.ecd4e6a62ade883c2c43.png",
     "index.html": "/index.html",
     "main.7d4919aa.css.map": "/static/css/main.7d4919aa.css.map",
-    "main.498ef7b5.js.map": "/static/js/main.498ef7b5.js.map",
-    "169.77db1d2c.chunk.css.map": "/static/css/169.77db1d2c.chunk.css.map",
-    "169.579093da.chunk.js.map": "/static/js/169.579093da.chunk.js.map",
+    "main.2a6ee946.js.map": "/static/js/main.2a6ee946.js.map",
+    "169.3ac040f2.chunk.css.map": "/static/css/169.3ac040f2.chunk.css.map",
+    "169.3966ded0.chunk.js.map": "/static/js/169.3966ded0.chunk.js.map",
     "38.9a1baf1b.chunk.js.map": "/static/js/38.9a1baf1b.chunk.js.map",
     "61.34b6fdf6.chunk.js.map": "/static/js/61.34b6fdf6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d4919aa.css",
-    "static/js/main.498ef7b5.js"
+    "static/js/main.2a6ee946.js"
   ]
 }
