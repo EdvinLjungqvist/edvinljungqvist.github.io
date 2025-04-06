@@ -12,7 +12,7 @@ i18n
         preload: ["en", "sv"],
         debug: process.env.NODE_ENV !== "production",
         saveMissing: process.env.NODE_ENV === "production",
-        parseMissingKeyHandler: (key) => process.env.NODE_ENV === "production" ? "Not found" : `${key}`,
+        parseMissingKeyHandler: (key) => process.env.NODE_ENV === "production" ? "N/A" : `${key}`,
         interpolation: {
             escapeValue: false,
         },

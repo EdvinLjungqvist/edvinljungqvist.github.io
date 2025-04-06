@@ -7,10 +7,9 @@ import Loader from "./components/Loader";
 import "./i18n";
 import "./index.css";
 
-const root: Root = createRoot(document.getElementById("root"));
 const App: LazyExoticComponent<FunctionComponent> = lazy(() => import("./App"));
 
-root.render(
+createRoot(document.getElementById("root")).render(
     <StrictMode>
         <Router>
             <HelmetProvider>

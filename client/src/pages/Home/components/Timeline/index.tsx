@@ -5,7 +5,7 @@ import RevealLeft from "../../../../components/animations/RevealLeft";
 import RevealRight from "../../../../components/animations/RevealRight";
 import styles from "./Timeline.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faCalendarCheck, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 type EventType = {
     date: string;
@@ -30,7 +30,7 @@ const Timeline: FunctionComponent = (): ReactElement => {
                 <span className={styles["line"]} />
                 {(t("timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
                     const isEven: boolean = index % 2 === 0;
-                    const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealUp;
+                    const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealLeft;
 
                     return (
                         <Fragment key={index}>

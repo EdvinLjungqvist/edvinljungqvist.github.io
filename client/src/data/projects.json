@@ -22,15 +22,27 @@
     {
         "key": "ragnarok",
         "image": "ragnarok.png",
-        "link": "https://ragnarok.se",
+        "link": "https://scalargames.com",
         "category": "websites",
         "technologies": [
             "HTML",
             "CSS",
             "JavaScript",
-            "Node.js",
             "React.js",
+            "Node.js",
             "Discord.js"
+        ]
+    },
+    {
+        "key": "portfolio",
+        "image": "portfolio.png",
+        "link": "https://github.com/EdvinLjungqvist/edvinljungqvist.github.io",
+        "category": "websites",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "React.js"
         ]
     },
     {

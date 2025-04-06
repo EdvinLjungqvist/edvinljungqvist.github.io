@@ -7,7 +7,7 @@ import me from "../../data/me.json";
 
 const Footer: FunctionComponent = (): ReactElement => {
     return (
-        <footer className="background-primary">
+        <footer className="overlay-primary">
             <div className={styles["container"]}>
                 <p>
                     Edvin Ljungqvist © {new Date().getFullYear()}

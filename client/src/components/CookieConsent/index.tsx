@@ -41,7 +41,6 @@ const CookieConsent: FunctionComponent = (): ReactElement => {
                 </div>
             )}
         </>
-
     );
 };
 

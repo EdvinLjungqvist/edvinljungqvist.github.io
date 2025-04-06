@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./Projects.module.css";
 import projects from "../../../../data/projects.json";
 import { Link } from "react-router-dom";
+import RevealRight from "../../../../components/animations/RevealRight";
 
 const INITIAL_VIEW_COUNT = 6;
 const ADD_VIEW_COUNT = 4;
@@ -24,10 +25,10 @@ type Category = {
 const categories: Category[] = [
     { name: "all", count: projects.length },
     ...Object.entries(
-        projects.reduce((acc: { [x: string]: any; }, project: { category: string | number; }) => {
+        projects.reduce((acc: { [key: string]: number }, project: Project) => {
             acc[project.category] = (acc[project.category] || 0) + 1;
             return acc;
-        }, {} as Record<string, number>)
+        }, {})
     ).map(([name, count]) => ({ name, count }))
 ];
 
@@ -36,6 +37,11 @@ const Projects: FunctionComponent = (): ReactElement => {
 
     const [selectedCategory, setSelectedCategory] = useState<string>("all");
     const [viewedProjectsCount, setViewedProjectsCount] = useState<number>(INITIAL_VIEW_COUNT);
+
+    const toggleCategory = (category: string) => {
+        setSelectedCategory(category);
+        setViewedProjectsCount(INITIAL_VIEW_COUNT);
+    };
 
     const filteredProjects = selectedCategory === "all"
         ? projects
@@ -58,7 +64,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                 </p>
             </RevealUp>
             <div className="container normal-spacing">
-                <RevealUp className="container small-spacing">
+                <RevealRight className="container small-spacing">
                     <h3>
                         {t("projects.categories.title")}
                     </h3>
@@ -66,22 +72,20 @@ const Projects: FunctionComponent = (): ReactElement => {
                         {categories.map(({ name, count }) => (
                             <button
                                 key={name}
-                                onClick={() => {
-                                    setSelectedCategory(name);
-                                    setViewedProjectsCount(INITIAL_VIEW_COUNT);
-                                }}
-                                className={name === selectedCategory ? styles["active"] : ""}
+                                onClick={() => toggleCategory(name)}
+                                className={selectedCategory === name ? styles["active"] : ""}
                             >
                                 {t(`projects.categories.list.${name}`)} ({count})
                             </button>
                         ))}
                     </div>
-                </RevealUp>
+                </RevealRight>
                 <div className={styles["grid"]}>
                     {viewedProjects.map((project: Project) => (
                         <Link key={project.key} to={project.link} target="_blank">
                             <RevealUp className={styles["cell"]}>
-                                <img src={require(`../../../../assets/images/projects/${project.image}`)}
+                                <img
+                                    src={require(`../../../../assets/images/projects/${project.image}`)}
                                     className={styles["image"]}
                                     alt={`Project ${project.key}`}
                                 />

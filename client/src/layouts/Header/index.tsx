@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement, useEffect } from "react";
+import React, { FunctionComponent, ReactElement, useEffect, useRef } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -17,14 +17,14 @@ const Header: FunctionComponent = (): ReactElement => {
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             const target = event.target as HTMLElement;
-    
+
             if (target && !target.closest(`.${styles["nav-container"]}`)) {
                 setListsInactive();
             }
         };
-    
+
         document.addEventListener("mousedown", handleClickOutside);
-    
+
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
@@ -71,22 +71,22 @@ const Header: FunctionComponent = (): ReactElement => {
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#skills" className={styles["nav-link"]}  onClick={setListsInactive}>
+                            <NavHashLink to="#skills" className={styles["nav-link"]} onClick={setListsInactive}>
                                 {t("header.navigation.skills")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#timeline" className={styles["nav-link"]}  onClick={setListsInactive}>
+                            <NavHashLink to="#timeline" className={styles["nav-link"]} onClick={setListsInactive}>
                                 {t("header.navigation.timeline")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#projects" className={styles["nav-link"]}  onClick={setListsInactive}>
+                            <NavHashLink to="#projects" className={styles["nav-link"]} onClick={setListsInactive}>
                                 {t("header.navigation.projects")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <NavHashLink to="#contact" className={styles["nav-link"]}  onClick={setListsInactive}>
+                            <NavHashLink to="#contact" className={styles["nav-link"]} onClick={setListsInactive}>
                                 {t("header.navigation.contact")}
                             </NavHashLink>
                         </li>
