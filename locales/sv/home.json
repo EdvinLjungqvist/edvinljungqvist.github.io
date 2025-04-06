@@ -31,7 +31,7 @@
         "title": "Projekt",
         "description": "Här är några av mina projekt",
         "categories": {
-            "title": "Välj kategorier",
+            "title": "Välj kategori",
             "list": {
                 "all": "Alla",
                 "minecraft": "Minecraft",

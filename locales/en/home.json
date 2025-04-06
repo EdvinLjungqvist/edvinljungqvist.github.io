@@ -31,7 +31,7 @@
         "title": "Projects",
         "description": "Here are some of my projects",
         "categories": {
-            "title": "Choose categories",
+            "title": "Choose category",
             "list": {
                 "all": "All",
                 "minecraft": "Minecraft",
