@@ -1,6 +1,6 @@
-import React, { FunctionComponent, ReactElement } from "react";
+import React, { FunctionComponent, ReactElement, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Home from "../../pages/Home";
+import { Home, HomeSkeleton } from "../../pages/Home";
 import styles from "./Main.module.css";
 
 const Main: FunctionComponent = (): ReactElement => {
@@ -8,7 +8,11 @@ const Main: FunctionComponent = (): ReactElement => {
         <main className={styles["main"]}>
             <Routes>
                 {["/", "/home", "/hem"].map((path, index) => (
-                    <Route key={index} path={path} element={<Home />} />
+                    <Route key={index} path={path} element={
+                        <Suspense fallback={<HomeSkeleton />}>
+                            <Home />
+                        </Suspense>
+                    }/>
                 ))}
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>

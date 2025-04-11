@@ -1,28 +1,40 @@
-/* Skeleton.module.css */
 .skeleton {
-    border-radius: 4px;
+    border-radius: 3px;
     animation: pulse 1.5s infinite ease-in-out;
 }
 
 .title {
     height: 35px;
+    width: 30%;
+    min-width: 150px;
+}
+
+.description {
+    height: 20px;
+    width: 50%;
+    min-width: 200px;
+}
+
+.heading {
+    height: 35px;
     width: 60%;
+    min-width: 200px;
 }
 
 .text {
     height: 20px;
     width: 90%;
+    min-width: 250px;
 }
 
 .image {
-    height: 150px;
+    aspect-ratio: 16/9;
     width: 100%;
     border-radius: 4px;
 }
 
 .circle {
-    height: 40px;
-    width: 40px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
