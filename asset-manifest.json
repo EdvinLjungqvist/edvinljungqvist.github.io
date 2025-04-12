@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d43a3542.css",
-    "main.js": "/static/js/main.9e68aa67.js",
-    "static/js/38.9a1baf1b.chunk.js": "/static/js/38.9a1baf1b.chunk.js",
+    "main.css": "/static/css/main.a7327e79.css",
+    "main.js": "/static/js/main.d35890dc.js",
+    "static/js/38.09cfd88f.chunk.js": "/static/js/38.09cfd88f.chunk.js",
     "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
     "static/media/ragnarok.png": "/static/media/ragnarok.72f16c9c884e1d4f4f28.png",
     "static/media/salmon-says.png": "/static/media/salmon-says.4aeab370d700034ff1fc.png",
@@ -15,12 +15,12 @@
     "static/media/othello.png": "/static/media/othello.195e78d56f90c9181e6f.png",
     "static/media/quiz-game.png": "/static/media/quiz-game.ecd4e6a62ade883c2c43.png",
     "index.html": "/index.html",
-    "main.d43a3542.css.map": "/static/css/main.d43a3542.css.map",
-    "main.9e68aa67.js.map": "/static/js/main.9e68aa67.js.map",
-    "38.9a1baf1b.chunk.js.map": "/static/js/38.9a1baf1b.chunk.js.map"
+    "main.a7327e79.css.map": "/static/css/main.a7327e79.css.map",
+    "main.d35890dc.js.map": "/static/js/main.d35890dc.js.map",
+    "38.09cfd88f.chunk.js.map": "/static/js/38.09cfd88f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d43a3542.css",
-    "static/js/main.9e68aa67.js"
+    "static/css/main.a7327e79.css",
+    "static/js/main.d35890dc.js"
   ]
 }
