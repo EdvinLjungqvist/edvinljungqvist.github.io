@@ -1,12 +1,7 @@
-import React, { FunctionComponent, ReactElement, ReactNode } from "react";
+import React, { FunctionComponent, ReactElement } from "react";
 import styles from "./IconLink.module.css";
 import { Link } from "react-router-dom";
-
-type IconLinkProps = {
-    to: string;
-    target: string;
-    icon: ReactNode;
-};
+import { IconLinkProps } from "./IconLink.types";
 
 const IconLink: FunctionComponent<IconLinkProps> = ({ to, target, icon }): ReactElement => {
     return (

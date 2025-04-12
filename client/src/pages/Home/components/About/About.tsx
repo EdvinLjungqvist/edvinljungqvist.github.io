@@ -22,10 +22,10 @@ const About: FunctionComponent = (): ReactElement => {
                             {me.name}
                         </h1>
                         <p className={styles["location"]}>
-                            <FontAwesomeIcon icon={faLocationDot} /> {t("about.location")}
+                            <FontAwesomeIcon icon={faLocationDot} /> {t("about.location", "Location")}
                         </p>
                         <p className={styles["description"]}>
-                            {t("about.description", { age: me.age, experience: me.experience })}
+                            {t("about.description", { age: me.age, experience: me.experience, defaultValue: "Description" })}
                         </p>
                     </div>
                     <div className={styles["links"]}>

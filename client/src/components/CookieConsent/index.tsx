@@ -28,11 +28,11 @@ const CookieConsent: FunctionComponent = (): ReactElement => {
                                 <FontAwesomeIcon icon={faCookie} /> {t("cookieConsent.title", "Cookies")}
                             </h3>
                             <p>
-                                {t("cookieConsent.description", "")}
+                                {t("cookieConsent.description", "Necessary cookies is used to improve your experience.")}
                             </p>
                         </div>
                         <button onClick={acceptCookies}>
-                            {t("cookieConsent.button")}
+                            {t("cookieConsent.button", "Okay")}
                         </button>
                         <button className={styles["close"]} onClick={close}>
                             <FontAwesomeIcon icon={faXmark} />

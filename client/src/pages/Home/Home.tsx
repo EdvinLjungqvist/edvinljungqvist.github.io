@@ -19,7 +19,7 @@ const Home: FunctionComponent = (): ReactElement => {
 			}
 		}
     }, [hash]);
-
+    
     return (
         <>
             <Helmet>

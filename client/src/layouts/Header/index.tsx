@@ -67,27 +67,27 @@ const Header: FunctionComponent = (): ReactElement => {
                     <ul className={`${styles["nav-list"]} ${navListActive ? styles["active"] : ""}`}>
                         <li className={styles["nav-item"]}>
                             <NavHashLink to="#about" className={styles["nav-link"]} onClick={setListsInactive}>
-                                {t("header.navigation.about")}
+                                {t("header.navigation.about", "About")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
                             <NavHashLink to="#skills" className={styles["nav-link"]} onClick={setListsInactive}>
-                                {t("header.navigation.skills")}
+                                {t("header.navigation.skills", "Skills")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
                             <NavHashLink to="#timeline" className={styles["nav-link"]} onClick={setListsInactive}>
-                                {t("header.navigation.timeline")}
+                                {t("header.navigation.timeline", "Timeline")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
                             <NavHashLink to="#projects" className={styles["nav-link"]} onClick={setListsInactive}>
-                                {t("header.navigation.projects")}
+                                {t("header.navigation.projects", "Projects")}
                             </NavHashLink>
                         </li>
                         <li className={styles["nav-item"]}>
                             <NavHashLink to="#contact" className={styles["nav-link"]} onClick={setListsInactive}>
-                                {t("header.navigation.contact")}
+                                {t("header.navigation.contact", "Contact")}
                             </NavHashLink>
                         </li>
                     </ul>
@@ -102,7 +102,7 @@ const Header: FunctionComponent = (): ReactElement => {
                             {languages.map(language => (
                                 <li key={language} className={styles["language-selector-item"]}>
                                     <button onClick={() => changeLanguage(language)} className={`${styles["language-selector-button"]} ${language == i18n.language ? styles["active"] : ""}`}>
-                                        {t("language", { lng: language })}
+                                        {t("language", { lng: language, defaultValue: language })}
                                     </button>
                                 </li>
                             ))}

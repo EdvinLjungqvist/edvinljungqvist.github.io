@@ -12,10 +12,10 @@ const Contact: FunctionComponent = (): ReactElement => {
         <section id="contact" className="container normal-spacing minimized-width">
             <RevealUp className="container small-spacing">
                 <h2>
-                    {t("contact.title")}
+                    {t("contact.title", "Let's collaborate")}
                 </h2>
                 <p>
-                    {t("contact.description")}
+                    {t("contact.description", "Feel free to reach out")}
                 </p>
             </RevealUp>
             <RevealUp>

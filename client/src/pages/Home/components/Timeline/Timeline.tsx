@@ -15,10 +15,10 @@ const Timeline: FunctionComponent = (): ReactElement => {
         <section id="timeline" className="container large-spacing minimized-width">
             <RevealUp className="container small-spacing center-content">
                 <h2 className="text-center">
-                    {t("timeline.title")}
+                    {t("timeline.title", "My journey")}
                 </h2>
                 <p>
-                    {t("timeline.description")}
+                    {t("timeline.description", "Path to where I am today")}
                 </p>
             </RevealUp>
             <div className={styles["grid"]}>

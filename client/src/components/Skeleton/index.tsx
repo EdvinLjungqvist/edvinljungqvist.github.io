@@ -1,11 +1,6 @@
 import React, { FunctionComponent, ReactElement } from "react";
 import styles from "./Skeleton.module.css";
-
-type SkeletonProps = {
-    type: "title" | "description" | "heading" | "text" | "image" | "circle" | "button";
-    count?: number;
-    className?: string;
-};
+import { SkeletonProps } from "./Skeleton.types";
 
 const Skeleton: FunctionComponent<SkeletonProps> = ({ type, count = 1, className }): ReactElement => {
     return (

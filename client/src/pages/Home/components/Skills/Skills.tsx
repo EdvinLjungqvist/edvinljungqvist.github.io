@@ -30,7 +30,7 @@ const Skills: FunctionComponent = (): ReactElement => {
             <div className="container normal-spacing full-width">
                 <RevealRight>
                     <h2>
-                        {t("skills.title")}
+                        {t("skills.title", "What I work with")}
                     </h2>
                 </RevealRight>
                 <div className={styles["grid"]}>

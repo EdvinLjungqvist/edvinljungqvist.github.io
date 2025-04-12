@@ -45,16 +45,16 @@ const Projects: FunctionComponent = (): ReactElement => {
         <section id="projects" className="container large-spacing full-width">
             <RevealUp className="container small-spacing center-content">
                 <h2>
-                    {t("projects.title")}
+                    {t("projects.title", "Projects")}
                 </h2>
                 <p>
-                    {t("projects.description")}
+                    {t("projects.description", "Here are some of my projects")}
                 </p>
             </RevealUp>
             <div className="container normal-spacing">
                 <RevealRight className="container small-spacing">
                     <h3>
-                        {t("projects.categories.title")}
+                        {t("projects.categories.title", "Choose category")}
                     </h3>
                     <div className={styles["categories"]}>
                         {categories.map(({ name, count }) => (
@@ -63,7 +63,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                                 onClick={() => toggleCategory(name)}
                                 className={selectedCategory === name ? styles["active"] : ""}
                             >
-                                {t(`projects.categories.list.${name}`)} ({count})
+                                {t(`projects.categories.list.${name}`, name.charAt(0).toUpperCase() + name.slice(1))} ({count})
                             </button>
                         ))}
                     </div>
@@ -79,10 +79,10 @@ const Projects: FunctionComponent = (): ReactElement => {
                                 />
                                 <div className={`${styles["content"]} container small-spacing`}>
                                     <h3 className={styles["title"]}>
-                                        {t(`projects.gallery.${project.key}.title`)}
+                                        {t(`projects.gallery.${project.key}.title`, "Title")}
                                     </h3>
                                     <p className={styles["description"]}>
-                                        {t(`projects.gallery.${project.key}.description`)}
+                                        {t(`projects.gallery.${project.key}.description`, "Description")}
                                     </p>
                                     <div className={styles["languages"]}>
                                         {project.technologies.map((language: string, index: number) => (
@@ -99,7 +99,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                 {viewedProjects.length < filteredProjects.length && (
                     <RevealUp className="container">
                         <button className={styles["button"]} onClick={showMore}>
-                            {t("projects.button", { count: Math.min(ADD_VIEW_COUNT, filteredProjects.length - viewedProjects.length) })}
+                            {t("projects.button", { count: Math.min(ADD_VIEW_COUNT, filteredProjects.length - viewedProjects.length), defaultValue: "Show more" })}
                         </button>
                     </RevealUp>
                 )}

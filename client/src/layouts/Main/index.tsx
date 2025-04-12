@@ -1,7 +1,9 @@
-import React, { FunctionComponent, ReactElement, Suspense } from "react";
+import React, { FunctionComponent, lazy, ReactElement, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Home, HomeSkeleton } from "../../pages/Home";
+import { HomeSkeleton } from "../../pages/Home";
 import styles from "./Main.module.css";
+
+const Home = lazy(() => import("../../pages/Home/Home"));
 
 const Main: FunctionComponent = (): ReactElement => {
     return (
