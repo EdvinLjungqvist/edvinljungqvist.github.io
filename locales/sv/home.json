@@ -1,7 +1,7 @@
 {
     "about": {
         "location": "Stockholm, Sverige",
-        "description": "Jag är en {{age}}-årig fullstackutvecklare med {{experience}} års erfarenhet. Utforska mitt arbete för att se hur jag förvandlar idéer till verklighet genom genomtänkt design och utveckling."
+        "description": "Jag är en {{age}}-årig fullstackutvecklare med {{experience}} års erfarenhet. Jag gillar att bygga välstrukturerade, effektiva och användarvänliga applikationer."
     },
     "skills": {
         "title": "Vad jag arbetar med"
