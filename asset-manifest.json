@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cdc02dd.css",
-    "main.js": "/static/js/main.35264d85.js",
+    "main.css": "/static/css/main.5a73b109.css",
+    "main.js": "/static/js/main.c012ca6d.js",
     "static/js/38.09cfd88f.chunk.js": "/static/js/38.09cfd88f.chunk.js",
     "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
     "static/media/ragnarok.png": "/static/media/ragnarok.72f16c9c884e1d4f4f28.png",
@@ -15,12 +15,12 @@
     "static/media/othello.png": "/static/media/othello.195e78d56f90c9181e6f.png",
     "static/media/quiz-game.png": "/static/media/quiz-game.ecd4e6a62ade883c2c43.png",
     "index.html": "/index.html",
-    "main.1cdc02dd.css.map": "/static/css/main.1cdc02dd.css.map",
-    "main.35264d85.js.map": "/static/js/main.35264d85.js.map",
+    "main.5a73b109.css.map": "/static/css/main.5a73b109.css.map",
+    "main.c012ca6d.js.map": "/static/js/main.c012ca6d.js.map",
     "38.09cfd88f.chunk.js.map": "/static/js/38.09cfd88f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cdc02dd.css",
-    "static/js/main.35264d85.js"
+    "static/css/main.5a73b109.css",
+    "static/js/main.c012ca6d.js"
   ]
 }
