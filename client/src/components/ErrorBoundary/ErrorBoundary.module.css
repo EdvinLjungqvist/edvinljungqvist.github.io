@@ -1,0 +1,23 @@
+:root {
+    --error: #ff0033;
+    --error-background: rgba(255, 0, 51, 0.1);
+}
+
+.container {
+    padding: 150px 15px 0px 15px;
+}
+
+.error {
+    border-radius: 5px;
+    border-left: 5px solid var(--error);
+    padding: 10px 20px;
+    background-color: var(--error-background);
+}
+
+.title {
+    color: var(--error);
+}
+
+.description {
+    color: var(--error);
+}

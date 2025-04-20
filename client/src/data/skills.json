@@ -1,9 +1,8 @@
 [
     {
-        "language": "JavaScript",
+        "language": "TypeScript",
         "icon": "faJs",
         "technologies": [
-            "TypeScript",
             "React.js",
             "Node.js"
         ]

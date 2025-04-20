@@ -2,6 +2,7 @@ import React, { FunctionComponent, lazy, ReactElement, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { HomeSkeleton } from "../../pages/Home";
 import styles from "./Main.module.css";
+import HashScroller from "../../components/HashScroller";
 
 const Home = lazy(() => import("../../pages/Home/Home"));
 
@@ -12,9 +13,11 @@ const Main: FunctionComponent = (): ReactElement => {
                 {["/", "/home", "/hem"].map((path, index) => (
                     <Route key={index} path={path} element={
                         <Suspense fallback={<HomeSkeleton />}>
-                            <Home />
+                            <HashScroller behaviour="smooth" block="start">
+                                <Home />
+                            </HashScroller>
                         </Suspense>
-                    }/>
+                    } />
                 ))}
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>

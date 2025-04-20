@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement, useEffect, useRef } from "react";
+import React, { FunctionComponent, ReactElement, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -6,9 +6,10 @@ import { useTheme } from "../../hooks/ThemeProvider";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
-import me from "../../data/me.json";
+import { useData } from "../../hooks/DataProvider";
 
 const Header: FunctionComponent = (): ReactElement => {
+    const { me } = useData();
     const [navListActive, setNavListActive] = useState<boolean>(false);
     const [languageListActive, setLanguageListActive] = useState<boolean>(false);
     const { theme, setTheme } = useTheme();
@@ -22,7 +23,6 @@ const Header: FunctionComponent = (): ReactElement => {
                 setListsInactive();
             }
         };
-
         document.addEventListener("mousedown", handleClickOutside);
 
         return () => {
@@ -55,8 +55,7 @@ const Header: FunctionComponent = (): ReactElement => {
         setLanguageListActive(false);
     };
 
-    const languages = ["sv", "en"];
-
+    const languages = ["en", "sv"];
     return (
         <header className={styles["header"]}>
             <nav className={styles["nav"]}>

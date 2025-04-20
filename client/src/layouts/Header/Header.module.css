@@ -74,11 +74,12 @@ nav {
 }
 
 .nav-button {
-    width: 41px;
-    height: 41px;
+    width: 43px;
+    height: 43px;
     border-radius: 5px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
     border: none;
     color: var(--text-30);

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
-export type IconLinkProps = {
+export type ButtonLinkProps = {
     to: string;
     target: string;
-    icon: ReactNode;
+    children?: ReactNode;
 };

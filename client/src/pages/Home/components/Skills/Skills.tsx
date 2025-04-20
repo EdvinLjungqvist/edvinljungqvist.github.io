@@ -2,13 +2,13 @@ import React, { FunctionComponent, ReactElement } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Skills.module.css";
-import skills from "../../../../data/skills.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faCss3Alt, faHtml5, faJava, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import RevealRight from "../../../../components/animations/RevealRight";
-import { Skill } from "./Skills.types";
+import { useData } from "../../../../hooks/DataProvider";
+import { Skill } from "../../../../types/data";
 
 const icons: Record<string, IconProp> = {
     "faJs": faJs,
@@ -20,6 +20,7 @@ const icons: Record<string, IconProp> = {
 };
 
 const Skills: FunctionComponent = (): ReactElement => {
+    const { skills } = useData()
     const { t } = useTranslation(["home"]);
 
     return (

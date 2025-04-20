@@ -1,9 +1,12 @@
 .link {
-    width: 41px;
-    height: 41px;
+    display: block;
+    padding: 10px;
     border-radius: 5px;
-    display: grid;
-    place-items: center;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
     color: var(--primary-0);
     border: 1px solid var(--primary-0);
 }

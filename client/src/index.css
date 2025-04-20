@@ -6,12 +6,12 @@
     --primary-40: #9cb6ff;
     --primary-50: #b2c4ff;
 
-    --secondary-0: #ff8000;
-    --secondary-10: #ff944a;
-    --secondary-20: #ffa366;
-    --secondary-30: #ffb380;
-    --secondary-40: #ffc199;
-    --secondary-50: #ffd1b2;
+    --secondary-0: #00b359;
+    --secondary-10: #33c173;
+    --secondary-20: #66ce8c;
+    --secondary-30: #80d6a0;
+    --secondary-40: #99dfb3;
+    --secondary-50: #b3e8c7;
 
     --gray-0: #ffffff;
     --gray-10: #e6e6e6;
@@ -154,7 +154,7 @@ img {
 }
 
 button {
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     border: none;

@@ -2,7 +2,7 @@ import React, { FunctionComponent, ReactElement } from "react";
 import styles from "./Skeleton.module.css";
 import { SkeletonProps } from "./Skeleton.types";
 
-const Skeleton: FunctionComponent<SkeletonProps> = ({ type, count = 1, className }): ReactElement => {
+const Skeleton: FunctionComponent<SkeletonProps> = ({ type, count = 1, className = "" }): ReactElement => {
     return (
         <>
             {Array.from({ length: count }).map((_, index) => (

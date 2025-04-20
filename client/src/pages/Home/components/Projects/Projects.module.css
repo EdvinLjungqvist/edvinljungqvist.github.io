@@ -31,7 +31,7 @@
 .languages {
     gap: 5px;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
 }
 
 .language {
@@ -41,6 +41,10 @@
     color: var(--gray-0);
     border-radius: 3px;
     background-color: var(--secondary-0);
+}
+
+.category {
+    color: var(--secondary-0);
 }
 
 .title {

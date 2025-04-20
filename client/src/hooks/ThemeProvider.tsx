@@ -1,10 +1,9 @@
 import React, { createContext, useContext, useEffect, useState, ReactNode, FunctionComponent, ReactElement } from "react";
 import { useCookies } from "react-cookie";
 import { useSearchParams } from "react-router-dom";
+import { Theme } from "../types/theme";
 
-type Theme = "dark" | "light";
-
-type ThemeContextType = {
+export type ThemeContextType = {
     theme: Theme;
     setTheme: React.Dispatch<React.SetStateAction<Theme>>;
 };
@@ -30,7 +29,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): Rea
     const [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
-        setTheme(searchParams.get("theme") as Theme ?? cookies.theme ?? "dark");
+        setTheme(searchParams.get("theme") as Theme ?? cookies.theme as Theme ?? "dark");
     }, []);
 
     useEffect(() => {

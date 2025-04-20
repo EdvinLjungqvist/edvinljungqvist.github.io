@@ -2,10 +2,11 @@ import React, { FunctionComponent, ReactElement } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RevealUp from "../../../../components/animations/RevealUp";
-import me from "../../../../data/me.json";
+import { useData } from "../../../../hooks/DataProvider";
 import styles from "./Contact.module.css";
 
 const Contact: FunctionComponent = (): ReactElement => {
+    const { me } = useData();
     const { t } = useTranslation(["home"]);
 
     return (

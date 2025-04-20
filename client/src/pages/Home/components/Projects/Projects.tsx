@@ -5,7 +5,8 @@ import styles from "./Projects.module.css";
 import projects from "../../../../data/projects.json";
 import { Link } from "react-router-dom";
 import RevealRight from "../../../../components/animations/RevealRight";
-import { Category, Project } from "./Projects.types";
+import { Project } from "../../../../types/data";
+import { Category } from "./Projects.types";
 
 const INITIAL_VIEW_COUNT = 6;
 const ADD_VIEW_COUNT = 4;
@@ -76,6 +77,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                                     src={require(`../../../../assets/images/projects/${project.image}`)}
                                     className={styles["image"]}
                                     alt={`Project ${project.key}`}
+                                    loading="lazy"
                                 />
                                 <div className={`${styles["content"]} container small-spacing`}>
                                     <h3 className={styles["title"]}>
@@ -83,6 +85,9 @@ const Projects: FunctionComponent = (): ReactElement => {
                                     </h3>
                                     <p className={styles["description"]}>
                                         {t(`projects.gallery.${project.key}.description`, "Description")}
+                                    </p>
+                                    <p className={styles["category"]}>
+                                        {t(`projects.categories.list.${project.category}`, project.category.charAt(0).toUpperCase() + project.category.slice(1))}
                                     </p>
                                     <div className={styles["languages"]}>
                                         {project.technologies.map((language: string, index: number) => (

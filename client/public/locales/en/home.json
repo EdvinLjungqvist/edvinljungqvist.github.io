@@ -1,7 +1,7 @@
 {
     "about": {
         "location": "Stockholm, Sweden",
-        "description": "I am a {{age}}-year-old full-stack developer with {{experience}} years of experience. Explore my work to see how I turn ideas into reality with thoughtful design and development."
+        "description": "I am a {{age}}-year-old full-stack developer with {{experience}} years of experience. I enjoy building clean, efficient, and user-friendly applications."
     },
     "skills": {
         "title": "What I work with"
