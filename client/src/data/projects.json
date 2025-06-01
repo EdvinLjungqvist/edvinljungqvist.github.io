@@ -25,8 +25,6 @@
         "link": "https://ragnarok.se",
         "category": "websites",
         "technologies": [
-            "HTML",
-            "CSS",
             "JavaScript",
             "React.js",
             "Node.js",
@@ -39,8 +37,6 @@
         "link": "https://github.com/EdvinLjungqvist/edvinljungqvist.github.io",
         "category": "websites",
         "technologies": [
-            "HTML",
-            "CSS",
             "TypeScript",
             "React.js"
         ]
@@ -51,8 +47,6 @@
         "link": "https://github.com/EdvinLjungqvist/Human-Performance-Tester",
         "category": "websites",
         "technologies": [
-            "HTML",
-            "CSS",
             "JavaScript",
             "Node.js",
             "React.js"

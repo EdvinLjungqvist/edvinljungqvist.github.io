@@ -3,7 +3,7 @@
         "language": "TypeScript",
         "icon": "faJs",
         "technologies": [
-            "React.js",
+            "Next.js",
             "Node.js"
         ]
     },

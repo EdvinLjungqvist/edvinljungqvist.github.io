@@ -86,9 +86,6 @@ const Projects: FunctionComponent = (): ReactElement => {
                                     <p className={styles["description"]}>
                                         {t(`projects.gallery.${project.key}.description`, "Description")}
                                     </p>
-                                    <p className={styles["category"]}>
-                                        {t(`projects.categories.list.${project.category}`, project.category.charAt(0).toUpperCase() + project.category.slice(1))}
-                                    </p>
                                     <div className={styles["languages"]}>
                                         {project.technologies.map((language: string, index: number) => (
                                             <span key={index} className={styles["language"]}>

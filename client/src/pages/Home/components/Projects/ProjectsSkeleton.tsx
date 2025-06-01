@@ -5,7 +5,7 @@ import Skeleton from "../../../../components/Skeleton";
 const ProjectsSkeleton: FunctionComponent = (): ReactElement => {
     return (
         <section className="container large-spacing full-width">
-            <div className="container small-spacing center-content">
+            <div className="container small-spacing center-content minimized-width">
                 <Skeleton type="title" />
                 <Skeleton type="description" />
             </div>

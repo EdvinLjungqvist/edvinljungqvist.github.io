@@ -10,7 +10,7 @@ const Main: FunctionComponent = (): ReactElement => {
     return (
         <main className={styles["main"]}>
             <Routes>
-                {["/", "/home", "/hem"].map((path, index) => (
+                {["/", "/index", "/home", "/hem"].map((path, index) => (
                     <Route key={index} path={path} element={
                         <Suspense fallback={<HomeSkeleton />}>
                             <HashScroller behaviour="smooth" block="start">
