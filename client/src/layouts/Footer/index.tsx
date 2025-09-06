@@ -1,13 +1,10 @@
 import React, { FunctionComponent, ReactElement } from "react";
-import IconLink from "../../components/ButtonLink";
 import styles from "./Footer.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { useData } from "../../hooks/DataProvider";
+import { Link } from "react-router-dom";
+import me from "../../data/me";
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer: FunctionComponent = (): ReactElement => {
-    const { me } = useData();
-
     return (
         <footer className="overlay-primary">
             <div className={styles["container"]}>
@@ -15,15 +12,18 @@ const Footer: FunctionComponent = (): ReactElement => {
                     {me.name} © {new Date().getFullYear()}
                 </p>
                 <div className={styles["links"]}>
-                    <IconLink to={me.socials.github} target="_blank">
-                        <FontAwesomeIcon icon={faGithub} />
-                    </IconLink>
-                    <IconLink to={me.socials.instagram} target="_blank">
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </IconLink>
-                    <IconLink to={me.socials.linkedin} target="_blank">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </IconLink>
+                    <Link to={me.socials.github} target="_blank" className="button small animated">
+                        <FaGithub className="icon" />
+                    </Link>
+                    <Link to={me.socials.instagram} target="_blank" className="button small animated">
+                        <FaInstagram className="icon" />
+                    </Link>
+                    <Link to={me.socials.linkedin} target="_blank" className="button small animated">
+                        <FaLinkedin className="icon" />
+                    </Link>
+                    <Link to={me.socials.discord} target="_blank" className="button small animated">
+                        <FaDiscord className="icon" />
+                    </Link>
                 </div>
             </div>
         </footer>

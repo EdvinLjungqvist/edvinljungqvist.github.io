@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { HomeSkeleton } from "../../pages/Home";
 import styles from "./Main.module.css";
 import HashScroller from "../../components/HashScroller";
+import Project from "../../pages/Project";
 
 const Home = lazy(() => import("../../pages/Home/Home"));
 
@@ -18,6 +19,9 @@ const Main: FunctionComponent = (): ReactElement => {
                             </HashScroller>
                         </Suspense>
                     } />
+                ))}
+                {["/project/*", "/projekt/*"].map((path, index) => (
+                    <Route key={index} path={path} element={<Project />} />
                 ))}
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>

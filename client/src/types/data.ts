@@ -1,12 +1,15 @@
 export type Me = {
     name: string;
+    username: string;
     age: number;
     experience: number;
     socials: {
         github: string;
         instagram: string;
         linkedin: string;
+        discord: string;
     };
+    mail: string;
 };
 
 export type Project = {

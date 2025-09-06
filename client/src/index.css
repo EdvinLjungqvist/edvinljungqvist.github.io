@@ -21,16 +21,18 @@
     --gray-50: #808080;
 
     --width: calc(100% - 30px);
-    --box-shadow: #00000059 0px 5px 15px;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+    --border-radius: 20px;
+    --border-radius-2x: 40px;
 }
 
 [theme=dark] {
-    --surface-0: #121212;
-    --surface-10: #282828;
-    --surface-20: #3f3f3f;
-    --surface-30: #575757;
-    --surface-40: #717171;
-    --surface-50: #8b8b8b;
+    --surface-0: #181818;
+    --surface-10: #1b1b1b;
+    --surface-20: #1e1e1e;
+    --surface-30: #212121;
+    --surface-40: #242424;
+    --surface-50: #272727;
 
     --text-0: #ffffff;
     --text-10: #e6e6e6;
@@ -42,11 +44,11 @@
 
 [theme=light] {
     --surface-0: #f2f2f2;
-    --surface-10: #dfdfdf;
-    --surface-20: #c6c6c6;
-    --surface-30: #aeaeae;
-    --surface-40: #959595;
-    --surface-50: #7d7d7d;
+    --surface-10: #ededed;
+    --surface-20: #e8e8e8;
+    --surface-30: #e3e3e3;
+    --surface-40: #dedede;
+    --surface-50: #d9d9d9;
 
     --text-0: #282828;
     --text-10: #3f3f3f;
@@ -62,6 +64,16 @@
     box-sizing: border-box;
     font-family: "IBM Plex Sans", serif;
     scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+*:not(body) {
+    transition: color .2s, background-color .2s;
+}
+
+::selection {
+    color: var(--gray-0);
+    background-color: var(--primary-0);
 }
 
 html,
@@ -87,6 +99,8 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
     color: var(--text-0);
 }
 
@@ -99,11 +113,11 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 25px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 21px;
 }
 
 h5 {
@@ -113,12 +127,18 @@ h5 {
 p,
 li,
 a,
-button {
+button,
+label,
+input,
+textarea {
     font-size: 18px;
 }
 
 p,
-li {
+li,
+label,
+input,
+textarea {
     color: var(--text-20);
 }
 
@@ -149,21 +169,69 @@ ol {
 
 img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     display: block;
 }
 
-button {
-    padding: 10px 15px;
-    border-radius: 5px;
+button,
+span:has(input[type=submit]) {
+    padding: 10px 20px;
+    border-radius: var(--border-radius-2x);
     cursor: pointer;
     border: none;
     color: var(--gray-0);
     background-color: var(--primary-0);
 }
 
-button:hover{
+button:hover,
+span:has(input[type=submit]):hover {
     background-color: var(--primary-10);
+}
+
+iframe,
+video {
+    aspect-ratio: 16/9;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+form {
+    width: 100%;
+    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--surface-10);
+    border: 1px solid var(--surface-20);
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 1000px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    outline: 2px solid var(--primary-0);
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--gray-0);
+    cursor: pointer;
 }
 
 @media (min-width: 992px) {

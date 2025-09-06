@@ -1,43 +1,30 @@
 import React, { FunctionComponent, ReactElement } from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RevealUp from "../../../../components/animations/RevealUp";
-import { useData } from "../../../../hooks/DataProvider";
-import styles from "./Contact.module.css";
+import me from "../../../../data/me";
 
 const Contact: FunctionComponent = (): ReactElement => {
-    const { me } = useData();
     const { t } = useTranslation(["home"]);
 
     return (
-        <section id="contact" className="container normal-spacing minimized-width">
+        <section id="contact" className="container normal-spacing compact-width">
             <RevealUp className="container small-spacing">
                 <h2>
-                    {t("contact.title", "Let's collaborate")}
+                    {t("page./home.contact.title", "Let's collaborate")}
                 </h2>
                 <p>
-                    {t("contact.description", "Feel free to reach out")}
+                    {t("page./home.contact.description", "Feel free to reach out")}
                 </p>
             </RevealUp>
             <RevealUp>
-                <ul>
-                    <li>
-                        <Link to={me.socials.github} target="_blank">
-                            GitHub
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={me.socials.instagram} target="_blank">
-                            Instagram
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={me.socials.linkedin} target="_blank">
-                            LinkedIn
-                        </Link>
-                    </li>
-                </ul>
-            </RevealUp>
+                <form action={`mailto:${me.mail}`} method="post" encType="text/plain">
+                    <input type="text" name="name" placeholder={t("page./home.contact.form.name", "Name")} />
+                    <textarea name="message" placeholder={t("page./home.contact.form.message", "Message")} />
+                    <span className="animated">
+                        <input type="submit" value={t("page./home.contact.form.send", "Send")} className="animated" />
+                    </span>
+                </form>
+            </RevealUp> 
         </section>
     );
 };

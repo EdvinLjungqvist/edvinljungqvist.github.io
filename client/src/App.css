@@ -3,10 +3,15 @@
     flex-direction: column;
 }
 
-.minimized-width,
-.full-width {
+.compact-width,
+.wide-width {
     margin: 0 auto;
     width: var(--width);
+}
+
+.full-width {
+    margin: 0 auto;
+    width: calc(100% - 30px);
 }
 
 .small-spacing {
@@ -48,8 +53,8 @@
 }
 
 .button {
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-2x);
     cursor: pointer;
     border: none;
     color: var(--gray-0);
@@ -61,8 +66,79 @@
     background-color: var(--primary-10);
 }
 
+.button.small {
+    padding: 7px 14px;
+}
+
+.quote {
+    margin-left: 15px;
+    position: relative;
+}
+
+.quote::after {
+    width: 5px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius-2x);
+    background-color: var(--surface-50);
+    top: 0;
+    right: calc(100% + 10px);
+}
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
 @media (min-width: 768px) {
-    .minimized-width {
-        width: calc(var(--width) - 20%);
+    .compact-width {
+        width: calc(var(--width) - min(20%, 350px));
     }
+
+    .full-width {
+        padding: 0 25px;
+    }
+
+    button.animated,
+    .button.animated,
+    span:has(input[type=submit]).animated {
+        position: relative;
+    }
+
+    button.animated::after,
+    .button.animated::after,
+    span:has(input[type=submit]).animated::after {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        border: 2px solid var(--primary-0);
+        border-radius: var(--border-radius-2x);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+    }
+
+    button.animated:focus,
+    .button.animated:focus,
+    span:has(input[type=submit]).animated:focus {
+        outline: none;
+    }
+
+    button.animated:hover,
+    .button.animated:hover,
+    span:has(input[type=submit]).animated:hover {
+        background-color: var(--primary-0);
+    }
+
+    button.animated:hover::after,
+    .button.animated:hover::after,
+    span:has(input[type=submit]).animated:hover::after,
+    button.animated:focus::after,
+    .button.animated:focus::after,
+    span:has(input[type=submit]).animated:focus::after {
+        opacity: 1;
+    }
+
 }

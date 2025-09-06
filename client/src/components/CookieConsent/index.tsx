@@ -1,9 +1,8 @@
 import React, { FunctionComponent, ReactElement, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useCookies } from "react-cookie";
+import { FaCookie, FaXmark } from "react-icons/fa6";
 import styles from "./CookieConsent.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCookie, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const CookieConsent: FunctionComponent = (): ReactElement => {
     const [hidden, setHidden] = useState<boolean>(false);
@@ -25,17 +24,17 @@ const CookieConsent: FunctionComponent = (): ReactElement => {
                     <div className="container normal-spacing">
                         <div className="container small-spacing">
                             <h3>
-                                <FontAwesomeIcon icon={faCookie} /> {t("cookieConsent.title", "Cookies")}
+                                <FaCookie className="icon" /> {t("common.cookieConsent.title", "Cookies")}
                             </h3>
                             <p>
-                                {t("cookieConsent.description", "Necessary cookies is used to improve your experience.")}
+                                {t("common.cookieConsent.description", "Necessary cookies is used to improve your experience.")}
                             </p>
                         </div>
-                        <button onClick={acceptCookies}>
-                            {t("cookieConsent.button", "Okay")}
+                        <button onClick={acceptCookies} className="animated">
+                            {t("common.cookieConsent.button", "Okay")}
                         </button>
                         <button className={styles["close"]} onClick={close}>
-                            <FontAwesomeIcon icon={faXmark} />
+                            <FaXmark className="icon" />
                         </button>
                     </div>
                 </div>

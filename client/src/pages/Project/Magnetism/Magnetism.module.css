@@ -1,0 +1,43 @@
+.quote-container {
+    padding: 25px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.container {
+    gap: 50px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 300px;
+    flex-grow: 1;
+    background-color: var(--surface-10);
+    border-radius: var(--border-radius);
+}
+
+.content {
+    padding: 15px;
+}
+
+.content * {
+    text-align: center;
+}
+
+.dungeons {
+    color: #00aa00;
+}
+
+.catacombs {
+    color: #ffaa00;
+}
+
+.caverns {
+    color: #00aaaa;
+}
+
+.volcano {
+    color: #ff5555;
+}

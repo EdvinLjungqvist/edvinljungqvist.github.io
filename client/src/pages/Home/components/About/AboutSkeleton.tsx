@@ -4,16 +4,16 @@ import Skeleton from "../../../../components/Skeleton";
 
 const AboutSkeleton: FunctionComponent = (): ReactElement => {
     return (
-        <section className="minimized-width">
+        <section className="compact-width">
             <div className={styles["container"]}>
-                <Skeleton type="circle" className={styles["image"]} />
+                <Skeleton type="image-circle" className={styles["image"]} />
                 <div className={`${styles["content"]} container normal-spacing`}>
                     <div className={`${styles["content"]} container small-spacing`}>
                         <Skeleton type="heading" />
                         <Skeleton type="text" count={3} />
                     </div>
                     <div className={styles["links"]}>
-                        <Skeleton type="square" count={3} />
+                        <Skeleton type="button-circle" count={4} />
                     </div>
                 </div>
             </div>

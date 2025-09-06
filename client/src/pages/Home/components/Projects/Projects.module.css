@@ -1,11 +1,11 @@
 .grid {
     gap: 50px 30px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
 }
 
 .cell {
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     position: relative;
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -35,11 +35,11 @@
 }
 
 .language {
-    padding: 3px;
+    padding: 3px 10px;
     width: fit-content;
     font-size: 16px;
     color: var(--gray-0);
-    border-radius: 3px;
+    border-radius: var(--border-radius-2x);
     background-color: var(--secondary-0);
 }
 
@@ -58,6 +58,7 @@
 }
 
 .categories button {
+    flex-grow: 1;
     border: none;
     color: var(--text-0);
     background: none;
@@ -65,34 +66,37 @@
 }
 
 .categories button:not(.active):hover {
-    background-color: var(--surface-10);
-}
-
-.categories button.active:hover {
-    background-color: var(--primary-10);
+    background-color: var(--surface-0);
 }
 
 .categories button.active {
     background: var(--primary-0);
     color: var(--gray-0);
-    border: 1px solid var(--primary-0);
+    border: 1px solid transparent;
+}
+
+.categories button.active:hover {
+    border: 1px solid transparent;
 }
 
 @media (min-width: 768px) {
 
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .content {
-        bottom: -41px;
+        bottom: -47px;
     }
 
-    .cell:hover .content {
+    a:has(.cell):focus {
+        outline: 2px solid var(--primary-0);
+        border-radius: var(--border-radius);
+    }
+
+    .cell:hover .content,
+    a:has(.cell):focus .content {
         bottom: 0;
     }
 
-    .cell:hover .image {
+    .cell:hover .image,
+    a:has(.cell):focus .image {
         transform: scale(1.2);
     }
 

@@ -16,14 +16,15 @@ i18n
             escapeValue: false,
         },
         backend: {
-            loadPath: "/locales/{{lng}}/{{ns}}.json",
-            addPath: "/locales/{{lng}}/{{ns}}.missing.json",
+            loadPath: "/locales/{{lng}}.json",
+            addPath: "/locales/{{lng}}.missing.json",
         },
         detection: {
             order: ["querystring", "cookie", "localStorage", "navigator"],
             lookupQuerystring: "lang",
-            caches: ["cookie"]
+            caches: ["localStorage"]
         },
+        defaultNS: "translation",
     });
 
 export default i18n;

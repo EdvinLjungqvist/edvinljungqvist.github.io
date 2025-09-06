@@ -2,16 +2,18 @@ import React, { FunctionComponent, ReactElement } from "react";
 import Header from "./layouts/Header";
 import Main from "./layouts/Main";
 import Footer from "./layouts/Footer";
-import CookieConsent from "./components/CookieConsent";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
+import CookieConsent from "./components/CookieConsent";
+
 
 const App: FunctionComponent = (): ReactElement => {
 	return (
 		<>
+			<ScrollToTop />
 			<Header />
 			<Main />
 			<Footer />
-			<CookieConsent />
 		</>
 	);
 }

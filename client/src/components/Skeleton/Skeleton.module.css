@@ -1,6 +1,9 @@
 .skeleton {
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     animation: pulse 1.5s infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -30,10 +33,10 @@
 .image {
     aspect-ratio: 16/9;
     width: 100%;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
-.circle {
+.image-circle {
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
@@ -41,25 +44,33 @@
 .button {
     height: 45px;
     width: 120px;
-    border-radius: 5px;
+    border-radius: var(--border-radius-2x);
 }
 
-.square {
+.button-circle {
     height: 45px;
     width: 45px;
-    border-radius: 5px;
+    border-radius: 50%;
+}
+
+.image-icon {
+    font-size: 50px;
+}
+
+.input {
+    height: 35px;
+    width: 100%;
+    min-width: 200px;
 }
 
 @keyframes pulse {
     0% {
-        background-color: var(--surface-10);
+        background-color: var(--skeleton-base-color);
     }
-
     50% {
-        background-color: var(--surface-20);
+        background-color: var(--skeleton-pulse-color);
     }
-
     100% {
-        background-color: var(--surface-10);
+        background-color: var(--skeleton-base-color);
     }
 }

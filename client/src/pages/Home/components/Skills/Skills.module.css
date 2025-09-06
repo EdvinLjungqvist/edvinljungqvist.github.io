@@ -1,12 +1,27 @@
 .container {
     position: relative;
+    padding: 50px 0;
     margin: 150px 0;
+}
+
+.title {
+    color: var(--primary-0);
+    background-image: linear-gradient(45deg, var(--primary-0), var(--secondary-0) 50%, var(--primary-0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .grid {
     gap: 30px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cell {
+    border-radius: var(--border-radius);
+    padding: 15px;
+    background-color: var(--surface-10);
 }
 
 .waves {
@@ -22,18 +37,4 @@
 
 .bottom {
     top: 100%;
-}
-
-@media (min-width: 576px) {
-
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 768px) {
-
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

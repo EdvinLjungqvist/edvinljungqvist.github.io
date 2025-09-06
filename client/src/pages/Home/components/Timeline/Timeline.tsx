@@ -4,26 +4,25 @@ import RevealUp from "../../../../components/animations/RevealUp";
 import RevealLeft from "../../../../components/animations/RevealLeft";
 import RevealRight from "../../../../components/animations/RevealRight";
 import styles from "./Timeline.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { EventType } from "./Timeline.types";
+import { FaClock } from "react-icons/fa6";
 
 const Timeline: FunctionComponent = (): ReactElement => {
-    const { t } = useTranslation(["home"]);
+    const { t } = useTranslation();
 
     return (
-        <section id="timeline" className="container large-spacing minimized-width">
+        <section id="timeline" className="container large-spacing compact-width">
             <RevealUp className="container small-spacing center-content">
                 <h2 className="text-center">
-                    {t("timeline.title", "My journey")}
+                    {t("page./home.timeline.title", "My journey")}
                 </h2>
                 <p>
-                    {t("timeline.description", "Path to where I am today")}
+                    {t("page./home.timeline.description", "Path to where I am today")}
                 </p>
             </RevealUp>
             <div className={styles["grid"]}>
                 <span className={styles["line"]} />
-                {(t("timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
+                {(t("page./home.timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
                     const isEven: boolean = index % 2 === 0;
                     const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealLeft;
 
@@ -34,7 +33,7 @@ const Timeline: FunctionComponent = (): ReactElement => {
                                 <span className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
                                     <p className={styles["date"]}>
-                                        <FontAwesomeIcon icon={faClock} /> {event.date}
+                                        <FaClock className="icon" /> {event.date}
                                     </p>
                                     <h3>
                                         {event.title}

@@ -17,10 +17,13 @@
 .content {
     padding: 20px;
     border-radius: 5px;
+    border-radius: 25px;
+    background-color: var(--surface-10);
 }
 
 .date {
-    color: var(--text-50)
+    font-size: 16px;
+    color: var(--text-50);
 }
 
 .empty {
@@ -35,17 +38,17 @@
     background-image: linear-gradient(
         to bottom, 
         var(--surface-0) 0%, 
-        var(--primary-0) 5%, 
+        var(--primary-0) 5%,
         var(--primary-0) 95%, 
         var(--surface-0) 100%
     );
 }
 
 .circle {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     top: -8px;
-    left: -26px;
+    left: -29px;
     border-radius: 50%;
     border: 2px solid var(--surface-0);
     position: absolute;
@@ -65,11 +68,11 @@
 
     .cell:nth-child(even) .circle {
         left: unset;
-        right: -22px;
+        right: -24px;
     }
 
     .cell:nth-child(odd) .circle {
-        left: -23px;
+        left: -25px;
         right: unset;
     }
 

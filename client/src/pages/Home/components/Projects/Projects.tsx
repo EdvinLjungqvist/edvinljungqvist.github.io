@@ -2,13 +2,12 @@ import React, { FunctionComponent, ReactElement, useState } from "react";
 import RevealUp from "../../../../components/animations/RevealUp";
 import { useTranslation } from "react-i18next";
 import styles from "./Projects.module.css";
-import projects from "../../../../data/projects.json";
 import { Link } from "react-router-dom";
-import RevealRight from "../../../../components/animations/RevealRight";
 import { Project } from "../../../../types/data";
 import { Category } from "./Projects.types";
+import projects from "../../../../data/projects";
 
-const INITIAL_VIEW_COUNT = 6;
+const INITIAL_VIEW_COUNT = 9;
 const ADD_VIEW_COUNT = 4;
 
 const categories: Category[] = [
@@ -43,48 +42,48 @@ const Projects: FunctionComponent = (): ReactElement => {
     };
 
     return (
-        <section id="projects" className="container large-spacing full-width">
-            <RevealUp className="container small-spacing center-content">
+        <section id="projects" className="container large-spacing">
+            <RevealUp className="container small-spacing center-content wide-width">
                 <h2>
-                    {t("projects.title", "Projects")}
+                    {t("page./home.projects.title", "Projects")}
                 </h2>
                 <p>
-                    {t("projects.description", "Here are some of my projects")}
+                    {t("page./home.projects.description", "Here are some of my projects")}
                 </p>
             </RevealUp>
-            <div className="container normal-spacing">
-                <RevealRight className="container small-spacing">
+            <div className="container large-spacing">
+                <RevealUp className="container small-spacing wide-width">
                     <h3>
-                        {t("projects.categories.title", "Choose category")}
+                        {t("page./home.projects.categories.title", "Choose category")}
                     </h3>
                     <div className={styles["categories"]}>
                         {categories.map(({ name, count }) => (
                             <button
                                 key={name}
                                 onClick={() => toggleCategory(name)}
-                                className={selectedCategory === name ? styles["active"] : ""}
+                                className={`animated ${selectedCategory === name ? styles["active"] : ""}`}
                             >
-                                {t(`projects.categories.list.${name}`, name.charAt(0).toUpperCase() + name.slice(1))} ({count})
+                                {t(`page./home.projects.categories.list.${name}`, name.charAt(0).toUpperCase() + name.slice(1))} ({count})
                             </button>
                         ))}
                     </div>
-                </RevealRight>
-                <div className={styles["grid"]}>
+                </RevealUp>
+                <div className={`${styles["grid"]} full-width`}>
                     {viewedProjects.map((project: Project) => (
-                        <Link key={project.key} to={project.link} target="_blank">
+                        <Link key={project.key} to={project.link}>
                             <RevealUp className={styles["cell"]}>
                                 <img
-                                    src={require(`../../../../assets/images/projects/${project.image}`)}
+                                    src={`/images/projects/${project.image}`}
                                     className={styles["image"]}
                                     alt={`Project ${project.key}`}
                                     loading="lazy"
                                 />
                                 <div className={`${styles["content"]} container small-spacing`}>
                                     <h3 className={styles["title"]}>
-                                        {t(`projects.gallery.${project.key}.title`, "Title")}
+                                        {t(`page./home.projects.gallery.${project.key}.title`, "Title")}
                                     </h3>
                                     <p className={styles["description"]}>
-                                        {t(`projects.gallery.${project.key}.description`, "Description")}
+                                        {t(`page./home.projects.gallery.${project.key}.description`, "Description")}
                                     </p>
                                     <div className={styles["languages"]}>
                                         {project.technologies.map((language: string, index: number) => (
@@ -99,9 +98,9 @@ const Projects: FunctionComponent = (): ReactElement => {
                     ))}
                 </div>
                 {viewedProjects.length < filteredProjects.length && (
-                    <RevealUp className="container">
-                        <button className={styles["button"]} onClick={showMore}>
-                            {t("projects.button", { count: Math.min(ADD_VIEW_COUNT, filteredProjects.length - viewedProjects.length), defaultValue: "Show more" })}
+                    <RevealUp className="container wide-width">
+                        <button onClick={showMore} className="animated">
+                            {t("page./home.projects.button", { count: Math.min(ADD_VIEW_COUNT, filteredProjects.length - viewedProjects.length), defaultValue: "Show more" })}
                         </button>
                     </RevealUp>
                 )}

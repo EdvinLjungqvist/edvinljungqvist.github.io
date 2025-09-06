@@ -16,7 +16,7 @@
     width: 35px;
     height: 35px;
     background: none;
-    color: var(--text-30);
+    color: var(--text-20);
 }
 
 .close:hover {

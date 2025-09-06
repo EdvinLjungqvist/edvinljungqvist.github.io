@@ -1,23 +1,21 @@
 import React, { FunctionComponent, ReactElement } from "react";
-import { Helmet } from "react-helmet-async";
 import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Timeline } from "./components/Timeline";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { ScrollIndicator } from "../../components/ScrollIndicator";
-import { useData } from "../../hooks/DataProvider";
+import { useTranslation } from "react-i18next";
+import me from "../../data/me";
 
 const Home: FunctionComponent = (): ReactElement => {
-    const { me } = useData();
+    const { t } = useTranslation();
 
     return (
         <>
-            <Helmet>
-                <title>
-                    {me.name} | Portfolio
-                </title>
-            </Helmet>
+            <title>
+                {t("page./home._title", { name: me.name })}
+            </title>
             <About />
             <Skills />
             <Timeline />

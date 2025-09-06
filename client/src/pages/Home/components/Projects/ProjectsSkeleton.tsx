@@ -4,20 +4,20 @@ import Skeleton from "../../../../components/Skeleton";
 
 const ProjectsSkeleton: FunctionComponent = (): ReactElement => {
     return (
-        <section className="container large-spacing full-width">
-            <div className="container small-spacing center-content minimized-width">
+        <section className="container large-spacing">
+            <div className="container small-spacing center-content compact-width">
                 <Skeleton type="title" />
                 <Skeleton type="description" />
             </div>
             <div className="container normal-spacing">
-                <div className="container small-spacing">
+                <div className="container small-spacing wide-width">
                     <Skeleton type="title" />
                     <div className={styles["categories"]}>
                         <Skeleton type="button" count={4} />
                     </div>
                 </div>
-                <div className={styles["grid"]}>
-                    <Skeleton type="image" count={6} />
+                <div className={`${styles["grid"]} full-width`}>
+                    <Skeleton type="image" count={9} />
                 </div>
             </div>
         </section>
