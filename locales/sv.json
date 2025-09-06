@@ -1,0 +1,167 @@
+{
+    "common": {
+        "locale": "🇸🇪 Svenska",
+        "layout": {
+            "header": {
+                "back": "Tillbaka",
+                "home": "Hem",
+                "projects": "Projekt"
+            }
+        },
+        "cookieConsent": {
+            "title": "Kakor",
+            "description": "Nödvändiga kakor (cookies) används för att förbättra din upplevelse.",
+            "button": "Okej"
+        }
+    },
+    "page": {
+        "/home": {
+            "_title": "Hem | {{name}}",
+            "about": {
+                "location": "Stockholm, Sverige",
+                "description": "Jag är en {{age}}-årig fullstackutvecklare med {{experience}} års erfarenhet. Jag gillar att bygga välstrukturerade, effektiva och användarvänliga applikationer."
+            },
+            "skills": {
+                "title": "Vad jag arbetar med",
+                "description": "Dessa teknologier specialiserar jag mig på"
+            },
+            "timeline": {
+                "title": "Min resa",
+                "description": "Vägen till där jag är idag",
+                "events": [
+                    {
+                        "date": "2018-2021",
+                        "title": "Lorem ipsum",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "date": "2021-2024",
+                        "title": "Lorem ipsum",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "date": "2024-2025",
+                        "title": "Lorem ipsum",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ]
+            },
+            "projects": {
+                "title": "Mina projekt",
+                "description": "Här är några av mina favoritprojekt",
+                "categories": {
+                    "title": "Välj kategori",
+                    "list": {
+                        "all": "Alla",
+                        "minecraft": "Minecraft",
+                        "websites": "Hemsidor",
+                        "games": "Spel"
+                    }
+                },
+                "gallery": {
+                    "90gqopen": {
+                        "title": "90gQopen webbplats",
+                        "description": "En webbplats för Minecraft-servern 90gQopen"
+                    },
+                    "ragnarok": {
+                        "title": "Ragnarök webbplats",
+                        "description": "En webbplats för Minecraft-servern Ragnarök"
+                    },
+                    "portfolio": {
+                        "title": "Portfolio webbplats",
+                        "description": "A webbplats för min portfolio"
+                    },
+                    "humanPerformanceTester": {
+                        "title": "Human Performance Tester",
+                        "description": "En webbplats som mäter prestation"
+                    },
+                    "magnetism": {
+                        "title": "Magnetism",
+                        "description": "En 2D äventyrsnmapp i Vanilla Minecraft"
+                    },
+                    "othello": {
+                        "title": "Othello",
+                        "description": "Ett Othello-spel med AI och anpassningsbart rutnät"
+                    },
+                    "quizGame": {
+                        "title": "Quizspel",
+                        "description": "Ett flerspelar-quizspel"
+                    },
+                    "balloonBlasters": {
+                        "title": "Balloon Blasters",
+                        "description": "Mitt första minispel skapat i Vanilla Minecraft"
+                    },
+                    "salmonSays": {
+                        "title": "Salmon Says",
+                        "description": "Ett minispel skapat i Vanilla Minecraft"
+                    }
+                },
+                "button": "Visa {{count}} till"
+            },
+            "contact": {
+                "title": "Låt oss samarbeta",
+                "description": "Tveka inte att höra av dig",
+                "form": {
+                    "name": "Namn",
+                    "message": "Meddelande",
+                    "send": "Skicka"
+                }
+            }
+        },
+        "/project/*": {
+            "title": "Letar du efter mer?",
+            "description": "Det här är inte det enda projektet jag har arbetat med! Under åren har jag utforskat en mängd olika teknologier och byggt flera intressanta applikationer, alla med sina egna unika utmaningar och lösningar.",
+            "button": "Se alla projekt"
+        },
+        "/project/magnetism": {
+            "_title": "Magnetism | {{name}}",
+            "info": {
+                "title": "Magnetism",
+                "description": "Spelet är tillgängligt (så länge vi håller det uppdaterat) som en Realm-äventyrskarta för alla som äger en Realm på Minecraft Java Edition.",
+                "credits": {
+                    "title": "Skapare",
+                    "projectLeadAndCode": "Projektledare & Kod",
+                    "code": "Kod",
+                    "artAndDesign": "Grafik & Design"
+                },
+                "article": {
+                    "button": "Läs hela artikeln"
+                }
+            },
+            "structure": {
+                "title": "Hur det är uppbyggt",
+                "menu": {
+                    "title": "Meny",
+                    "description": "Här kan du välja ett pussel och se skapare"
+                },
+                "dungeons": {
+                    "title": "Fängelsehålorna",
+                    "description": "Du lär dig att skjuta lådor till deras tilldelade platser"
+                },
+                "catacombs": {
+                    "title": "Katakomberna",
+                    "description": "Magnetiska egenskaper läggs till på vissa objekt"
+                },
+                "caverns": {
+                    "title": "Grottorna",
+                    "description": "En magnetpolaritetsväxlare introduceras"
+                },
+                "volcano": {
+                    "title": "Vulkanen",
+                    "description": "Sätter de färdigheter du har utvecklat på prov"
+                }
+            },
+            "solution": {
+                "title": "Visa lösning",
+                "description": "Om du fastnar på ett pussel kan du klicka på \"Show Solution\"-knappen. Varje pussel lagrar sin lösning som en array av siffror, där varje siffra representerar ett drag. Till exempel motsvarar <b>[0, 1, 2, 3]</b> dragen <b>upp</b>, <b>ner</b>, <b>vänster</b> och <b>höger</b>. Den verkliga utmaningen är dock inte bara att veta vilka drag du ska göra – utan att lista ut rätt timing för varje drag."
+            }
+        },
+        "/project/90gqopen-website": {
+            "_title": "90gQopen hemsida | {{name}}",
+            "title": "90gQopen hemsida",
+            "description": "Detta är webbplatsen för en av Sveriges största Minecraft-servrar, kallad 90gQopen. Webbplatsen ger spelare aktuell information om servern, evenemang och gemenskapsresurser. Webbplatsen integreras även med serverns API:er för att visa live-statistik och erbjuder en plattform där spelare kan ansluta och dela sina upplevelser.",
+            "technologies": "Huvudsakliga teknologier",
+            "button": "Besök webbplats"
+        }
+    }
+}

@@ -1,26 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f30b3f6d.css",
-    "main.js": "/static/js/main.abc0514c.js",
-    "static/js/38.09cfd88f.chunk.js": "/static/js/38.09cfd88f.chunk.js",
-    "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
-    "static/media/ragnarok.png": "/static/media/ragnarok.72f16c9c884e1d4f4f28.png",
-    "static/media/salmon-says.png": "/static/media/salmon-says.4aeab370d700034ff1fc.png",
-    "static/media/me.png": "/static/media/me.ce6eeae9db91f41cac77.png",
-    "static/media/balloon-blasters.png": "/static/media/balloon-blasters.11963130cde3a62e4eaf.png",
-    "static/media/magnetism.png": "/static/media/magnetism.01a28685bb2575fd4fac.png",
-    "static/media/portfolio.png": "/static/media/portfolio.f02c6344c71dfe355db0.png",
-    "static/media/magnetism_old.png": "/static/media/magnetism_old.d9e1eeed5289cf0f7f9b.png",
-    "static/media/human-performance-tester.png": "/static/media/human-performance-tester.3551b7245da8f8230628.png",
-    "static/media/othello.png": "/static/media/othello.195e78d56f90c9181e6f.png",
-    "static/media/quiz-game.png": "/static/media/quiz-game.ecd4e6a62ade883c2c43.png",
+    "main.css": "/static/css/main.69d7cb2e.css",
+    "main.js": "/static/js/main.2d14ae8d.js",
+    "static/js/38.9a1baf1b.chunk.js": "/static/js/38.9a1baf1b.chunk.js",
     "index.html": "/index.html",
-    "main.f30b3f6d.css.map": "/static/css/main.f30b3f6d.css.map",
-    "main.abc0514c.js.map": "/static/js/main.abc0514c.js.map",
-    "38.09cfd88f.chunk.js.map": "/static/js/38.09cfd88f.chunk.js.map"
+    "main.69d7cb2e.css.map": "/static/css/main.69d7cb2e.css.map",
+    "main.2d14ae8d.js.map": "/static/js/main.2d14ae8d.js.map",
+    "38.9a1baf1b.chunk.js.map": "/static/js/38.9a1baf1b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f30b3f6d.css",
-    "static/js/main.abc0514c.js"
+    "static/css/main.69d7cb2e.css",
+    "static/js/main.2d14ae8d.js"
   ]
 }

@@ -1,0 +1,167 @@
+{
+    "common": {
+        "locale": "🇺🇸 English",
+        "layout": {
+            "header": {
+                "back": "Back",
+                "home": "Home",
+                "projects": "Projects"
+            }
+        },
+        "cookieConsent": {
+            "title": "Cookies",
+            "description": "Necessary cookies is used to improve your experience.",
+            "button": "Okay"
+        }
+    },
+    "page": {
+        "/home": {
+            "_title": "Home | {{name}}",
+            "about": {
+                "location": "Stockholm, Sweden",
+                "description": "I am a {{age}}-year-old full-stack developer with {{experience}} years of experience. I enjoy building clean, efficient, and user-friendly applications."
+            },
+            "skills": {
+                "title": "What I work with",
+                "description": "These are the technologies I specialize in"
+            },
+            "timeline": {
+                "title": "My journey",
+                "description": "Path to where I am today",
+                "events": [
+                    {
+                        "date": "2018-2021",
+                        "title": "Lorem ipsum",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "date": "2021-2024",
+                        "title": "Lorem ipsum",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "date": "2024-2025",
+                        "title": "Lorem ipsum",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ]
+            },
+            "projects": {
+                "title": "My projects",
+                "description": "Here are some of my favorite projects",
+                "categories": {
+                    "title": "Choose category",
+                    "list": {
+                        "all": "All",
+                        "minecraft": "Minecraft",
+                        "websites": "Websites",
+                        "games": "Games"
+                    }
+                },
+                "gallery": {
+                    "90gqopen": {
+                        "title": "90gQopen website",
+                        "description": "A website for the Minecraft server 90gQopen"
+                    },
+                    "ragnarok": {
+                        "title": "Ragnarök website",
+                        "description": "A website for the Minecraft server Ragnarök"
+                    },
+                    "portfolio": {
+                        "title": "Portfolio website",
+                        "description": "A website for my portfolio"
+                    },
+                    "humanPerformanceTester": {
+                        "title": "Human Performance Tester",
+                        "description": "A website that measures performance."
+                    },
+                    "magnetism": {
+                        "title": "Magnetism",
+                        "description": "A 2D adventure map in vanilla Minecraft"
+                    },
+                    "othello": {
+                        "title": "Othello",
+                        "description": "An Othello game with AI and customizable grid"
+                    },
+                    "quizGame": {
+                        "title": "Quiz game",
+                        "description": "A multiplayer quiz game"
+                    },
+                    "balloonBlasters": {
+                        "title": "Balloon Blasters",
+                        "description": "My first minigame created in vanilla Minecraft"
+                    },
+                    "salmonSays": {
+                        "title": "Salmon Says",
+                        "description": "A minigame created in vanilla Minecraft"
+                    }
+                },
+                "button": "Show {{count}} more"
+            },
+            "contact": {
+                "title": "Let's collaborate",
+                "description": "Feel free to reach out",
+                "form": {
+                    "name": "Name",
+                    "message": "Message",
+                    "send": "Send"
+                }
+            }
+        },
+        "/project/*": {
+            "title": "Looking for more?",
+            "description": "This is not the only project I have been working on! Over the years, I have explored a variety of technologies and built several interesting applications, each with its own unique challenges and solutions.",
+            "button": "View all projects"
+        },
+        "/project/magnetism": {
+            "_title": "Magnetism | {{name}}",
+            "info": {
+                "title": "Magnetism",
+                "description": "The game is available (as long as we keep it up-to-date) as a Realm adventure map for anyone who owns a Realm on Minecraft Java Edition.",
+                "credits": {
+                    "title": "Credits",
+                    "projectLeadAndCode": "Project Lead & Code",
+                    "code": "Code",
+                    "artAndDesign": "Art & Design"
+                },
+                "article": {
+                    "button": "Read the whole article"
+                }
+            },
+            "structure": {
+                "title": "How it's structured",
+                "menu": {
+                    "title": "Menu",
+                    "description": "Here you can select a puzzle and view creators"
+                },
+                "dungeons": {
+                    "title": "The Dungeons",
+                    "description": "You learn how to push boxes into there assigned places"
+                },
+                "catacombs": {
+                    "title": "The Catacombs",
+                    "description": "Magnetic properties are added to some objects"
+                },
+                "caverns": {
+                    "title": "The Caverns",
+                    "description": "A magnet polarity switcher is introduced"
+                },
+                "volcano": {
+                    "title": "The Volcano",
+                    "description": "Puts the skills you have developed to the test"
+                }
+            },
+            "solution": {
+                "title": "Show solution",
+                "description": "If you get stuck on a puzzle, you can click the \"Show Solution\" button. Each puzzle stores its solution as an array of numbers, where each number represents a move. For example, <b>[0, 1, 2, 3]</b> corresponds to <b>up</b>, <b>down</b>, <b>left</b>, and <b>right</b>. The real challenge, however, isn't just knowing which moves to make - it's figuring out the right timing for each move."
+            }
+        },
+        "/project/90gqopen-website": {
+            "_title": "90gQopen website | {{name}}",
+            "title": "90gQopen website",
+            "description": "This is the website made for one of the largest Swedish Minecraft servers, called 90gQopen. The site provides players with up-to-date information about the server, events, and community resources. The website also integrates with server APIs to display live statistics and offers a platform for players to connect and share their experiences.",
+            "technologies": "Main technologies",
+            "button": "Visit website"
+        }
+    }
+}
