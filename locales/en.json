@@ -5,7 +5,10 @@
             "header": {
                 "back": "Back",
                 "home": "Home",
-                "projects": "Projects"
+                "projects": "Projects",
+                "magnetism": "Magnetism",
+                "90gqopenWebsite": "90gQopen website",
+                "othello": "Othello"
             }
         },
         "cookieConsent": {
@@ -162,6 +165,9 @@
             "description": "This is the website made for one of the largest Swedish Minecraft servers, called 90gQopen. The site provides players with up-to-date information about the server, events, and community resources. The website also integrates with server APIs to display live statistics and offers a platform for players to connect and share their experiences.",
             "technologies": "Main technologies",
             "button": "Visit website"
+        },
+        "/project/othello": {
+            "_title": "Othello | {{name}}"
         }
     }
 }
