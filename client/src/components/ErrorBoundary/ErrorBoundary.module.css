@@ -9,7 +9,7 @@
 
 .error {
     border-radius: var(--border-radius);
-    padding: 10px 20px;
+    padding: 25px;
     background-color: var(--error-background);
 }
 

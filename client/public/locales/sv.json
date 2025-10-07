@@ -1,6 +1,5 @@
 {
     "common": {
-        "locale": "🇸🇪 Svenska",
         "layout": {
             "header": {
                 "back": "Tillbaka",
@@ -33,16 +32,19 @@
                 "description": "Vägen till där jag är idag",
                 "events": [
                     {
+                        "key": "1",
                         "date": "2018-2021",
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     },
                     {
+                        "key": "2",
                         "date": "2021-2024",
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     },
                     {
+                        "key": "3",
                         "date": "2024-2025",
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -106,6 +108,7 @@
                 "description": "Tveka inte att höra av dig",
                 "form": {
                     "name": "Namn",
+                    "email": "Email",
                     "message": "Meddelande",
                     "send": "Skicka"
                 }

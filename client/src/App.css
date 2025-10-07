@@ -48,7 +48,7 @@
     position: absolute;
     inset: 0;
     background-color: var(--primary-0);
-    opacity: 0.05;
+    opacity: 0.075;
     pointer-events: none;
 }
 

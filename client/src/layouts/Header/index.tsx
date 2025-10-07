@@ -1,4 +1,4 @@
-import React, { act, FunctionComponent, ReactElement, useEffect, useRef, useState } from "react";
+import React, { FunctionComponent, ReactElement, useEffect, useRef, useState } from "react";
 import styles from "./Header.module.css";
 import me from "../../data/me";
 import { NavLink } from "react-router-dom";
@@ -9,7 +9,16 @@ import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useTheme } from "../../contexts/Theme";
 import { FaBars, FaCaretDown, FaCaretLeft, FaCaretRight, FaCaretUp, FaMoon, FaSun, FaXmark } from "react-icons/fa6";
 
-const LOCALES = ["sv", "en"]
+const LOCALES = [
+    {
+        key: "sv",
+        label: "🇸🇪 Svenska"
+    },
+    {
+        key: "en",
+        label: "🇺🇸 English"
+    }
+]
 
 const Header: FunctionComponent = (): ReactElement => {
     const { t, i18n } = useTranslation();
@@ -36,8 +45,6 @@ const Header: FunctionComponent = (): ReactElement => {
         };
     }, []);
 
-    console.log("Active Dropdown", activeDropdown)
-    
     return (
         <header
             ref={ref}
@@ -90,7 +97,7 @@ const Header: FunctionComponent = (): ReactElement => {
                             onClick={() => clickDropdown("locales")}
                             onMouseOver={() => hoverDropdown("locales")}
                         >
-                            {t("common.locale", { locale: i18n.language })} {desktop ? (activeDropdown === "locales" ? <FaCaretUp className="icon" /> : <FaCaretDown className="icon" /> ) : <FaCaretRight className="icon" />}
+                            {(LOCALES.find(locale => locale.key === i18n.language) || LOCALES[0]).label} {desktop ? (activeDropdown === "locales" ? <FaCaretUp className="icon" /> : <FaCaretDown className="icon" /> ) : <FaCaretRight className="icon" />}
                         </button>
                         <ul className={`${styles["dropdown"]} ${activeDropdown === "locales" ? styles["active"] : ""}`}>
                             <li className={`${styles["item"]} ${styles["back"]}`}>
@@ -101,10 +108,10 @@ const Header: FunctionComponent = (): ReactElement => {
                             {LOCALES.map((locale, index) => (
                                 <li key={index} className={styles["item"]}>
                                     <button className={styles["button"]} onClick={() => {
-                                        setLocale(locale);
+                                        setLocale(locale.key);
                                         clickDropdown("locales");
                                     }}>
-                                        {t("common.locale", { lng: locale })}
+                                        {locale.label}
                                     </button>
                                 </li>
                             ))}

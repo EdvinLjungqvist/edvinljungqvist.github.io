@@ -1,15 +1,7 @@
 .container {
     position: relative;
     padding: 50px 0;
-    margin: 150px 0;
-}
-
-.title {
-    color: var(--primary-0);
-    background-image: linear-gradient(45deg, var(--primary-0), var(--secondary-0) 50%, var(--primary-0) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 200px 0;
 }
 
 .grid {
@@ -27,14 +19,16 @@
 .waves {
     min-width: 1920px;
     position: absolute;
-    opacity: 0.05;
+    opacity: 0.075;
     z-index: -1;
 }
 
 .top {
     bottom: 100%;
+    filter: drop-shadow(0 -25px 0 color-mix(in srgb, var(--primary-0) 50%, transparent 50%));
 }
 
 .bottom {
     top: 100%;
+    filter: drop-shadow(0 25px 0 color-mix(in srgb, var(--primary-0) 50%, transparent 50%));
 }

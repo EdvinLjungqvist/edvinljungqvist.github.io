@@ -53,6 +53,12 @@
     border: 2px solid var(--surface-0);
     position: absolute;
     background-color: var(--primary-0);
+    transition: scale .2s;
+    cursor: pointer;
+}
+
+.circle:hover {
+    scale: 1.5;
 }
 
 @media (min-width: 768px) {

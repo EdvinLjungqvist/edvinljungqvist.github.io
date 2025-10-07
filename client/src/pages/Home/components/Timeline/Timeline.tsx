@@ -6,6 +6,7 @@ import RevealRight from "../../../../components/animations/RevealRight";
 import styles from "./Timeline.module.css";
 import { EventType } from "./Timeline.types";
 import { FaClock } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Timeline: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
@@ -27,10 +28,10 @@ const Timeline: FunctionComponent = (): ReactElement => {
                     const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealLeft;
 
                     return (
-                        <Fragment key={index}>
+                        <Fragment key={event.key}>
                             {isEven && <div className={styles["empty"]} />}
-                            <div className={`${styles["cell"]}`}>
-                                <span className={styles["circle"]} />
+                            <div id={`timeline-${event.key}`} className={`${styles["cell"]}`}>
+                                <Link to={`#timeline-${event.key}`} className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
                                     <p className={styles["date"]}>
                                         <FaClock className="icon" /> {event.date}

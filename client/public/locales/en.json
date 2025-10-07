@@ -1,6 +1,5 @@
 {
     "common": {
-        "locale": "🇺🇸 English",
         "layout": {
             "header": {
                 "back": "Back",
@@ -33,16 +32,19 @@
                 "description": "Path to where I am today",
                 "events": [
                     {
+                        "key": "1",
                         "date": "2018-2021",
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     },
                     {
+                        "key": "2",
                         "date": "2021-2024",
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     },
                     {
+                        "key": "3",
                         "date": "2024-2025",
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -106,6 +108,7 @@
                 "description": "Feel free to reach out",
                 "form": {
                     "name": "Name",
+                    "email": "Email",
                     "message": "Message",
                     "send": "Send"
                 }
