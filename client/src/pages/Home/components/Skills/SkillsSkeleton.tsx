@@ -9,7 +9,7 @@ const SkillsSkeleton: FunctionComponent = (): ReactElement => {
                 <path fill="var(--primary-0)" fillOpacity="1" d="M0,80L48,90.7C96,101.5,192,122.5,288,120C384,117.5,480,90.5,576,90.7C672,91,768,117.5,864,114.7C960,112,1056,80,1152,69.3C1248,58.5,1344,69.5,1392,74.7L1440,80L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z" />
             </svg>
             <div className="container normal-spacing wide-width">
-                <div>
+                <div className="container small-spacing">
                     <Skeleton type="title" />
                 </div>
                 <div className={styles["grid"]}>

@@ -11,7 +11,7 @@ const RevealLeft: FunctionComponent<RevealProps> = ({ children, className }): Re
             ref={ref}
             initial={{ opacity: 0, x: 75 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className={className}
         >
             {children}

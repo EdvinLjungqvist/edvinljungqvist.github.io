@@ -11,15 +11,15 @@ export default [
             id: "projects",
             list: [
                 {
-                    label: "Magnetism",
+                    translation: "common.layout.header.magnetism",
                     path: "/project/magnetism"
                 },
                 {
-                    label: "90gQopens website",
+                    translation: "common.layout.header.90gqopenWebsite",
                     path: "/project/90gqopen-website"
                 },
                 {
-                    label: "Othello",
+                    translation: "common.layout.header.othello",
                     path: "/project/othello"
                 }
             ]

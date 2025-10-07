@@ -38,6 +38,10 @@
     display: flex;
     flex-direction: column;
     background-color: var(--surface-0);
+
+    transition: .2s;
+    opacity: 0;
+    transform: translateX(30px);
 }
 
 .list {
@@ -51,6 +55,13 @@
 .list.active,
 .dropdown.active {
     visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.list:has(.dropdown.active) {
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 .item {
@@ -108,11 +119,13 @@
     .list {
         width: fit-content;
         height: auto;
-        padding: 0;
-        visibility: visible;
         flex-direction: row;
         position: static;
         background: none;
+        padding: 0;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
     }
 
     .dropdown {
@@ -124,6 +137,13 @@
         border-radius: calc(var(--border-radius) + 5px);
         border: 1px solid var(--surface-20);
         box-shadow: var(--box-shadow);
+        transform: translate(0, -15px);
+        scale: 0.9;
+    }
+
+    .dropdown.active {
+        transform: translate(0, 0);
+        scale: 1;
     }
 
     .dropdown .item:not(:last-child) {
@@ -148,7 +168,7 @@
         padding: 10px 20px;
         background: none;
     }
-    
+
     .dropdown .item:not(:last-child) .link,
     .dropdown .item:not(:last-child) .button {
         margin-bottom: 5px;
@@ -163,7 +183,7 @@
     .button.active,
     .link:hover,
     .button:hover {
-        background-color: var(--surface-20);
+        background-color: var(--surface-10);
     }
 
     .hamburger {

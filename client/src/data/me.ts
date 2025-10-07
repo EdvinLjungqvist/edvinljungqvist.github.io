@@ -2,7 +2,6 @@ import { Me } from "../types/data";
 
 export default {
     name: "Edvin Ljungqvist",
-    username: "Ljungan",
     age: 19,
     experience: 6,
     socials: {

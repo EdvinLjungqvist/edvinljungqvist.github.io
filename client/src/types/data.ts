@@ -1,6 +1,5 @@
 export type Me = {
     name: string;
-    username: string;
     age: number;
     experience: number;
     socials: {

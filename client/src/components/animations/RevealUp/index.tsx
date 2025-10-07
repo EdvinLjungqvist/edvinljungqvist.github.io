@@ -11,7 +11,7 @@ const RevealUp: FunctionComponent<RevealProps> = ({ children, className }): Reac
             ref={ref}
             initial={{ opacity: 0, y: 75 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className={className}
         >
             {children}

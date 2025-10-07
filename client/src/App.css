@@ -137,7 +137,7 @@
     span:has(input[type=submit]).animated:hover::after,
     button.animated:focus::after,
     .button.animated:focus::after,
-    span:has(input[type=submit]).animated:focus::after {
+    span:has(input[type=submit]:focus).animated::after {
         opacity: 1;
     }
 

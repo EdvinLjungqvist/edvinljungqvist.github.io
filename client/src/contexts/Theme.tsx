@@ -24,12 +24,16 @@ type ThemeProviderProps = {
 
 const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }): ReactElement => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [theme, setTheme] = useState<Theme>("dark");
+    const [theme, setTheme] = useState<Theme>(() => {
+        const storedTheme = localStorage.getItem("theme") as Theme | null;
+        return storedTheme ?? "dark";
+    });
 
     useEffect(() => {
         const urlTheme = searchParams.get("theme") as Theme | null;
-        const storedTheme = localStorage.getItem("theme") as Theme | null;
-        setTheme(urlTheme ?? storedTheme ?? "dark");
+        if (urlTheme && urlTheme !== theme) {
+            setTheme(urlTheme);
+        }
     }, [searchParams]);
 
     useEffect(() => {

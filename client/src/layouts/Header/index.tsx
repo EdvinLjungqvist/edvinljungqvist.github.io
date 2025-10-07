@@ -35,6 +35,8 @@ const Header: FunctionComponent = (): ReactElement => {
             window.removeEventListener("mousedown", handleMouseDown);
         };
     }, []);
+
+    console.log("Active Dropdown", activeDropdown)
     
     return (
         <header
