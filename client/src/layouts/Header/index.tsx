@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement, useEffect, useRef, useState } from "react";
+import React, { FunctionComponent, ReactElement, useRef, useState } from "react";
 import styles from "./Header.module.css";
 import me from "../../data/me";
 import { NavLink } from "react-router-dom";
@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useTheme } from "../../contexts/Theme";
 import { FaBars, FaCaretDown, FaCaretLeft, FaCaretRight, FaCaretUp, FaMoon, FaSun, FaXmark } from "react-icons/fa6";
+import { useClickOutside } from "../../hooks/useClickOutside";
 
 const LOCALES = [
     {
@@ -18,7 +19,7 @@ const LOCALES = [
         key: "en",
         label: "🇺🇸 English"
     }
-]
+];
 
 const Header: FunctionComponent = (): ReactElement => {
     const { t, i18n } = useTranslation();
@@ -32,18 +33,7 @@ const Header: FunctionComponent = (): ReactElement => {
     const hoverDropdown = (dropdown: DropdownType) => desktop && activeDropdown !== null && setActiveDropdown(dropdown);
     const setLocale = (language: string) => i18n.changeLanguage(language);
 
-    useEffect(() => {
-        const handleMouseDown = (event: MouseEvent) => {
-            if (ref.current && !ref.current.contains(event.target as Node)) {
-                setActiveDropdown(null);
-            }
-        };
-        window.addEventListener("mousedown", handleMouseDown);
-
-        return () => {
-            window.removeEventListener("mousedown", handleMouseDown);
-        };
-    }, []);
+    useClickOutside(ref, () => setActiveDropdown(null));
 
     return (
         <header

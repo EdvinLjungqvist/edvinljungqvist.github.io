@@ -31,9 +31,10 @@
 }
 
 .line {
-    width: 3px;
+    width: 5px;
     height: calc(100% + 100px);
     top: -50px;
+    border-radius: 5px;
     position: absolute;
     background-image: linear-gradient(
         to bottom, 
@@ -48,7 +49,7 @@
     width: 20px;
     height: 20px;
     top: -8px;
-    left: -29px;
+    left: -28px;
     border-radius: 50%;
     border: 2px solid var(--surface-0);
     position: absolute;
@@ -74,7 +75,7 @@
 
     .cell:nth-child(even) .circle {
         left: unset;
-        right: -24px;
+        right: -25px;
     }
 
     .cell:nth-child(odd) .circle {

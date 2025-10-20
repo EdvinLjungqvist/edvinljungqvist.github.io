@@ -4,8 +4,6 @@ import Main from "./layouts/Main";
 import Footer from "./layouts/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
-import CookieConsent from "./components/CookieConsent";
-
 
 const App: FunctionComponent = (): ReactElement => {
 	return (

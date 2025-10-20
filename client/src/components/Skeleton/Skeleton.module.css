@@ -1,6 +1,6 @@
 .skeleton {
     border-radius: var(--border-radius);
-    animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.2s infinite ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;

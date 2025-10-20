@@ -146,7 +146,7 @@
         border-radius: calc(var(--border-radius) + 5px);
         border: 1px solid var(--surface-20);
         box-shadow: var(--box-shadow);
-        scale: 0.9;
+        scale: 0.8;
     }
 
     .dropdown.active {
