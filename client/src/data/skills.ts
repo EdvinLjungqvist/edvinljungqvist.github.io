@@ -42,6 +42,7 @@ export default [
         language: "CSS",
         icon: "faCss3Alt",
         technologies: [
+            "CSS Modules",
             "Tailwind",
             "Bootstrap"
         ]

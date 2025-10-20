@@ -24,3 +24,9 @@ export type Skill = {
     icon: string;
     technologies: string[];
 };
+
+export type Event = {
+    id: string;
+    key: string;
+    date: string;
+}

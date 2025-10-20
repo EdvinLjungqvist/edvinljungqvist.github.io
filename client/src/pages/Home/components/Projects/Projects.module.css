@@ -71,6 +71,7 @@
 .categories button.active {
     background: var(--primary-0);
     color: var(--gray-0);
+    border: 1px solid transparent;
 }
 
 @media (min-width: 768px) {

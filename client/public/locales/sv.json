@@ -30,26 +30,20 @@
             "timeline": {
                 "title": "Min resa",
                 "description": "Vägen till där jag är idag",
-                "events": [
-                    {
-                        "key": "1",
-                        "date": "2018-2021",
+                "list": {
+                    "key1": {
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     },
-                    {
-                        "key": "2",
-                        "date": "2021-2024",
+                    "key2": {
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     },
-                    {
-                        "key": "3",
-                        "date": "2024-2025",
+                    "key3": {
                         "title": "Lorem ipsum",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     }
-                ]
+                }
             },
             "projects": {
                 "title": "Mina projekt",
@@ -67,10 +61,6 @@
                     "90gqopen": {
                         "title": "90gQopen webbplats",
                         "description": "En webbplats för Minecraft-servern 90gQopen"
-                    },
-                    "ragnarok": {
-                        "title": "Ragnarök webbplats",
-                        "description": "En webbplats för Minecraft-servern Ragnarök"
                     },
                     "portfolio": {
                         "title": "Portfolio webbplats",

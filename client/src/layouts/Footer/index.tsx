@@ -6,7 +6,7 @@ import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer: FunctionComponent = (): ReactElement => {
     return (
-        <footer className="overlay-primary">
+        <footer>
             <div className={styles["container"]}>
                 <p>
                     {me.name} © {new Date().getFullYear()}

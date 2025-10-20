@@ -144,8 +144,6 @@
         width: max-content;
         background-color: var(--surface-10);
         border-radius: calc(var(--border-radius) + 5px);
-        border: 1px solid var(--surface-20);
-        box-shadow: var(--box-shadow);
         scale: 0.8;
     }
 

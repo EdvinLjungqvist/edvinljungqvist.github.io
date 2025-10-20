@@ -4,9 +4,9 @@ import RevealUp from "../../../../components/animations/RevealUp";
 import RevealLeft from "../../../../components/animations/RevealLeft";
 import RevealRight from "../../../../components/animations/RevealRight";
 import styles from "./Timeline.module.css";
-import { EventType } from "./Timeline.types";
 import { FaClock } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import events from "../../../../data/events";
 
 const Timeline: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
@@ -23,24 +23,24 @@ const Timeline: FunctionComponent = (): ReactElement => {
             </RevealUp>
             <div className={styles["grid"]}>
                 <span className={styles["line"]} />
-                {(t("page./home.timeline.events", { returnObjects: true }) as EventType[]).map((event, index) => {
+                {events.map((event, index) => {
                     const isEven: boolean = index % 2 === 0;
                     const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealLeft;
 
                     return (
                         <Fragment key={event.key}>
                             {isEven && <div className={styles["empty"]} />}
-                            <div id={`timeline-${event.key}`} className={`${styles["cell"]}`}>
-                                <Link to={`#timeline-${event.key}`} className={styles["circle"]} />
+                            <div id={`timeline-${event.id}`} className={`${styles["cell"]}`}>
+                                <Link to={`#timeline-${event.id}`} className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
                                     <p className={styles["date"]}>
                                         <FaClock className="icon" /> {event.date}
                                     </p>
                                     <h3>
-                                        {event.title}
+                                        {t(`page./home.timeline.list.${event.key}.title`, "Title")}
                                     </h3>
                                     <p>
-                                        {event.description}
+                                        {t(`page./home.timeline.list.${event.key}.description`, "Description")}
                                     </p>
                                 </Animation>
                             </div>
