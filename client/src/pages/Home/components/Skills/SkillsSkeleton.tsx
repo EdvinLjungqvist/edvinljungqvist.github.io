@@ -11,6 +11,7 @@ const SkillsSkeleton: FunctionComponent = (): ReactElement => {
             <div className="container normal-spacing wide-width">
                 <div className="container small-spacing">
                     <Skeleton type="title" />
+                    <Skeleton type="description" />
                 </div>
                 <div className={styles["grid"]}>
                     {[...Array(6)].map((_, index) => (

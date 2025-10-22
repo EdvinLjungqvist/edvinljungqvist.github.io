@@ -5,6 +5,7 @@ import styles from "./About.module.css";
 import { Link } from "react-router-dom";
 import me from "../../../../data/me";
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaLocationDot } from "react-icons/fa6";
+import { Tooltip } from "../../../../components/Tooltip";
 
 
 const About: FunctionComponent = (): ReactElement => {

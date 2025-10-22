@@ -35,13 +35,11 @@
     top: -50px;
     border-radius: 5px;
     position: absolute;
-    background-image: linear-gradient(
-        to bottom, 
-        var(--surface-0) 0%, 
-        var(--primary-0) 5%,
-        var(--primary-0) 95%, 
-        var(--surface-0) 100%
-    );
+    background-image: linear-gradient(to bottom,
+            var(--surface-0) 0%,
+            var(--primary-0) 5%,
+            var(--primary-0) 95%,
+            var(--surface-0) 100%);
 }
 
 .circle {
@@ -55,10 +53,6 @@
     background-color: var(--primary-0);
     transition: scale .2s;
     cursor: pointer;
-}
-
-.circle:hover {
-    scale: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -84,5 +78,9 @@
 
     .line {
         left: calc(50% - 2px)
+    }
+
+    .circle:hover {
+        scale: 1.5;
     }
 }

@@ -50,7 +50,6 @@ const Contact: FunctionComponent = (): ReactElement => {
                         <input
                             type="submit"
                             value={t("page./home.contact.form.send", "Send")}
-                            className="animated"
                         />
                     </span>
                 </form>

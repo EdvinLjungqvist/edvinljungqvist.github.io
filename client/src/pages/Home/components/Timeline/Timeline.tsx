@@ -7,9 +7,11 @@ import styles from "./Timeline.module.css";
 import { FaClock } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import events from "../../../../data/events";
+import { useMediaQuery } from "../../../../hooks/useMediaQuery";
 
 const Timeline: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
+    const desktop = useMediaQuery("(min-width: 768px)");
 
     return (
         <section id="timeline" className="container large-spacing compact-width">
@@ -25,7 +27,7 @@ const Timeline: FunctionComponent = (): ReactElement => {
                 <span className={styles["line"]} />
                 {events.map((event, index) => {
                     const isEven: boolean = index % 2 === 0;
-                    const Animation: ElementType = window.innerWidth > 768 ? (isEven ? RevealLeft : RevealRight) : RevealLeft;
+                    const Animation: ElementType = desktop ? (isEven ? RevealLeft : RevealRight) : RevealLeft;
 
                     return (
                         <Fragment key={event.key}>

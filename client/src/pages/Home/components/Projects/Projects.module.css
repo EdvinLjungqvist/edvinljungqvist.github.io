@@ -63,19 +63,11 @@
 
 .categories button {
     flex-grow: 1;
-    color: var(--text-0);
-    background: none;
-    border: 1px solid var(--surface-10);
-}
-
-.categories button:not(.active):hover {
-    background-color: var(--surface-0);
 }
 
 .categories button.active {
     background: var(--primary-0);
     color: var(--gray-0);
-    border: 1px solid transparent;
 }
 
 @media (min-width: 768px) {

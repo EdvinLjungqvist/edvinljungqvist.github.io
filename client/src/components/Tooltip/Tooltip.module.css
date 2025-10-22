@@ -4,22 +4,21 @@
 
 .tooltip {
     z-index: 999;
-    padding: 5px 10px;
+    padding: 10px;
     bottom: 100%;
     width: max-content;
     min-width: 150px;
     max-width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
-    border-radius: 5px;
+    border-radius: 20px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
-    animation: reveal-up 200ms ease-out;
+    animation: reveal-up .2s ease-out;
 }
 
 .tooltip::after {

@@ -57,13 +57,12 @@
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    color: var(--gray-0);
-    background-color: var(--primary-0);
+    color: var(--text-0);
+    background-color: var(--surface-20);
 }
 
 .button:hover {
     text-decoration: none;
-    background-color: var(--primary-10);
 }
 
 .button.small {
@@ -114,22 +113,26 @@
         content: "";
         position: absolute;
         inset: -5px;
-        border: 5px solid color-mix(in srgb, var(--primary-0) 50%, transparent 50%);
+        border: 5px solid color-mix(in srgb, var(--primary-0) 25%, transparent 75%);
         border-radius: calc(10px + 5px);
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.2s;
     }
 
-    button.animated:focus,
-    .button.animated:focus,
-    span:has(input[type=submit]).animated:focus {
+    button.animated:focus-visible,
+    .button.animated:focus-visible,
+    input[type=submit]:focus-visible {
         outline: none;
     }
 
     button.animated:hover,
     .button.animated:hover,
-    span:has(input[type=submit]).animated:hover {
+    span:has(input[type=submit]).animated:hover,
+    button.animated:focus-visible,
+    .button.animated:focus-visible,
+    span:has(input[type=submit]:focus-visible).animated {
+        color: var(--gray-0);
         background-color: var(--primary-0);
     }
 
