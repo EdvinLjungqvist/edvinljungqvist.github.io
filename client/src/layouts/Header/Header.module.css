@@ -17,6 +17,8 @@
 }
 
 .logo {
+    padding: 10px 20px;
+    border-radius: 10px;
     color: var(--text-20);
 }
 
@@ -84,7 +86,7 @@
     width: 100%;
     margin-bottom: 5px;
     padding: 20px 40px;
-    border-radius: var(--border-radius-2x);
+    border-radius: 10px;
     text-wrap: nowrap;
     justify-content: flex-start;
     display: flex;
@@ -102,7 +104,7 @@
 .button:hover {
     color: var(--text-0);
     text-decoration: none;
-    background-color: var(--surface-10);
+    background: none;
 }
 
 .icon {
@@ -116,7 +118,7 @@
 
 .icon:hover {
     color: var(--text-0);
-    background-color: var(--surface-10);
+    background: none;
 }
 
 @media (min-width: 768px) {
@@ -143,7 +145,7 @@
         top: 100%;
         width: max-content;
         background-color: var(--surface-10);
-        border-radius: calc(var(--border-radius) + 5px);
+        border-radius: calc(10px + 5px);
         scale: 0.8;
     }
 
@@ -179,18 +181,6 @@
     .dropdown .item:not(:last-child) .link,
     .dropdown .item:not(:last-child) .button {
         margin-bottom: 5px;
-    }
-
-    .dropdown .link:hover,
-    .dropdown .button:hover {
-        background-color: var(--surface-20);
-    }
-
-    .link.active,
-    .button.active,
-    .link:hover,
-    .button:hover {
-        background-color: var(--surface-10);
     }
 
     .hamburger {

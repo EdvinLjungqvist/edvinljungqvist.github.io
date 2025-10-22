@@ -54,7 +54,7 @@
 
 .button {
     padding: 10px 20px;
-    border-radius: var(--border-radius-2x);
+    border-radius: 10px;
     cursor: pointer;
     border: none;
     color: var(--gray-0);
@@ -80,7 +80,7 @@
     height: 100%;
     content: "";
     position: absolute;
-    border-radius: var(--border-radius-2x);
+    border-radius: 999px;
     background-color: var(--surface-50);
     top: 0;
     right: calc(100% + 10px);
@@ -115,7 +115,7 @@
         position: absolute;
         inset: -5px;
         border: 5px solid color-mix(in srgb, var(--primary-0) 50%, transparent 50%);
-        border-radius: var(--border-radius-2x);
+        border-radius: calc(10px + 5px);
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.2s;
@@ -136,9 +136,9 @@
     button.animated:hover::after,
     .button.animated:hover::after,
     span:has(input[type=submit]).animated:hover::after,
-    button.animated:focus::after,
-    .button.animated:focus::after,
-    span:has(input[type=submit]:focus).animated::after {
+    button.animated:focus-visible::after,
+    .button.animated:focus-visible::after,
+    span:has(input[type=submit]:focus-visible).animated::after {
         opacity: 1;
     }
 

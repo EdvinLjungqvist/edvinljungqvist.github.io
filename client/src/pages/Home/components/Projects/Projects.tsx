@@ -70,7 +70,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                 </RevealUp>
                 <div className={`${styles["grid"]} full-width`}>
                     {viewedProjects.map((project: Project) => (
-                        <Link key={project.key} to={project.link}>
+                        <Link key={project.key} to={project.link} className={styles["link"]}>
                             <RevealUp className={styles["cell"]}>
                                 <img
                                     src={`/images/projects/${project.image}`}

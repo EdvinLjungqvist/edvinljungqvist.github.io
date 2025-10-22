@@ -26,7 +26,7 @@ export type Skill = {
 };
 
 export type Event = {
-    id: string;
+    hash: string;
     key: string;
     date: string;
 }

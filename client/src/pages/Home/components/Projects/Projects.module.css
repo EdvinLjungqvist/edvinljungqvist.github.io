@@ -4,10 +4,14 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
 }
 
-.cell {
-    border-radius: var(--border-radius);
-    position: relative;
+.link {
+    border-radius: 20px;
     overflow: hidden;
+}
+
+.cell {
+    border-radius: 20px;
+    position: relative;
     box-shadow: var(--box-shadow);
 }
 
@@ -39,7 +43,7 @@
     width: fit-content;
     font-size: 16px;
     color: var(--gray-0);
-    border-radius: var(--border-radius-2x);
+    border-radius: 10px;
     background-color: var(--secondary-0);
 }
 
@@ -80,18 +84,13 @@
         bottom: -47px;
     }
 
-    a:has(.cell):focus {
-        outline: 2px solid var(--primary-0);
-        border-radius: var(--border-radius);
-    }
-
     .cell:hover .content,
-    a:has(.cell):focus .content {
+    a:has(.cell):focus-visible .content {
         bottom: 0;
     }
 
     .cell:hover .image,
-    a:has(.cell):focus .image {
+    a:has(.cell):focus-visible .image {
         transform: scale(1.2);
     }
 

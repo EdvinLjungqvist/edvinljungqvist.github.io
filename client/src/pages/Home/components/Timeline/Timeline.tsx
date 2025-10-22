@@ -30,8 +30,8 @@ const Timeline: FunctionComponent = (): ReactElement => {
                     return (
                         <Fragment key={event.key}>
                             {isEven && <div className={styles["empty"]} />}
-                            <div id={`timeline-${event.id}`} className={`${styles["cell"]}`}>
-                                <Link to={`#timeline-${event.id}`} className={styles["circle"]} />
+                            <div id={`timeline-${event.hash}`} className={`${styles["cell"]}`}>
+                                <Link to={`#timeline-${event.hash}`} className={styles["circle"]} />
                                 <Animation className={`${styles["content"]} container small-spacing`}>
                                     <p className={styles["date"]}>
                                         <FaClock className="icon" /> {event.date}

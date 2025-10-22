@@ -8,7 +8,7 @@
 }
 
 .error {
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     padding: 25px;
     background-color: var(--error-background);
 }
