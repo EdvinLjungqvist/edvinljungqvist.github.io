@@ -61,11 +61,11 @@
     gap: 10px;
 }
 
-.categories button {
+.categories-button {
     flex-grow: 1;
 }
 
-.categories button.active {
+.categories-button.active {
     background: var(--primary-0);
     color: var(--gray-0);
 }

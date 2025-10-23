@@ -58,7 +58,7 @@
     cursor: pointer;
     border: none;
     color: var(--text-0);
-    background-color: var(--surface-20);
+    background-color: var(--surface-50);
 }
 
 .button:hover {

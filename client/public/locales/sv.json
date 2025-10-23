@@ -98,7 +98,7 @@
                 "description": "Tveka inte att höra av dig",
                 "form": {
                     "name": "Namn",
-                    "email": "Email",
+                    "email": "E-post",
                     "message": "Meddelande",
                     "send": "Skicka"
                 }

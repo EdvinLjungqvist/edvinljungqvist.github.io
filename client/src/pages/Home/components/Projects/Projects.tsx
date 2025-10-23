@@ -61,7 +61,7 @@ const Projects: FunctionComponent = (): ReactElement => {
                             <button
                                 key={name}
                                 onClick={() => toggleCategory(name)}
-                                className={`animated ${selectedCategory === name ? styles["active"] : ""}`}
+                                className={`${styles["categories-button"]} animated ${selectedCategory === name ? styles["active"] : ""}`}
                             >
                                 {t(`page./home.projects.categories.list.${name}`, name.charAt(0).toUpperCase() + name.slice(1))} ({count})
                             </button>

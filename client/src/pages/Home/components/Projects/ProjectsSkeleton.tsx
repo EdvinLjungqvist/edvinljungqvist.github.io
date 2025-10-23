@@ -13,7 +13,7 @@ const ProjectsSkeleton: FunctionComponent = (): ReactElement => {
                 <div className="container small-spacing wide-width">
                     <Skeleton type="title" />
                     <div className={styles["categories"]}>
-                        <Skeleton type="button" count={4} />
+                        <Skeleton type="button" count={4} className={styles["categories-button"]}  />
                     </div>
                 </div>
                 <div className={`${styles["grid"]} full-width`}>
