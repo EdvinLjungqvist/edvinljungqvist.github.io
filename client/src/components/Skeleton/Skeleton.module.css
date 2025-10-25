@@ -47,10 +47,10 @@
     border-radius: 10px;
 }
 
-.button-circle {
+.button-icon {
     height: 45px;
     width: 45px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .image-icon {

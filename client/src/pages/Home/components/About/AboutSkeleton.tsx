@@ -13,7 +13,7 @@ const AboutSkeleton: FunctionComponent = (): ReactElement => {
                         <Skeleton type="text" count={3} />
                     </div>
                     <div className={styles["links"]}>
-                        <Skeleton type="button-circle" count={4} />
+                        <Skeleton type="button-icon" count={4} />
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ import { Category } from "./Projects.types";
 import projects from "../../../../data/projects";
 
 const INITIAL_VIEW_COUNT = 9;
-const ADD_VIEW_COUNT = 4;
+const ADD_VIEW_COUNT = 6;
 
 const categories: Category[] = [
     { name: "all", count: projects.length },

@@ -149,7 +149,7 @@ li {
 }
 
 li::marker {
-    color: var(--secondary-0);
+    color: var(--text-50);
 }
 
 a {
@@ -213,6 +213,11 @@ textarea {
     min-height: 100px;
     max-height: 1000px;
     resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-50);
 }
 
 input[type=submit] {
