@@ -5,6 +5,7 @@ import styles from "./About.module.css";
 import { Link } from "react-router-dom";
 import me from "../../../../data/me";
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaLocationDot } from "react-icons/fa6";
+import { Tooltip } from "../../../../components/Tooltip";
 
 const About: FunctionComponent = (): ReactElement => {
     const { t } = useTranslation();
@@ -35,9 +36,11 @@ const About: FunctionComponent = (): ReactElement => {
                         <Link to={me.socials.linkedin} target="_blank" className="button small animated">
                             <FaLinkedin className="icon" />
                         </Link>
-                        <Link to={me.socials.discord} target="_blank" className="button small animated">
-                            <FaDiscord className="icon" />
-                        </Link>
+                        <Tooltip text={t("common.tooltip.copy.text", "Click to copy")} clickText={t("common.tooltip.copy.clickText", "Click to copy")} copyText={me.socials.discord}>
+                            <button className="small animated">
+                                <FaDiscord className="icon" />
+                            </button>
+                        </Tooltip>
                     </div>
                 </div>
             </RevealUp>

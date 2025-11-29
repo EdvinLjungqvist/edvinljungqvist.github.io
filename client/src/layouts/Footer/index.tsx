@@ -3,8 +3,12 @@ import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
 import me from "../../data/me";
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { Tooltip } from "../../components/Tooltip";
+import { useTranslation } from "react-i18next";
 
 const Footer: FunctionComponent = (): ReactElement => {
+    const { t } = useTranslation();
+
     return (
         <footer>
             <div className={styles["container"]}>
@@ -21,10 +25,12 @@ const Footer: FunctionComponent = (): ReactElement => {
                     <Link to={me.socials.linkedin} target="_blank" className="button small animated">
                         <FaLinkedin className="icon" />
                     </Link>
-                    <Link to={me.socials.discord} target="_blank" className="button small animated">
-                        <FaDiscord className="icon" />
-                    </Link>
-                </div>
+                    <Tooltip text={t("common.tooltip.copy.text", "Click to copy")} clickText={t("common.tooltip.copy.clickText", "Click to copy")} copyText={me.socials.discord}>
+                        <button className="small animated">
+                            <FaDiscord className="icon" />
+                        </button>
+                    </Tooltip>
+            </div>
             </div>
         </footer>
     );

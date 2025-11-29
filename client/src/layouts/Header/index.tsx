@@ -24,7 +24,7 @@ const LOCALES = [
 const Header: FunctionComponent = (): ReactElement => {
     const { t, i18n } = useTranslation();
     const { theme, setTheme } = useTheme();
-    const [activeDropdown, setActiveDropdown] = useState<DropdownType>(null);
+    const [activeDropdown, setActiveDropdown] = useState<DropdownType | null>(null);
     const desktop = useMediaQuery("(min-width: 768px)");
     const ref = useRef<HTMLElement>(null);
 

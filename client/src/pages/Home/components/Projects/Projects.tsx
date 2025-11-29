@@ -69,32 +69,34 @@ const Projects: FunctionComponent = (): ReactElement => {
                     </div>
                 </RevealUp>
                 <div className={`${styles["grid"]} full-width`}>
-                    {viewedProjects.map((project: Project) => (
-                        <Link key={project.key} to={project.link} className={styles["link"]}>
-                            <RevealUp className={styles["cell"]}>
-                                <img
-                                    src={`/images/projects/${project.image}`}
-                                    className={styles["image"]}
-                                    alt={`Project ${project.key}`}
-                                    loading="lazy"
-                                />
-                                <div className={`${styles["content"]} container small-spacing`}>
-                                    <h3 className={styles["title"]}>
-                                        {t(`page./home.projects.gallery.${project.key}.title`, "Title")}
-                                    </h3>
-                                    <p className={styles["description"]}>
-                                        {t(`page./home.projects.gallery.${project.key}.description`, "Description")}
-                                    </p>
-                                    <div className={styles["languages"]}>
-                                        {project.technologies.map((language: string, index: number) => (
-                                            <span key={index} className={styles["language"]}>
-                                                {language}
-                                            </span>
-                                        ))}
+                    {viewedProjects.map((project: Project, index: number) => (
+                        <RevealUp key={project.key}>
+                            <Link to={project.link} className={styles["link"]}>
+                                <div className={styles["cell"]}>
+                                    <img
+                                        src={`/images/projects/${project.image}`}
+                                        className={styles["image"]}
+                                        alt={`Project ${project.key}`}
+                                        loading="lazy"
+                                    />
+                                    <div className={`${styles["content"]} container small-spacing`}>
+                                        <h3 className={styles["title"]}>
+                                            {t(`page./home.projects.gallery.${project.key}.title`, "Title")}
+                                        </h3>
+                                        <p className={styles["description"]}>
+                                            {t(`page./home.projects.gallery.${project.key}.description`, "Description")}
+                                        </p>
+                                        <div className={styles["languages"]}>
+                                            {project.technologies.map((language: string, index: number) => (
+                                                <span key={index} className={styles["language"]}>
+                                                    {language}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
-                            </RevealUp>
-                        </Link>
+                            </Link>
+                        </RevealUp>
                     ))}
                 </div>
                 {viewedProjects.length < filteredProjects.length && (

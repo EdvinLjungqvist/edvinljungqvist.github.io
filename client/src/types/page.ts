@@ -1,4 +1,4 @@
-export type DropdownType = "projects" | "locales" | "hamburger" | null;
+export type DropdownType = "projects" | "locales" | "hamburger";
 
 export type DropdownList = {
     id: DropdownType;

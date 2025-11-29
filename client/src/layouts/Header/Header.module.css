@@ -119,6 +119,24 @@
     background: none;
 }
 
+.color-theme {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.color-theme.blue {
+    background-color: #0080ff;
+}
+
+.color-theme.green {
+    background-color: #4fa866;
+}
+
+.color-theme.red {
+background-color: #c05757;
+}
+
 @media (min-width: 768px) {
 
     .list,

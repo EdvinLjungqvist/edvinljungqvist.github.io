@@ -1,24 +1,31 @@
 .container {
     position: relative;
+    display: inline-block;
 }
 
 .tooltip {
     z-index: 999;
-    padding: 10px;
-    bottom: 100%;
+    padding: 5px 10px;
+    bottom: calc(100% + 5px);
     width: max-content;
-    min-width: 150px;
-    max-width: 300px;
-    margin-bottom: 15px;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    border-radius: 10px;
     pointer-events: none;
-    animation: reveal-up .2s ease-out;
+
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+
+    transition: .2s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tooltip.visible {
+    bottom: calc(100% + 15px);
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    transform: translateX(-50%) scale(1);
 }
 
 .tooltip::after {
@@ -33,17 +40,6 @@
     display: block;
     width: 0;
     height: 0;
-}
-
-@keyframes reveal-up {
-    0% {
-      transform: translateX(-50%) translateY(10px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(-50%) translateY(0);
-      opacity: 1;
-    }
 }
 
 .text {

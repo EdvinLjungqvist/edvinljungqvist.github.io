@@ -14,6 +14,12 @@
             "title": "Cookies",
             "description": "Necessary cookies is used to improve your experience.",
             "button": "Okay"
+        },
+        "tooltip": {
+            "copy": {
+                "text": "Click to copy",
+                "clickText": "Copied"
+            }
         }
     },
     "page": {

@@ -14,6 +14,12 @@
             "title": "Kakor",
             "description": "Nödvändiga kakor (cookies) används för att förbättra din upplevelse.",
             "button": "Okej"
+        },
+        "tooltip": {
+            "copy": {
+                "text": "Klicka för att kopiera",
+                "clickText": "Kopierat"
+            }
         }
     },
     "page": {
