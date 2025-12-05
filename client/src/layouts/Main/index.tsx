@@ -11,7 +11,7 @@ const Main: FunctionComponent = (): ReactElement => {
     return (
         <main className={styles["main"]}>
             <Routes>
-                {["/", "/index", "/home", "/hem"].map((path, index) => (
+                {["/", "/index", "/home"].map((path, index) => (
                     <Route key={index} path={path} element={
                         <Suspense fallback={<HomeSkeleton />}>
                             <HashScroller behaviour="smooth" block="start">
@@ -20,7 +20,7 @@ const Main: FunctionComponent = (): ReactElement => {
                         </Suspense>
                     } />
                 ))}
-                {["/project/*", "/projekt/*"].map((path, index) => (
+                {["/project/*"].map((path, index) => (
                     <Route key={index} path={path} element={<Project />} />
                 ))}
                 <Route path="*" element={<Navigate to="/" />} />

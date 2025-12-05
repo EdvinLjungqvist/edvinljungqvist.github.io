@@ -27,13 +27,13 @@ const About: FunctionComponent = (): ReactElement => {
                         </p>
                     </div>
                     <div className={styles["links"]}>
-                        <Link to={me.socials.github} target="_blank" className="button small animated">
+                        <Link to={`https://github.com/${me.socials.github}`} target="_blank" className="button small animated">
                             <FaGithub className="icon" />
                         </Link>
-                        <Link to={me.socials.instagram} target="_blank" className="button small animated">
+                        <Link to={`https://www.instagram.com/${me.socials.instagram}`} target="_blank" className="button small animated">
                             <FaInstagram className="icon" />
                         </Link>
-                        <Link to={me.socials.linkedin} target="_blank" className="button small animated">
+                        <Link to={`https://www.linkedin.com/in/${me.socials.linkedin}`} target="_blank" className="button small animated">
                             <FaLinkedin className="icon" />
                         </Link>
                         <Tooltip text={t("common.tooltip.copy.text", "Click to copy")} clickText={t("common.tooltip.copy.clickText", "Click to copy")} copyText={me.socials.discord}>
